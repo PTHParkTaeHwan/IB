@@ -4,16 +4,16 @@
 
 #include "InfinityBlade.h"
 #include "GameFramework/Character.h"
-#include "TestWolf.generated.h"
+#include "IB_E_GreaterSpider.generated.h"
 
 UCLASS()
-class INFINITYBLADE_API ATestWolf : public ACharacter
+class INFINITYBLADE_API AIB_E_GreaterSpider : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	ATestWolf();
+	AIB_E_GreaterSpider();
 
 protected:
 	// Called when the game starts or when spawned
