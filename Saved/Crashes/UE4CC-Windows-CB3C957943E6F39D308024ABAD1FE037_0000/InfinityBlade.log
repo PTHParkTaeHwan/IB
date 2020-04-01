@@ -1,0 +1,558 @@
+﻿Log file open, 04/01/20 14:26:42
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: InfinityBlade
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1203960272) SRandInit(1203960272).
+LogInit: Read version file with build ID '3944462'
+LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
+LogInit: Registered custom module enumerator with build ID '3944462'
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.317214
+LogD3D11RHI: Aftermath initialized
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.150s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBladeSetting-7827.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBlade-6812.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLink.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLinkEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Win64/UE4Editor-CLionSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeys.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeysOpenSSL.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Win64/UE4Editor-DataValidation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Win64/UE4Editor-DatasmithContent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Win64/UE4Editor-LinearTimecode.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Win64/UE4Editor-NetcodeUnitTest.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Win64/UE4Editor-NUTUnrealEngine4.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCaptureEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3944462).
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: WinSock: I am DESKTOP-2UPP01C (192.168.0.88:0)
+LogInit: Build: ++UE4+Release-4.19-CL-4033788
+LogInit: Engine Version: 4.19.2-4033788+++UE4+Release-4.19
+LogInit: Compatible Engine Version: 4.19.0-3944462+++UE4+Release-4.19
+LogInit: Net CL: 3944462
+LogDevObjectVersion: Number of dev versions registered: 18
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 23
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 33
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 25
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 6
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 1
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 2
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 16
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogInit: Compiled (64-bit): Apr 27 2018 02:06:57
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.19
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogStreaming: Display: Took  0.011s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2020.04.01-05.26.45:412][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.01-05.26.45:412][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.01-05.26.45:424][  0]LogInit: Computer: DESKTOP-2UPP01C
+[2020.04.01-05.26.45:424][  0]LogInit: User: pth08
+[2020.04.01-05.26.45:424][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.04.01-05.26.45:424][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.01-05.26.45:424][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.04.01-05.26.45:424][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.01-05.26.45:424][  0]LogMemory: Process Physical Memory: 278.82 MB used, 278.82 MB peak
+[2020.04.01-05.26.45:424][  0]LogMemory: Process Virtual Memory: 272.73 MB used, 272.73 MB peak
+[2020.04.01-05.26.45:424][  0]LogMemory: Physical Memory: 8034.78 MB used,  8264.52 MB free, 16299.29 MB total
+[2020.04.01-05.26.45:424][  0]LogMemory: Virtual Memory: 4787.44 MB used,  8264.52 MB free, 134217728.00 MB total
+[2020.04.01-05.26.45:451][  0]LogInit: Using OS detected language (ko-KR).
+[2020.04.01-05.26.45:451][  0]LogInit: Using OS detected locale (ko-KR).
+[2020.04.01-05.26.45:455][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2020.04.01-05.26.45:864][  0]LogStreaming: Display: Took  0.412s to EndInitTextLocalization.
+[2020.04.01-05.26.45:865][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.01-05.26.45:960][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.01-05.26.45:960][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.01-05.26.46:327][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.01-05.26.46:345][  0]LogD3D11RHI:    0. 'Intel(R) UHD Graphics 620' (Feature Level 11_0)
+[2020.04.01-05.26.46:345][  0]LogD3D11RHI:       128/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x8086
+[2020.04.01-05.26.46:612][  0]LogD3D11RHI:    1. 'Radeon(TM) 540 Graphics' (Feature Level 11_0)
+[2020.04.01-05.26.46:612][  0]LogD3D11RHI:       1995/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2020.04.01-05.26.46:615][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.01-05.26.46:615][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.01-05.26.46:615][  0]LogD3D11RHI: Chosen D3D11 Adapter: 1
+[2020.04.01-05.26.46:624][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.01-05.26.46:624][  0]LogD3D11RHI:     GPU DeviceId: 0x699f (for the marketing name, search the web for "GPU Device Id")
+[2020.04.01-05.26.46:624][  0]LogWindows: EnumDisplayDevices:
+[2020.04.01-05.26.46:625][  0]LogWindows:    0. 'Intel(R) UHD Graphics 620' (P:0 D:1)
+[2020.04.01-05.26.46:625][  0]LogWindows:    1. 'Intel(R) UHD Graphics 620' (P:1 D:1)
+[2020.04.01-05.26.46:626][  0]LogWindows:    2. 'Intel(R) UHD Graphics 620' (P:0 D:0)
+[2020.04.01-05.26.46:626][  0]LogWindows:    3. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:627][  0]LogWindows:    4. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:628][  0]LogWindows:    5. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:629][  0]LogWindows:    6. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:630][  0]LogWindows:    7. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:631][  0]LogWindows:    8. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:631][  0]LogWindows:    9. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:632][  0]LogWindows:    10. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:633][  0]LogWindows:    11. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:633][  0]LogWindows:    12. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:634][  0]LogWindows:    13. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:635][  0]LogWindows:    14. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:635][  0]LogWindows:    15. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:636][  0]LogWindows:    16. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:636][  0]LogWindows:    17. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:637][  0]LogWindows:    18. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.01-05.26.46:637][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2020.04.01-05.26.46:637][  0]LogD3D11RHI:     Adapter Name: Radeon(TM) 540 Graphics
+[2020.04.01-05.26.46:637][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2020.04.01-05.26.46:637][  0]LogD3D11RHI:      Driver Date: Unknown
+[2020.04.01-05.26.46:637][  0]LogRHI: Texture pool is 1396 MB (70% of 1995 MB)
+[2020.04.01-05.26.47:595][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.01-05.26.47:606][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2020.04.01-05.26.47:608][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (../../../../../../dev/IB/Intermediate/Shaders/WorkingDirectory/17660/).
+[2020.04.01-05.26.47:608][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/pth08/AppData/Local/Temp/UnrealShaderWorkingDir/85F7C1844AC7268202A09A9700CEF4AD/'.
+[2020.04.01-05.26.47:961][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2020.04.01-05.26.47:979][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2020.04.01-05.26.48:000][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2020.04.01-05.26.48:019][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2020.04.01-05.26.48:038][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2020.04.01-05.26.48:058][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2020.04.01-05.26.48:075][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2020.04.01-05.26.48:091][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2020.04.01-05.26.48:100][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2020.04.01-05.26.48:114][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2020.04.01-05.26.48:128][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2020.04.01-05.26.48:140][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2020.04.01-05.26.48:157][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2020.04.01-05.26.48:172][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2020.04.01-05.26.48:186][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2020.04.01-05.26.48:215][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2020.04.01-05.26.48:215][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2020.04.01-05.26.48:231][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2020.04.01-05.26.48:234][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2020.04.01-05.26.48:276][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2020.04.01-05.26.48:289][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2020.04.01-05.26.48:303][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2020.04.01-05.26.48:316][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2020.04.01-05.26.48:329][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2020.04.01-05.26.48:342][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2020.04.01-05.26.48:342][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.01-05.26.48:518][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.01-05.26.48:518][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.01-05.26.48:518][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.01-05.26.49:416][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: Loaded boot cache 0.07s 94MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../dev/IB/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../dev/IB/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.01-05.26.49:484][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.01-05.26.49:499][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.01-05.26.49:512][  0]LogDerivedDataCache: Using Local data cache path C:/Users/pth08/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.01-05.26.49:512][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.01-05.26.49:512][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.01-05.26.49:523][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.01-05.26.49:523][  0]LogSlate: Using Freetype 2.6.0
+[2020.04.01-05.26.49:524][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.01-05.26.49:524][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.01-05.26.49:692][  0]LogAssetRegistry: FAssetRegistry took 0.0271 seconds to start up
+[2020.04.01-05.26.50:084][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.01-05.26.50:179][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2020.04.01-05.26.50:184][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2020.04.01-05.26.50:184][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.01-05.26.50:184][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2020.04.01-05.26.50:184][  0]LogMeshReduction: No automatic mesh merging module available
+[2020.04.01-05.26.50:184][  0]LogMeshMerging: No automatic mesh merging module available
+[2020.04.01-05.26.50:331][  0]LogNetVersion: InfinityBlade , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 376743747)
+[2020.04.01-05.26.50:782][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.072337 seconds
+[2020.04.01-05.26.50:787][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2020.04.01-05.26.50:787][  0]LogUObjectAllocator: 7314312 out of 0 bytes used by permanent object pool.
+[2020.04.01-05.26.50:787][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.01-05.26.52:757][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.01-05.26.52:795][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.04.01-05.26.53:192][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.326800ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.01-05.26.53:212][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aec8028e38, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.01-05.26.53:222][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aec8028e38, Size=20
+[2020.04.01-05.26.53:222][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aec806d7c8, Size=20, Default__WarriorAnimBlueprint_C Function /Engine/Transient.REINST_WarriorAnimBlueprint_C_0:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.01-05.26.53:232][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aeac2d66b0, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/sk_CharM_Base.sk_CharM_Base
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Forge.SK_CharM_Forge
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_FrostGiant.SK_CharM_FrostGiant
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Golden.SK_CharM_Golden
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Natural.SK_CharM_Natural
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Pit.SK_CharM_Pit
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ragged0.SK_CharM_Ragged0
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_RaggedElite.SK_CharM_RaggedElite
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ram.SK_CharM_Ram
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Robo.SK_CharM_Robo
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Shell.SK_CharM_Shell
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_solid.SK_CharM_solid
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Standard.SK_CharM_Standard
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Tusk.SK_CharM_Tusk
+[2020.04.01-05.26.53:274][  0]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior
+[2020.04.01-05.26.53:306][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.071400ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword17/SK_Blade_HeroSword17.SK_Blade_HeroSword17
+[2020.04.01-05.26.53:360][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.278600ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.01-05.26.53:490][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.053600ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword22/SK_Blade_HeroSword22.SK_Blade_HeroSword22
+[2020.04.01-05.26.53:691][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.01-05.26.53:691][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.01-05.26.53:718][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.01-05.26.53:746][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.01-05.26.54:452][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.01-05.26.55:248][  0]LogOcInput: OculusInput pre-init called
+[2020.04.01-05.26.55:398][  0]LogEngine: Initializing Engine...
+[2020.04.01-05.26.55:401][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.01-05.26.55:402][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.01-05.26.55:402][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.01-05.26.55:612][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.01-05.26.56:080][  0]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.01-05.26.56:203][  0]LogInit: FAudioDevice initialized.
+[2020.04.01-05.26.56:261][  0]LogDerivedDataCache: Saved boot cache 0.06s 94MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.01-05.26.56:275][  0]LogInit: Texture streaming: Enabled
+[2020.04.01-05.26.56:300][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.01-05.26.56:318][  0]LogInit: Transaction tracking system initialized
+[2020.04.01-05.26.56:353][  0]BlueprintLog: New page: 에디터 로드
+[2020.04.01-05.26.56:470][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2020.04.01-05.26.56:877][  0]LogConsoleResponse: Display: 
+[2020.04.01-05.26.57:076][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.01-05.26.57:076][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.01-05.26.57:076][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2020.04.01-05.26.57:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.01-05.26.57:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.01-05.26.57:535][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/' took 0.11s
+[2020.04.01-05.26.57:666][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.01-05.26.57:666][  0]Cmd: MAP LOAD FILE="../../../../../../dev/IB/Content/dev/Maps/Title.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.01-05.26.57:667][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.01-05.26.57:670][  0]MapCheck: New page: 맵 체크
+[2020.04.01-05.26.57:670][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.01-05.26.57:679][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aec806d7c8, Size=20
+[2020.04.01-05.26.57:693][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aed6b5b6e0, Size=32, Default__UI_Title_C Function /Game/Book/UI/UI_Title.UI_Title_C:ExecuteUbergraph_UI_Title
+[2020.04.01-05.26.57:696][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aed6b5b6e0, Size=32
+[2020.04.01-05.26.57:696][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aed6b5b6e0, Size=32, Default__UI_Title_C Function /Engine/Transient.REINST_UI_Title_C_3:ExecuteUbergraph_UI_Title
+[2020.04.01-05.26.57:698][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aeac2c6300, Size=32, Default__UI_Title_C Function /Game/Book/UI/UI_Title.UI_Title_C:ExecuteUbergraph_UI_Title
+[2020.04.01-05.26.57:710][  0]LogAIModule: Creating AISystem for world Title
+[2020.04.01-05.26.57:711][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.01-05.26.57:720][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aed6b5b6e0, Size=32
+[2020.04.01-05.26.57:720][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.01-05.26.57:825][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 104.778ms.
+[2020.04.01-05.26.57:825][  0]LogFileHelpers: Loading map 'Title' took 0.159
+[2020.04.01-05.26.58:101][  0]LogCollectionManager: Loaded 0 collections in 0.002589 seconds
+[2020.04.01-05.26.58:157][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Saved/Collections/' took 0.01s
+[2020.04.01-05.26.58:157][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Developers/pth08/Collections/' took 0.01s
+[2020.04.01-05.26.58:157][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Collections/' took 0.01s
+[2020.04.01-05.26.58:157][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2020.04.01-05.26.58:176][  0]LogContentBrowser: Native class hierarchy populated in 0.0185 seconds. Added 2479 classes and 566 folders.
+[2020.04.01-05.26.58:197][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0108 seconds. Added 0 classes and 0 folders.
+[2020.04.01-05.26.58:319][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0099 seconds. Added 0 classes and 0 folders.
+[2020.04.01-05.26.58:336][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0095 seconds. Added 1 classes and 2 folders.
+[2020.04.01-05.26.58:415][  0]LogSlate: Took 0.000309 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.01-05.26.58:419][  0]LogSlate: Took 0.002790 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.04.01-05.26.58:423][  0]LogSlate: Took 0.002691 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2020.04.01-05.26.58:423][  0]LogSlate: Took 0.000430 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.01-05.26.58:431][  0]LogSlate: Took 0.001431 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.01-05.26.58:551][  0]LogRenderer: Reallocating scene render targets to support 920x660 Format 9 NumSamples 1 (Frame:1).
+[2020.04.01-05.26.58:774][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0105 seconds. Added 0 classes and 0 folders.
+[2020.04.01-05.26.58:775][  0]LogLoad: (Engine Initialization) Total time: 17.69 seconds
+[2020.04.01-05.26.58:775][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.01-05.26.58:814][  0]LogContentStreaming: Texture pool size now 600 MB
+[2020.04.01-05.26.58:875][  0]LogSlate: Took 0.003636 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.01-05.26.59:044][  5]LogAssetRegistry: Asset discovery search completed in 9.3750 seconds
+[2020.04.01-05.26.59:062][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2020.04.01-05.26.59:062][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000121 seconds (updated 0 objects)
+[2020.04.01-05.27.05:105][255]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.01-05.27.07:601][353]LogSlate: Took 0.001792 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.01-05.27.08:131][353]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0119 seconds. Added 116 classes and 0 folders.
+[2020.04.01-05.27.08:445][353]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aef22a6508, Size=4, Default__SKEL_PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.SKEL_PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2020.04.01-05.27.08:446][353]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aef22a64d0, Size=4, Default__PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2020.04.01-05.27.08:859][353]LogSlate: Took 0.001612 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.04.01-05.27.08:884][353]LogSlate: Took 0.002009 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/../../Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.04.01-05.27.11:334][438]LogSlate: Window 'UI_Menu' being destroyed
+[2020.04.01-05.27.13:482][538]LogSlate: Took 0.000685 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.04.01-05.27.41:730][706]LogSlate: Took 0.008180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2020.04.01-05.28.44:168][938]LogHotReload: New module detected: UE4Editor-InfinityBlade-1100.dll
+[2020.04.01-05.28.45:853][944]LogHotReload: Starting Hot-Reload from IDE
+[2020.04.01-05.28.46:655][944]LogClass: ECharacterState HotReload.
+[2020.04.01-05.28.46:655][944]LogClass: IBCharacterData HotReload.
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/sk_CharM_Base.sk_CharM_Base
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Forge.SK_CharM_Forge
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_FrostGiant.SK_CharM_FrostGiant
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Golden.SK_CharM_Golden
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Natural.SK_CharM_Natural
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Pit.SK_CharM_Pit
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ragged0.SK_CharM_Ragged0
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_RaggedElite.SK_CharM_RaggedElite
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ram.SK_CharM_Ram
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Robo.SK_CharM_Robo
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Shell.SK_CharM_Shell
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_solid.SK_CharM_solid
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Standard.SK_CharM_Standard
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Tusk.SK_CharM_Tusk
+[2020.04.01-05.28.46:659][944]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior
+[2020.04.01-05.28.46:662][944]LogHotReload: Re-instancing IBItemWeapon after hot-reload.
+[2020.04.01-05.28.46:735][944]LogHotReload: Re-instancing IBPawn after hot-reload.
+[2020.04.01-05.28.46:811][944]LogHotReload: Re-instancing IBSection after hot-reload.
+[2020.04.01-05.28.46:891][944]LogContentBrowser: Native class hierarchy updated for 'InfinityBlade' in 0.0099 seconds. Added 24 classes and 2 folders.
+[2020.04.01-05.28.46:893][944]Display: HotReload successful (14 functions remapped  1 scriptstructs remapped)
+[2020.04.01-05.28.47:293][944]LogContentBrowser: Native class hierarchy populated in 0.0181 seconds. Added 2480 classes and 568 folders.
+[2020.04.01-05.28.47:330][944]Display: HotReload took  1.5s.
+[2020.04.01-05.30.01:983][573]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.01-05.30.02:024][573]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.01-05.30.02:024][573]PIE: New page: PIE 세션: Title (2020. 4. 1. 오후 11:30:02)
+[2020.04.01-05.30.02:024][573]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Title
+[2020.04.01-05.30.02:025][573]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001105s)
+[2020.04.01-05.30.02:025][573]LogAIModule: Creating AISystem for world Title
+[2020.04.01-05.30.02:026][573]LogPlayLevel: PIE: World Init took: (0.000793s)
+[2020.04.01-05.30.02:026][573]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Title.Title to /Game/dev/Maps/UEDPIE_0_Title.Title (0.002170s)
+[2020.04.01-05.30.02:537][573]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.01-05.30.02:616][573]LogInit: FAudioDevice initialized.
+[2020.04.01-05.30.02:659][573]LogLoad: Game class is 'BP_TitleGameMode_C'
+[2020.04.01-05.30.02:660][573]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Title.Title up for play (max tick rate 60) at 2020.04.01-14.30.02
+[2020.04.01-05.30.02:660][573]LogWorld: Bringing up level for play took: 0.000530
+[2020.04.01-05.30.02:706][573]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0100 seconds. Added 11 classes and 0 folders.
+[2020.04.01-05.30.02:709][573]PIE: /Game/dev/Maps/UEDPIE_0_Title 에 대한 에디터에서 플레이 시작 시간: 1.481
+[2020.04.01-05.30.03:503][618]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.01-05.30.03:604][624]LogNet: Browse: /Game/dev/Maps/Select
+[2020.04.01-05.30.03:604][624]LogLoad: LoadMap: /Game/dev/Maps/Select
+[2020.04.01-05.30.03:641][624]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aef8ad1d38, Size=4, Default__UI_Select_C Function /Game/Book/UI/UI_Select.UI_Select_C:ExecuteUbergraph_UI_Select
+[2020.04.01-05.30.03:644][624]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aef8ad1d38, Size=4
+[2020.04.01-05.30.03:644][624]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aef8ad1d38, Size=4, Default__UI_Select_C Function /Engine/Transient.REINST_UI_Select_C_4:ExecuteUbergraph_UI_Select
+[2020.04.01-05.30.03:645][624]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aef8ad12e0, Size=4, Default__UI_Select_C Function /Game/Book/UI/UI_Select.UI_Select_C:ExecuteUbergraph_UI_Select
+[2020.04.01-05.30.03:686][624]LogSkeletalMesh: Skeletal Mesh found in DDC [2.354200ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.01-05.30.04:335][624]LogAIModule: Creating AISystem for world Select
+[2020.04.01-05.30.04:336][624]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.01-05.30.04:337][624]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.01-14.30.04
+[2020.04.01-05.30.04:338][624]LogWorld: Bringing up level for play took: 0.001142
+[2020.04.01-05.30.04:338][624]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2020.04.01-05.30.04:339][624]LogLoad: Took 0.734967 seconds to LoadMap(/Game/dev/Maps/Select)
+[2020.04.01-05.30.05:076][668]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.01-05.30.07:371][805]LogNet: Browse: /Game/dev/Maps/StartRoom
+[2020.04.01-05.30.07:371][805]LogLoad: LoadMap: /Game/dev/Maps/StartRoom
+[2020.04.01-05.30.07:394][805]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002aef8ad1d38, Size=4
+[2020.04.01-05.30.07:497][805]LogUObjectGlobals: Created PersistentFrame Addr=0x000002ae910b7ac0, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.01-05.30.07:501][805]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002ae910b7ac0, Size=408
+[2020.04.01-05.30.07:501][805]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aecb8afe40, Size=408, Default__StartRoom_C Function /Engine/Transient.REINST_StartRoom_C_27:ExecuteUbergraph_StartRoom
+[2020.04.01-05.30.07:503][805]LogUObjectGlobals: Created PersistentFrame Addr=0x000002aecb8ae5c0, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/sk_CharM_Base.sk_CharM_Base
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Forge.SK_CharM_Forge
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_FrostGiant.SK_CharM_FrostGiant
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Golden.SK_CharM_Golden
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Natural.SK_CharM_Natural
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Pit.SK_CharM_Pit
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ragged0.SK_CharM_Ragged0
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_RaggedElite.SK_CharM_RaggedElite
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Ram.SK_CharM_Ram
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Robo.SK_CharM_Robo
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Shell.SK_CharM_Shell
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_solid.SK_CharM_solid
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Standard.SK_CharM_Standard
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Tusk.SK_CharM_Tusk
+[2020.04.01-05.30.07:505][805]InfinityBlade: Warning: AIBCharacter::AIBCharacter(123)Character Asset : /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior
+[2020.04.01-05.30.07:545][805]LogSkeletalMesh: Skeletal Mesh found in DDC [1.379800ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword16/SK_Blade_HeroSword16.SK_Blade_HeroSword16
+[2020.04.01-05.30.11:842][805]LogStats: FPlatformStackWalk::StackWalkAndDump -  4.253 s
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: === Handled ensure: ===
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: 
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: Ensure condition failed: IsObjectValidForDatabase(AssetObject) [File:D:\Build\++UE4+Release-4.19+Compile\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionDatabase.cpp] [Line: 1315]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: 
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: Stack: 
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E6FBB706 UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:234]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E6D1AE3A UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\misc\assertionmacros.cpp:299]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E6D2ECD6 UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\misc\assertionmacros.cpp:430]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E0BDBBE9 UE4Editor-BlueprintGraph.dll!FBlueprintActionDatabase::RefreshAssetActions() [d:\build\++ue4+release-4.19+compile\sync\engine\source\editor\blueprintgraph\private\blueprintactiondatabase.cpp:1315]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E0BAD28D UE4Editor-BlueprintGraph.dll!TBaseStaticDelegateInstance<void __cdecl(UObject * __ptr64)>::ExecuteIfSafe() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:788]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E6526F37 UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void,UObject * __ptr64>::Broadcast() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegatesignatureimpl.inl:937]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E686C010 UE4Editor-CoreUObject.dll!EndLoad() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\coreuobject\private\uobject\uobjectglobals.cpp:1721]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E688312B UE4Editor-CoreUObject.dll!LoadPackageInternal() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\coreuobject\private\uobject\uobjectglobals.cpp:1339]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E6882544 UE4Editor-CoreUObject.dll!LoadPackage() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\coreuobject\private\uobject\uobjectglobals.cpp:1436]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000BF81917A UE4Editor-Engine.dll!UEngine::LoadMap() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\engine\private\unrealengine.cpp:10889]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000BF7CC788 UE4Editor-Engine.dll!UEngine::Browse() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\engine\private\unrealengine.cpp:10373]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000BF83A4A0 UE4Editor-Engine.dll!UEngine::TickWorldTravel() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\engine\private\unrealengine.cpp:10562]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E2D5CD20 UE4Editor-UnrealEd.dll!UEditorEngine::Tick() [d:\build\++ue4+release-4.19+compile\sync\engine\source\editor\unrealed\private\editorengine.cpp:1639]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x00000000E35F9626 UE4Editor-UnrealEd.dll!UUnrealEdEngine::Tick() [d:\build\++ue4+release-4.19+compile\sync\engine\source\editor\unrealed\private\unrealedengine.cpp:401]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000009C6C5EAC UE4Editor.exe!FEngineLoop::Tick() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\launchengineloop.cpp:3339]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000009C6D6BD0 UE4Editor.exe!GuardedMain() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\launch.cpp:166]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000009C6D6C4A UE4Editor.exe!GuardedMainWrapper() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:144]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000009C6E4177 UE4Editor.exe!WinMain() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:223]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000009C6E5B87 UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:253]
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000002AB37BD4 KERNEL32.DLL!UnknownFunction []
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: [Callstack] 0x000000002BA8CED1 ntdll.dll!UnknownFunction []
+[2020.04.01-05.30.11:842][805]LogOutputDevice: Error: 
+[2020.04.01-05.30.11:849][805]LogStats:                SubmitErrorReport -  0.000 s

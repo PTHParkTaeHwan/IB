@@ -5,6 +5,7 @@
 #include "IBCharacter.h"
 #include "IBPlayerController.h"
 #include "IBPlayerState.h"
+#include "IBGameState.h"
 
 
 AIBGameMode::AIBGameMode()
@@ -12,6 +13,7 @@ AIBGameMode::AIBGameMode()
 	DefaultPawnClass = AIBCharacter::StaticClass();
 	PlayerControllerClass = AIBPlayerController::StaticClass();
 	PlayerStateClass = AIBPlayerState::StaticClass();
+	GameStateClass = AIBGameState::StaticClass();
 }
 
 void AIBGameMode::PostLogin(APlayerController * NewPlayer)

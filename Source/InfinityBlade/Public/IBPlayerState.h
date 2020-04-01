@@ -34,8 +34,20 @@ private:
 	
 
 //end Exp
+
+//save¿ë
+public:
+	int32 GetGameHighScore() const;
+	FString SaveSlotName;
+
+protected:
+	UPROPERTY()
+	int32 GameHighScore;
+
 public:
 	void InitPlayerData();
+	void SavePlayerData();
+	int32 GetCharacterIndex() const;
 
 	FOnPlayerStateChangedDelegate OnPlayerStateChanged;
 
@@ -45,5 +57,7 @@ protected:
 
 	UPROPERTY(Transient)
 	int32 CharacterLevel;
-	
+
+	UPROPERTY(Transient)
+	int32 CharacterIndex;	
 };

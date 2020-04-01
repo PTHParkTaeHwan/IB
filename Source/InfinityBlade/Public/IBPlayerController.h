@@ -19,18 +19,32 @@ public:
 
 	class UIBHUDWidget* GetHUDWidget() const;
 	void NPCKill(class AIBCharacter* KilledNPC) const;
+	void ChangeInputMode(bool bGameMode = true);
+
 
 protected:
+	virtual void SetupInputComponent() override;
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<class UIBHUDWidget> HUDWidgetClass;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
+	TSubclassOf<class UIBGameplayWidget> MenuWidgetClass;
+
 private:
+	void OnGamePause();
+
 	UPROPERTY()
 	class UIBHUDWidget* HUDWidget;
 
 	UPROPERTY()
 	class AIBPlayerState* IBPlayerState;
+
+	UPROPERTY()
+	class UIBGameplayWidget* MenuWidget;
+
+	FInputModeGameOnly GameInputMode;
+	FInputModeUIOnly UIInputMode;
 	
 };

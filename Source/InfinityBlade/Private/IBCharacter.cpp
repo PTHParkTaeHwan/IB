@@ -245,7 +245,9 @@ void AIBCharacter::BeginPlay()
 	
 	if (bIsPlayer)
 	{
-		AssetIndex = 2;
+		auto IBPlayerState = Cast<AIBPlayerState>(PlayerState);
+		ABCHECK(nullptr != IBPlayerState);
+		AssetIndex = IBPlayerState->GetCharacterIndex();
 	}
 	else
 	{

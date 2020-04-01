@@ -2,12 +2,16 @@
 
 #include "IBPlayerState.h"
 #include "IBGameInstance.h"
+#include "IBSaveGame.h"
 
 AIBPlayerState::AIBPlayerState()
 {
 	CharacterLevel = 1;
 	GameScore = 0;
+	GameHighScore = 0;
 	Exp = 0;
+	SaveSlotName = TEXT("Player1");
+	CharacterIndex = 0;
 }
 
 int32 AIBPlayerState::GetGameScore() const
@@ -44,6 +48,7 @@ bool AIBPlayerState::AddExp(int32 IncomeExp)
 	}
 
 	OnPlayerStateChanged.Broadcast();
+	SavePlayerData();
 	return DidLevelUp;
 }
 
@@ -59,10 +64,43 @@ void AIBPlayerState::SetCharacterLevel(int32 NewCharacterLevel)
 
 }
 
+int32 AIBPlayerState::GetGameHighScore() const
+{
+	return GameHighScore;
+}
+
 void AIBPlayerState::InitPlayerData()
 {
-	SetPlayerName(TEXT("Destiny"));
-	SetCharacterLevel(5);
+	auto IBSaveGame = Cast<UIBSaveGame>(UGameplayStatics::LoadGameFromSlot(SaveSlotName, 0));
+	if (nullptr == IBSaveGame)
+	{
+		IBSaveGame = GetMutableDefault<UIBSaveGame>();
+	}
+	SetPlayerName(IBSaveGame->PlayerName);
+	SetCharacterLevel(IBSaveGame->Level);
 	GameScore = 0;
-	Exp = 0;
+	GameHighScore = IBSaveGame->HighScore;
+	Exp = IBSaveGame->Exp;
+	CharacterIndex = IBSaveGame->CharacterIndex;
+	SavePlayerData();
+}
+
+void AIBPlayerState::SavePlayerData()
+{
+	UIBSaveGame* NewPlayerData = NewObject<UIBSaveGame>();
+	NewPlayerData->PlayerName = GetPlayerName();
+	NewPlayerData->Level = CharacterLevel;
+	NewPlayerData->Exp = Exp;
+	NewPlayerData->HighScore = GameHighScore;
+	NewPlayerData->CharacterIndex = CharacterIndex;
+
+	if (!UGameplayStatics::SaveGameToSlot(NewPlayerData, SaveSlotName, 0))
+	{
+		ABLOG(Error, TEXT("Error!"));
+	}
+}
+
+int32 AIBPlayerState::GetCharacterIndex() const
+{
+	return CharacterIndex;
 }
