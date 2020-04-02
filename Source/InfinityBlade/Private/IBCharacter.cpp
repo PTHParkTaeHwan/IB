@@ -330,7 +330,6 @@ void AIBCharacter::PostInitializeComponents()
 	IBAnim->OnMontageEnded.AddDynamic(this, &AIBCharacter::OnAttackMontageEnded);
 
 	IBAnim->OnNextAttackCheck.AddLambda([this]() -> void {
-		ABLOG(Warning, TEXT("OnNextAttackCheck"));
 		CanNextCombo = false;
 
 		if (IsComboInputOn)
@@ -343,7 +342,6 @@ void AIBCharacter::PostInitializeComponents()
 	IBAnim->OnAttackHitCheck.AddUObject(this, &AIBCharacter::AttackCheck);
 
 	CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
-		ABLOG(Warning, TEXT("OnHPIsZero"));
 		IBAnim->SetDeadAnim();
 		SetActorEnableCollision(false);
 	});
@@ -359,7 +357,6 @@ void AIBCharacter::PostInitializeComponents()
 float AIBCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-	ABLOG(Warning, TEXT("%s , %f"), *GetName(), FinalDamage);
 	FirstHitEffect->Activate(true);
 	
 	switch (CurrentControlMode)
@@ -452,6 +449,9 @@ void AIBCharacter::LeftRight(float NewAxisValue)
 {
 	if (!IsAttacking) AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue);
 	else  AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue/100);
+
+	
+
 }
 void AIBCharacter::LookUp(float NewAxisValue)
 {
@@ -520,6 +520,24 @@ void AIBCharacter::ShiftButtonChange()
 
 void AIBCharacter::Attack()
 {
+	//////
+	float temp = 200.0f;
+	FVector TraceVec = GetActorForwardVector() * temp;
+	FVector Center = GetActorLocation() + TraceVec * 0.5f;
+	float HalfHeight = temp * 0.5f + AttackRadius;
+	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
+	FColor DrawColor = FColor::Green;
+	float DebugLifeTime = 2.0f;
+
+	DrawDebugCapsule(GetWorld(),
+		Center,
+		HalfHeight,
+		AttackRadius,
+		CapsuleRot,
+		DrawColor,
+		false,
+		DebugLifeTime);
+
 	switch (CurrentControlMode)
 	{
 	case AIBCharacter::EControlMode::NPC:

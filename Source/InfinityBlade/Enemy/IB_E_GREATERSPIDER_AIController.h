@@ -6,6 +6,7 @@
 #include "AIController.h"
 #include "IB_E_GREATERSPIDER_AIController.generated.h"
 
+
 /**
  * 
  */
@@ -17,14 +18,27 @@ class INFINITYBLADE_API AIB_E_GREATERSPIDER_AIController : public AAIController
 public:
 	AIB_E_GREATERSPIDER_AIController();
 	virtual void Possess(APawn* InPawn) override;
-	virtual void UnPossess() override;
 
 private:
-	void OnRepeatTimer();
 
-	FTimerHandle RepeatTimerHandle;
-	float RepeatInterval;
+	UPROPERTY()
+	class UBehaviorTree* BTAsset;
+
+	UPROPERTY()
+	class UBlackboardData* BBAssset;
+
+public:
+	static const FName HomePosKey;
+	static const FName PatrolPosKey;
+	static const FName TargetKey;
+	static const FName IsRoarKey;
 	
+	//접근 후 행동 관리 변수들
+	static const FName IsStayHereKey;
+	static const FName AttackOrIdleKey;
+	static const FName LeftOrRightKey;
+	static const FName LeftPosKey;
+
 	
 	
 };
