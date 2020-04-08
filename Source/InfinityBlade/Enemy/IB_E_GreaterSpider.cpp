@@ -1,10 +1,10 @@
 #include "IB_E_GreaterSpider.h"
 #include "IB_E_GreaterSpider_AnimInstance.h"
 #include "IBWeapon.h"
-#include "IBCharacterStatComponent.h"
+#include "IB_E_GS_StatComponent.h"
 #include "DrawDebugHelpers.h"
 #include "Components/WidgetComponent.h"
-#include "IBCharacterWidget.h"
+#include "IB_E_GS_Widget.h"
 #include "IB_E_GREATERSPIDER_AIController.h"
 #include "IBCharacterSetting.h"
 #include "IBGameInstance.h"
@@ -35,6 +35,22 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 	{
 		GetMesh()->SetAnimInstanceClass(GREATERSPIDER_ANIM.Class);
 	}
+
+	//캐릭터스텟컴퍼넌트 가져오기
+	CharacterStat = CreateDefaultSubobject<UIB_E_GS_StatComponent>(TEXT("CHARACTERSTAT"));
+
+	//HPBar Widget
+	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBARWIDGET"));
+	HPBarWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 70.0f));
+	HPBarWidget->SetWidgetSpace(EWidgetSpace::Screen);
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_HUD(TEXT("/Game/dev/Enemy/UI/UI_E_HPUIBar.UI_E_HPUIBar_C"));
+	if (UI_HUD.Succeeded())
+	{
+		HPBarWidget->SetWidgetClass(UI_HUD.Class);
+		HPBarWidget->SetDrawSize(FVector2D(75.0f, 25.0f));
+	}
+	HPBarWidget->SetHiddenInGame(true);	
+
 
 	//콜리전 프리셋 설정
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("IBCharacter"));
@@ -70,6 +86,9 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 
 	//탠션모드
 	TentionModeInit();
+
+	//Dead State
+	DeadModeOn = false;
 }
 
 // Called when the game starts or when spawned
@@ -104,24 +123,68 @@ void AIB_E_GreaterSpider::PostInitializeComponents()
 	//TentionMode관리
 	IB_E_GSAnim->E_OnLeftCheck.AddUObject(this, &AIB_E_GreaterSpider::TentionModeInit);
 	IB_E_GSAnim->E_OnRightCheck.AddUObject(this, &AIB_E_GreaterSpider::TentionModeInit);
+
+	CharacterStat->E_OnHPIsZero.AddLambda([this]()-> void {
+		DeadModeOn = true;
+	});
+
+	//HP위젯 연결
+	auto CharacterWidget = Cast<UIB_E_GS_Widget>(HPBarWidget->GetUserWidgetObject());
+	if (nullptr != CharacterWidget)
+	{
+		CharacterWidget->BindCharacterStat(CharacterStat);
+	}
 }
 
 float AIB_E_GreaterSpider::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
-	return 0.0f;
+	//ABLOG(Warning, TEXT("TakeDamage"));
+
+	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	//FirstHitEffect->Activate(true);
+	
+	CharacterStat->SetDamage(FinalDamage);
+
+	if (DeadModeOn)
+	{
+		auto IBPlayerController = Cast<AIBPlayerController>(EventInstigator);
+		ABCHECK(nullptr != IBPlayerController, 0.0f);
+		IBPlayerController->NPCKill(this);
+		Destroy(this);
+	}
+
+	/*if (CurrentState == ECharacterState::DEAD)
+	{
+		if (EventInstigator->IsPlayerController())
+		{
+			auto IBPlayerController = Cast<AIBPlayerController>(EventInstigator);
+			ABCHECK(nullptr != IBPlayerController, 0.0f);
+			IBPlayerController->NPCKill(this);
+		}
+	}*/
+
+	return FinalDamage;
 }
 
 // Called every frame
 void AIB_E_GreaterSpider::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	if (IdleOn)
+	{
+		IdleTime += DeltaTime;
+		if (IdleTime >= 2.0f)
+		{
+			TentionModeInit();
+		}
+	}
 }
 
 // Called to bind functionality to input
 void AIB_E_GreaterSpider::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 
 void AIB_E_GreaterSpider::SetTentionMode()
@@ -130,26 +193,26 @@ void AIB_E_GreaterSpider::SetTentionMode()
 	{
 		IsAttacking = true;
 		int32 temp = FMath::RandRange(1, 10);
-
 		if (temp <= 5) IsStayHere = true;
 		else IsStayHere = false;
 
 		if (IsStayHere)
 		{
 			int32 temp2 = FMath::RandRange(1, 10);
-			if (temp <= 5)
+			if (temp2 <= 7)
 			{
 				AttackOrIdle = true;
 			}
 			else
 			{
 				AttackOrIdle = false;
+				IdleOn = true;
 			}
 		}
-		else if (!IsStayHere)
+		else 
 		{
-			int32 temp2 = FMath::RandRange(1, 10);
-			if (temp <= 5)
+			int32 temp3 = FMath::RandRange(1, 10);
+			if (temp3 <= 5)
 			{
 				LeftOrRight = true;
 				IB_E_GSAnim->PlayLeftMontage();
@@ -162,10 +225,6 @@ void AIB_E_GreaterSpider::SetTentionMode()
 		}
 	}
 
-	ABLOG(Warning, TEXT("////////////////////"));
-	ABLOG(Warning, TEXT("IsStayHere %d"), IsStayHere);
-	ABLOG(Warning, TEXT("AttackOrIdle %d"), AttackOrIdle);
-	ABLOG(Warning, TEXT("LeftOrRight %d"), LeftOrRight);
 }
 
 
@@ -177,13 +236,14 @@ void AIB_E_GreaterSpider::Attack()
 	2. 이동 일 경우 랜덤으로 1-3번 중 하나의 숫자가 선정되도록 한 후 그 숫자만큼 몽타주 재생
 	3. 공격모션일 경우 일반적인 방법으로 진행
 	4. 캐릭터가 거리에서 멀어지면 관련 변수 모두 초기화
-	
 	*/
-	
-	AttackStartComboState();
-	IB_E_GSAnim->PlayAttackMontage();
-	IB_E_GSAnim->JumpToAttackMontageSection(CurrentCombo);
-
+	if (!AttackOn)
+	{
+		AttackOn = true;
+		AttackStartComboState();
+		IB_E_GSAnim->PlayAttackMontage();
+		IB_E_GSAnim->JumpToAttackMontageSection(CurrentCombo);
+	}
 
 	/*
 	if (!IsAttacking)
@@ -246,6 +306,11 @@ void AIB_E_GreaterSpider::Attack()
 			IsRight = false;
 		}
 	}*/
+}
+
+void AIB_E_GreaterSpider::SetHPBarWidgetHiddenInGame(bool NewStat)
+{
+	HPBarWidget->SetHiddenInGame(NewStat);
 }
 
 void AIB_E_GreaterSpider::OnAttackMontageEnded(UAnimMontage * Montage, bool bInterrupted)
@@ -353,6 +418,10 @@ void AIB_E_GreaterSpider::TentionModeInit()
 	IsStayHere = false;
 	AttackOrIdle = false;
 	LeftOrRight = false;
+
+	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->MaxWalkSpeed = 500.0f;
+
 }
 
 
@@ -370,6 +439,21 @@ bool AIB_E_GreaterSpider::GetAttackOrIdle()
 bool AIB_E_GreaterSpider::GetLeftOrRight()
 {
 	return LeftOrRight;
+}
+
+bool AIB_E_GreaterSpider::GetIsAttacking()
+{
+	return IsAttacking;
+}
+
+void AIB_E_GreaterSpider::SetbOrientRotationToMovement(bool NewRotation)
+{
+	GetCharacterMovement()->bOrientRotationToMovement = NewRotation;
+}
+
+int32 AIB_E_GreaterSpider::GetExp() const
+{
+	return CharacterStat->GetDropExp();
 }
 
 

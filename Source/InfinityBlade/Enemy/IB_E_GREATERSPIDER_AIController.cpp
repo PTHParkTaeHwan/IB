@@ -18,6 +18,8 @@ const FName AIB_E_GREATERSPIDER_AIController::IsStayHereKey(TEXT("IsStayHere"));
 const FName AIB_E_GREATERSPIDER_AIController::AttackOrIdleKey(TEXT("AttackOrIdle"));
 const FName AIB_E_GREATERSPIDER_AIController::LeftOrRightKey(TEXT("LeftOrRight"));
 const FName AIB_E_GREATERSPIDER_AIController::LeftPosKey(TEXT("LeftPos"));
+const FName AIB_E_GREATERSPIDER_AIController::RightPosKey(TEXT("RightPos"));
+
 
 AIB_E_GREATERSPIDER_AIController::AIB_E_GREATERSPIDER_AIController()
 {

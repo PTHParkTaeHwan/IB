@@ -39,6 +39,17 @@ public:
 
 	void SetEnemyMode(EnemyMode NewMode);
 
+	//HP Bar widget °ü¸®
+public:
+	UPROPERTY(VisibleAnywhere, Category = Stat)
+	class UIB_E_GS_StatComponent* CharacterStat;
+
+	UPROPERTY(VisibleAnywhere, Category = UI)
+	class UWidgetComponent* HPBarWidget;
+
+	void SetHPBarWidgetHiddenInGame(bool NewStat);
+	
+
 private:
 	UFUNCTION()
 		void OnAttackMontageEnded(UAnimMontage* Montage, bool bInterrupted);
@@ -98,7 +109,7 @@ private:
 	bool IsRight;
 	bool MoveRightOn;
 	bool IdleOn;
-	int32 IdleTime;
+	float IdleTime;
 
 	bool IsStayHere;
 	bool AttackOrIdle;
@@ -110,5 +121,14 @@ public:
 	bool GetIsStayHere();
 	bool GetAttackOrIdle();
 	bool GetLeftOrRight();
-	
+	bool GetIsAttacking();
+	void SetbOrientRotationToMovement(bool NewRotation);
+
+	//dead State
+private:
+	bool DeadModeOn;
+
+public:
+	int32 GetExp() const;
+
 };

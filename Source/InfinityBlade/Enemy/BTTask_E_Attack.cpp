@@ -26,7 +26,7 @@ EBTNodeResult::Type UBTTask_E_Attack::ExecuteTask(UBehaviorTreeComponent & Owner
 		IsAttacking = false;
 	});
 	   	
-	ABLOG(Warning, TEXT(""));
+	ABLOG(Warning, TEXT("UBTTask_E_Attack()"));
 
 	return EBTNodeResult::InProgress;
 

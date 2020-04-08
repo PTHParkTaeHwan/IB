@@ -38,6 +38,7 @@ public:
 	static const FName AttackOrIdleKey;
 	static const FName LeftOrRightKey;
 	static const FName LeftPosKey;
+	static const FName RightPosKey;
 
 	
 	

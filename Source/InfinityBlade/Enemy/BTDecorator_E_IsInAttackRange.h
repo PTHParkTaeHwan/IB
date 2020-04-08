@@ -17,9 +17,8 @@ class INFINITYBLADE_API UBTDecorator_E_IsInAttackRange : public UBTDecorator
 public:
 	UBTDecorator_E_IsInAttackRange();
 
+
 protected:
 	virtual bool CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const override;
-
-	
 	
 };

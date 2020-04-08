@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "InfinityBlade.h"
 #include "GameFramework/PlayerController.h"
 #include "IBPlayerController.generated.h"
 
@@ -18,7 +18,7 @@ public:
 	AIBPlayerController();
 
 	class UIBHUDWidget* GetHUDWidget() const;
-	void NPCKill(class AIBCharacter* KilledNPC) const;
+	void NPCKill(AActor* KilledNPC /*AIBCharacter* KilledNPC*/) const;
 	void ChangeInputMode(bool bGameMode = true);
 
 

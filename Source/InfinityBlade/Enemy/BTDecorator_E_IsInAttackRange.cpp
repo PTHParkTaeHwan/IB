@@ -5,12 +5,15 @@
 #include "IB_E_GreaterSpider.h"
 #include "IBCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "DrawDebugHelpers.h"
 
 
 UBTDecorator_E_IsInAttackRange::UBTDecorator_E_IsInAttackRange()
 {
 	NodeName = TEXT("E_GreaterSpiderCanAttack");
 }
+
+
 
 bool UBTDecorator_E_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory) const
 {
@@ -24,18 +27,31 @@ bool UBTDecorator_E_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCom
 	if (nullptr == Target)
 		return false;
 
-	bResult = (Target->GetDistanceTo(ControllingPawn) <= 500.0f);
+	bResult = (Target->GetDistanceTo(ControllingPawn) <= 350.0f);
 	auto IBGreaterSpider = Cast<AIB_E_GreaterSpider>(OwnerComp.GetAIOwner()->GetPawn());
 	if (nullptr == IBGreaterSpider)
 		return false;
 
 	if (bResult)
 	{
-		IBGreaterSpider->SetCharacterInAttackRange(true);
-		IBGreaterSpider->SetTentionMode();
-		OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::IsStayHereKey, IBGreaterSpider->GetIsStayHere());
-		OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::AttackOrIdleKey, IBGreaterSpider->GetAttackOrIdle());
-		OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::LeftOrRightKey, IBGreaterSpider->GetLeftOrRight());
+		if (!IBGreaterSpider->GetIsAttacking())
+		{
+			IBGreaterSpider->SetCharacterInAttackRange(true);
+			IBGreaterSpider->SetTentionMode();
+			OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::IsStayHereKey, IBGreaterSpider->GetIsStayHere());
+			OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::AttackOrIdleKey, IBGreaterSpider->GetAttackOrIdle());
+			OwnerComp.GetBlackboardComponent()->SetValueAsBool(AIB_E_GREATERSPIDER_AIController::LeftOrRightKey, IBGreaterSpider->GetLeftOrRight());
+			OwnerComp.GetBlackboardComponent()->SetValueAsVector(AIB_E_GREATERSPIDER_AIController::LeftPosKey,
+				(IBGreaterSpider->GetActorLocation() - IBGreaterSpider->GetActorRightVector() * 230.0f)
+			);
+			OwnerComp.GetBlackboardComponent()->SetValueAsVector(AIB_E_GREATERSPIDER_AIController::RightPosKey,
+				(IBGreaterSpider->GetActorLocation() + IBGreaterSpider->GetActorRightVector() * 230.0f)
+			);
+			
+			/*DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() - IBGreaterSpider->GetActorRightVector() * 300.0f, 20.0f, FColor::Red, false, 3.0f);
+			DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() + IBGreaterSpider->GetActorRightVector() * 300.0f, 20.0f, FColor::Blue, false, 3.0f);*/
+
+		}
 		return bResult;
 	}
 	else

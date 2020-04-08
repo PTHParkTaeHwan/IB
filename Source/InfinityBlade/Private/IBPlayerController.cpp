@@ -6,6 +6,7 @@
 #include "IBPlayerState.h"
 #include "IBCharacter.h"
 #include "IBGameplayWidget.h"
+#include "Enemy/IB_E_GreaterSpider.h"
 
 AIBPlayerController::AIBPlayerController()
 {
@@ -62,9 +63,11 @@ UIBHUDWidget * AIBPlayerController::GetHUDWidget() const
 	return HUDWidget;
 }
 
-void AIBPlayerController::NPCKill(AIBCharacter * KilledNPC) const
+void AIBPlayerController::NPCKill(AActor* KilledNPC /*AIBCharacter * KilledNPC*/) const
 {
-	IBPlayerState->AddExp(KilledNPC->GetExp());
+	auto Enemy = Cast<AIB_E_GreaterSpider>(KilledNPC);
+	ABLOG(Warning, TEXT("%d"), Enemy->GetExp());
+	IBPlayerState->AddExp(Enemy->GetExp());
 }
 
 void AIBPlayerController::ChangeInputMode(bool bGameMode)

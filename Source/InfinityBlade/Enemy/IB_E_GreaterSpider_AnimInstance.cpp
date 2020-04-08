@@ -121,11 +121,12 @@ FName UIB_E_GreaterSpider_AnimInstance::GetAttackMontageSectionName(int32 Sectio
 
 void UIB_E_GreaterSpider_AnimInstance::PlayLeftMontage()
 {
-	Montage_Play(E_LeftMontage, 1.0f);
+	Montage_Play(E_LeftMontage, 0.5f);
 }
 void UIB_E_GreaterSpider_AnimInstance::AnimNotify_LeftDone()
 {
 	E_OnLeftCheck.Broadcast();
+	ABLOG(Warning, TEXT("AnimNotify_LeftDone"));
 }
 
 
@@ -133,9 +134,11 @@ void UIB_E_GreaterSpider_AnimInstance::AnimNotify_LeftDone()
 
 void UIB_E_GreaterSpider_AnimInstance::PlayRightMontage()
 {
-	Montage_Play(E_RightMontage, 1.0f);
+	Montage_Play(E_RightMontage, 0.5f);
 }
 void UIB_E_GreaterSpider_AnimInstance::AnimNotify_RightDone()
 {
 	E_OnRightCheck.Broadcast();
+	ABLOG(Warning, TEXT("AnimNotify_RightDone"));
+
 }

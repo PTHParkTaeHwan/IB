@@ -51,6 +51,7 @@ void UBTService_E_Detect::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * N
 				DrawDebugLine(World, ControllingPawn->GetActorLocation(), IBCharacter->GetActorLocation(), FColor::Blue, false, 0.2f);
 				//ControllingCharacter->GetCharacterMovement()->MaxWalkSpeed = 600;
 				Enemy->SetEnemyMode(EnemyMode::TARGETON);
+				Enemy->SetHPBarWidgetHiddenInGame(false);
 				return;
 			}
 		}

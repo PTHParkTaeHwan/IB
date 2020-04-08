@@ -521,10 +521,31 @@ void AIBCharacter::ShiftButtonChange()
 void AIBCharacter::Attack()
 {
 	//////
+	/*
+	float temp = 200.0f;
+	FVector TraceVec = GetActorRightVector();
+	FVector Center = GetActorLocation() + GetActorRightVector() * temp;
+	float HalfHeight = 50.0f;
+	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
+	FColor DrawColor = FColor::Green;
+	float DebugLifeTime = 2.0f;
+
+	GetActorLocation() + GetActorRightVector() * temp;
+
+	DrawDebugCapsule(GetWorld(),
+		Center,
+		HalfHeight,
+		AttackRadius,
+		CapsuleRot,
+		DrawColor,
+		false,
+		DebugLifeTime);
+
+	
 	float temp = 200.0f;
 	FVector TraceVec = GetActorForwardVector() * temp;
-	FVector Center = GetActorLocation() + TraceVec * 0.5f;
-	float HalfHeight = temp * 0.5f + AttackRadius;
+	FVector Center = GetActorLocation() + GetActorRightVector() * temp;
+	float HalfHeight = 50.0f;
 	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
 	FColor DrawColor = FColor::Green;
 	float DebugLifeTime = 2.0f;
@@ -536,7 +557,7 @@ void AIBCharacter::Attack()
 		CapsuleRot,
 		DrawColor,
 		false,
-		DebugLifeTime);
+		DebugLifeTime);*/
 
 	switch (CurrentControlMode)
 	{
