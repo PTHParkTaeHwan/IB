@@ -17,12 +17,13 @@ UBTService_E_Detect::UBTService_E_Detect()
 
 void UBTService_E_Detect::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory, float DeltaSeconds)
 {
+
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
 	APawn* ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
 	AIB_E_GreaterSpider* Enemy = Cast<AIB_E_GreaterSpider>(OwnerComp.GetAIOwner()->GetCharacter());
 	if (nullptr == ControllingPawn) return;
-
+	
 	UWorld* World = ControllingPawn->GetWorld();
 	FVector Center = ControllingPawn->GetActorLocation();
 

@@ -21,13 +21,19 @@ EBTNodeResult::Type UBTTask_E_Attack::ExecuteTask(UBehaviorTreeComponent & Owner
 		return EBTNodeResult::Failed;
 
 	IBGreaterSpider->Attack();
+	if (!IBGreaterSpider->GetAttackOn())
+	{
+		IBGreaterSpider->TentionModeInit();
+		return EBTNodeResult::Failed;
+	}
+
 	IsAttacking = true;
+
+	
 	IBGreaterSpider->OnAttackEnd.AddLambda([this]() -> void {
 		IsAttacking = false;
 	});
 	   	
-	ABLOG(Warning, TEXT("UBTTask_E_Attack()"));
-
 	return EBTNodeResult::InProgress;
 
 }

@@ -39,6 +39,7 @@ public:
 	static const FName LeftOrRightKey;
 	static const FName LeftPosKey;
 	static const FName RightPosKey;
+	static const FName IsHitMotionKey;
 
 	
 	

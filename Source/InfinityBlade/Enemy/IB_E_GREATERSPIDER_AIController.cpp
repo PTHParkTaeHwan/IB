@@ -5,6 +5,9 @@
 #include "BehaviorTree/BlackboardData.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
+//hit motion
+const FName AIB_E_GREATERSPIDER_AIController::IsHitMotionKey(TEXT("IsHitMotion"));
+
 //ÆÐÆ®·Ñ
 const FName AIB_E_GREATERSPIDER_AIController::HomePosKey(TEXT("HomePos"));
 const FName AIB_E_GREATERSPIDER_AIController::PatrolPosKey(TEXT("PatrolPos"));
@@ -19,6 +22,7 @@ const FName AIB_E_GREATERSPIDER_AIController::AttackOrIdleKey(TEXT("AttackOrIdle
 const FName AIB_E_GREATERSPIDER_AIController::LeftOrRightKey(TEXT("LeftOrRight"));
 const FName AIB_E_GREATERSPIDER_AIController::LeftPosKey(TEXT("LeftPos"));
 const FName AIB_E_GREATERSPIDER_AIController::RightPosKey(TEXT("RightPos"));
+
 
 
 AIB_E_GREATERSPIDER_AIController::AIB_E_GREATERSPIDER_AIController()

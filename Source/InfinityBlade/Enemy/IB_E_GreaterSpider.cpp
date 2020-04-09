@@ -70,7 +70,6 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 
 	//공격 콤보 관리
 	MaxCombo = 3;
-	AttackEndComboState();
 
 
 	//공격 범위 디버그
@@ -89,6 +88,19 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 
 	//Dead State
 	DeadModeOn = false;
+
+	//hit particle
+	HitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("HITEFFECT"));
+	HitEffect->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/Impact/P_ImpactSpark.P_ImpactSpark"));
+	if (P_HIT.Succeeded())
+	{
+		HitEffect->SetTemplate(P_HIT.Object);
+		HitEffect->bAutoActivate = false;
+	}
+
+	HitMotionOn = false;
+
 }
 
 // Called when the game starts or when spawned
@@ -134,15 +146,22 @@ void AIB_E_GreaterSpider::PostInitializeComponents()
 	{
 		CharacterWidget->BindCharacterStat(CharacterStat);
 	}
+
+	//hit motion
+	IB_E_GSAnim->E_OnHitCheck.AddLambda([this]()->void {
+		HitMotionOn = false;
+		TentionModeInit();
+	});
 }
 
 float AIB_E_GreaterSpider::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
-	//ABLOG(Warning, TEXT("TakeDamage"));
-
+	ABLOG(Warning, TEXT("TakeDamage"));
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-	//FirstHitEffect->Activate(true);
-	
+	//IB_E_GSAnim->StopAllMontage();
+	HitMotionOn = true;	
+	HitEffect->Activate(true);
+	IB_E_GSAnim->PlayHitMontage();
 	CharacterStat->SetDamage(FinalDamage);
 
 	if (DeadModeOn)
@@ -152,17 +171,6 @@ float AIB_E_GreaterSpider::TakeDamage(float DamageAmount, FDamageEvent const & D
 		IBPlayerController->NPCKill(this);
 		Destroy(this);
 	}
-
-	/*if (CurrentState == ECharacterState::DEAD)
-	{
-		if (EventInstigator->IsPlayerController())
-		{
-			auto IBPlayerController = Cast<AIBPlayerController>(EventInstigator);
-			ABCHECK(nullptr != IBPlayerController, 0.0f);
-			IBPlayerController->NPCKill(this);
-		}
-	}*/
-
 	return FinalDamage;
 }
 
@@ -215,97 +223,26 @@ void AIB_E_GreaterSpider::SetTentionMode()
 			if (temp3 <= 5)
 			{
 				LeftOrRight = true;
-				IB_E_GSAnim->PlayLeftMontage();
 			}
 			else
 			{
 				LeftOrRight = false;
-				IB_E_GSAnim->PlayRightMontage();
 			}
 		}
 	}
-
 }
 
 
 void AIB_E_GreaterSpider::Attack()
 {
-	/*
-	0. IsAttacking을 false에서 true로 변경하면서 공격모션 시작.
-	1. 랜덤으로 숫자를 생성해서  0-30_좌, 31-45_대기, 46-55_공, 56-70_대, 71-100_우
-	2. 이동 일 경우 랜덤으로 1-3번 중 하나의 숫자가 선정되도록 한 후 그 숫자만큼 몽타주 재생
-	3. 공격모션일 경우 일반적인 방법으로 진행
-	4. 캐릭터가 거리에서 멀어지면 관련 변수 모두 초기화
-	*/
-	if (!AttackOn)
+	if (!AttackOn && !HitMotionOn)
 	{
 		AttackOn = true;
 		AttackStartComboState();
+		ABLOG(Warning, TEXT("Attack()"));
 		IB_E_GSAnim->PlayAttackMontage();
 		IB_E_GSAnim->JumpToAttackMontageSection(CurrentCombo);
 	}
-
-	/*
-	if (!IsAttacking)
-	{
-		IsAttacking = true;
-		int32 temp = FMath::RandRange(1, 10);
-
-		if (0 <= temp && temp <= 100)
-		{
-			IsLeft = true;
-		}
-		else if (31 <= temp && temp <= 45)
-		{
-			ABLOG(Warning, TEXT("IdleOn"));
-			IdleOn = true;
-		}
-		else if (46 <= temp && temp <= 55)
-		{
-			AttackOn = true;
-		}
-		else if (56 <= temp && temp <= 70)
-		{
-			ABLOG(Warning, TEXT("IdleOn"));
-			IdleOn = true;
-		}
-		else
-		{
-			IsRight = true;
-		}
-	}*/
-
-	/*if (IsAttacking)
-	{
-		if (IsLeft)
-		{
-			IB_E_GSAnim->PlayLeftMontage();
-			IsLeft = false;
-			MoveLeftOn = true;
-			GetActorLocation() + GetActorRightVector() * 50.0f;
-		}
-		else if (AttackOn)
-		{
-			AttackStartComboState();
-			IB_E_GSAnim->PlayAttackMontage();
-			IB_E_GSAnim->JumpToAttackMontageSection(CurrentCombo);
-			AttackOn = false;
-		}
-		else if (IdleOn)
-		{
-			IdleTime++;
-			ABLOG(Warning, TEXT("IdleTime %d"), IdleTime);
-			if (IdleTime == 3)
-			{
-				TentionModeInit();
-			}
-		}
-		else if (IsRight)
-		{
-			IB_E_GSAnim->PlayRightMontage();
-			IsRight = false;
-		}
-	}*/
 }
 
 void AIB_E_GreaterSpider::SetHPBarWidgetHiddenInGame(bool NewStat)
@@ -315,18 +252,19 @@ void AIB_E_GreaterSpider::SetHPBarWidgetHiddenInGame(bool NewStat)
 
 void AIB_E_GreaterSpider::OnAttackMontageEnded(UAnimMontage * Montage, bool bInterrupted)
 { 
+	ABLOG(Warning, TEXT("OnAttackMontageEnded(%s, %d)"), *Montage->GetName(), bInterrupted);
 	if (AnimNotify_NextAttackCheckOn)
 	{
 		AnimNotify_NextAttackCheckOn = false;
 		AttackStartComboState();
+		ABLOG(Warning, TEXT("OnAttackMontageEnded(%s, %d), if (AnimNotify_NextAttackCheckOn)"), *Montage->GetName(), bInterrupted);
 		IB_E_GSAnim->PlayAttackMontage();
 		IB_E_GSAnim->JumpToAttackMontageSection(CurrentCombo);
 	}
-	else
+	else if(!AnimNotify_NextAttackCheckOn)
 	{
-		IsAttacking = false;
-		AttackEndComboState();
 		TentionModeInit();
+		IsAttacking = false;
 		OnAttackEnd.Broadcast();
 	}
 }
@@ -337,14 +275,6 @@ void AIB_E_GreaterSpider::AttackStartComboState()
 	//IsComboInputOn = false;
 	ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 0, MaxCombo - 1));
 	CurrentCombo = FMath::Clamp<int32>(CurrentCombo + 1, 1, MaxCombo);
-}
-
-void AIB_E_GreaterSpider::AttackEndComboState()
-{
-	AnimNotify_NextAttackCheckOn = false;
-	//IsComboInputOn = false;
-	//CanNextCombo = false;
-	CurrentCombo = 0;
 }
 
 void AIB_E_GreaterSpider::AttackCheck()
@@ -382,15 +312,15 @@ void AIB_E_GreaterSpider::AttackCheck()
 	{
 		for (FHitResult HitResult : HitResults)
 		{
-			if (CurrentCombo < 3)
+			if (CurrentCombo < 2)
 			{
-				//FDamageEvent DamageEvent;
-				//HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
+				FDamageEvent DamageEvent;
+				HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
 			}
 			else
 			{
-				//FDamageEvent DamageEvent;
-				//HitResult.Actor->TakeDamage(CharacterStat->GetAttack() * 2, DamageEvent, GetController(), this);
+				FDamageEvent DamageEvent;
+				HitResult.Actor->TakeDamage(CharacterStat->GetAttack() * 2, DamageEvent, GetController(), this);
 			}
 		}
 	}
@@ -403,15 +333,13 @@ bool AIB_E_GreaterSpider::GetIsRoar()
 
 void AIB_E_GreaterSpider::TentionModeInit()
 {
-	IsAttacking = false;
-	AttackOn = false;
+	AnimNotify_NextAttackCheckOn = false;
+	CurrentCombo = 0;
 
-	IsLeft = false;
-	MoveLeftOn = false;
-	
-	IsRight = false;
-	MoveRightOn = false;
-	
+	//IsAttacking = false;
+	AttackOn = false;
+	IsLeftOrRightMove = false;
+
 	IdleOn = false;
 	IdleTime = 0;
 
@@ -446,14 +374,48 @@ bool AIB_E_GreaterSpider::GetIsAttacking()
 	return IsAttacking;
 }
 
+void AIB_E_GreaterSpider::SetIsAttacking(bool NewState)
+{
+	IsAttacking = NewState;
+}
+
+bool AIB_E_GreaterSpider::GetAttackOn()
+{
+	return AttackOn;
+}
+
 void AIB_E_GreaterSpider::SetbOrientRotationToMovement(bool NewRotation)
 {
 	GetCharacterMovement()->bOrientRotationToMovement = NewRotation;
 }
 
+void AIB_E_GreaterSpider::PlayLeftOrRightMontage()
+{
+	if (LeftOrRight && !HitMotionOn)
+	{
+		IB_E_GSAnim->PlayLeftMontage();
+		IsLeftOrRightMove = true;
+	}
+	else if (!LeftOrRight && !HitMotionOn)
+	{
+		IB_E_GSAnim->PlayRightMontage();
+		IsLeftOrRightMove = true;
+	}
+}
+
+bool AIB_E_GreaterSpider::GetIsLeftOrRightMove()
+{
+	return IsLeftOrRightMove;
+}
+
 int32 AIB_E_GreaterSpider::GetExp() const
 {
 	return CharacterStat->GetDropExp();
+}
+
+bool AIB_E_GreaterSpider::GetHitMotionOn()
+{
+	return HitMotionOn;
 }
 
 
@@ -478,7 +440,6 @@ void AIB_E_GreaterSpider::SetEnemyMode(EnemyMode NewMode)
 		}
 		break;
 	case EnemyMode::TENTIONON:
-		ABLOG(Warning, TEXT("TENTIONON"));
 		break;
 	case EnemyMode::ATTACK:
 		break;

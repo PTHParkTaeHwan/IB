@@ -24,9 +24,5 @@ protected:
 private:
 	bool IsAttacking = false;
 
-	UBehaviorTreeComponent* OwnerComponent;
 
-public:
-	void SetLeftPos(FVector NewVector);
-	
 };

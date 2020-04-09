@@ -13,8 +13,6 @@ UBTDecorator_E_IsInAttackRange::UBTDecorator_E_IsInAttackRange()
 	NodeName = TEXT("E_GreaterSpiderCanAttack");
 }
 
-
-
 bool UBTDecorator_E_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory) const
 {
 	bool bResult = Super::CalculateRawConditionValue(OwnerComp, NodeMemory);
@@ -31,7 +29,6 @@ bool UBTDecorator_E_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCom
 	auto IBGreaterSpider = Cast<AIB_E_GreaterSpider>(OwnerComp.GetAIOwner()->GetPawn());
 	if (nullptr == IBGreaterSpider)
 		return false;
-
 	if (bResult)
 	{
 		if (!IBGreaterSpider->GetIsAttacking())
@@ -48,8 +45,8 @@ bool UBTDecorator_E_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCom
 				(IBGreaterSpider->GetActorLocation() + IBGreaterSpider->GetActorRightVector() * 230.0f)
 			);
 			
-			/*DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() - IBGreaterSpider->GetActorRightVector() * 300.0f, 20.0f, FColor::Red, false, 3.0f);
-			DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() + IBGreaterSpider->GetActorRightVector() * 300.0f, 20.0f, FColor::Blue, false, 3.0f);*/
+			DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() - IBGreaterSpider->GetActorRightVector() * 230.0f, 20.0f, FColor::Red, false, 3.0f);
+			DrawDebugPoint(GetWorld(), IBGreaterSpider->GetActorLocation() + IBGreaterSpider->GetActorRightVector() * 230.0f, 20.0f, FColor::Blue, false, 3.0f);
 
 		}
 		return bResult;

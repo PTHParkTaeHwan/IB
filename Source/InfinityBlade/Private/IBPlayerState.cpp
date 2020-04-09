@@ -23,7 +23,7 @@ void AIBPlayerState::InitPlayerData()
 		IBSaveGame = GetMutableDefault<UIBSaveGame>();
 	}
 	SetPlayerName(IBSaveGame->PlayerName);
-	SetCharacterLevel(IBSaveGame->Level);
+	SetCharacterLevel(19/*IBSaveGame->Level*/);
 	GameScore = 0;
 	GameHighScore = IBSaveGame->HighScore;
 	Exp = IBSaveGame->Exp;

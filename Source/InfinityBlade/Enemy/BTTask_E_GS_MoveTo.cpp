@@ -16,27 +16,18 @@ EBTNodeResult::Type UBTTask_E_GS_MoveTo::ExecuteTask(UBehaviorTreeComponent & Ow
 {
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 
-	/*auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
-	if (nullptr == ControllingPawn)
-		return EBTNodeResult::Failed;
-
-	
-	UNavigationSystem* NavSystem = UNavigationSystem::GetNavigationSystem(ControllingPawn->GetWorld());
-	if (nullptr == NavSystem)
-		return EBTNodeResult::Failed;
-
-
-	FVector Origin = OwnerComp.GetBlackboardComponent()->GetValueAsVector(AIB_E_GREATERSPIDER_AIController::HomePosKey);
-	FNavLocation NextPatrol;
-
-
-	if (NavSystem->GetRandomPointInNavigableRadius(Origin, 500.0f, NextPatrol))
-	{
-		OwnerComp.GetBlackboardComponent()->SetValueAsVector(AIB_E_GREATERSPIDER_AIController::PatrolPosKey, NextPatrol.Location);
-		return EBTNodeResult::Succeeded;
-	}*/
 	auto GreatSpider = Cast<AIB_E_GreaterSpider>(OwnerComp.GetAIOwner()->GetPawn());
 	auto Target = Cast<AIBCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AIB_E_GREATERSPIDER_AIController::TargetKey));
+
+	if (!GreatSpider->GetIsLeftOrRightMove())
+	{
+		GreatSpider->PlayLeftOrRightMontage();
+		if (!GreatSpider->GetIsLeftOrRightMove())
+		{
+			GreatSpider->TentionModeInit();
+			return EBTNodeResult::Failed;
+		}
+	}
 
 	GreatSpider->SetbOrientRotationToMovement(false);
 	GreatSpider->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
@@ -54,4 +45,5 @@ void UBTTask_E_GS_MoveTo::TickTask(UBehaviorTreeComponent & OwnerComp, uint8 * N
 	LookVector.Z = 0.0f;
 	FRotator TargetRot = FRotationMatrix::MakeFromX(LookVector).Rotator();
 	GreatSpider->SetActorRotation(FMath::RInterpTo(GreatSpider->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 4.0f));
+
 }

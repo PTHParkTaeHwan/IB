@@ -11,6 +11,7 @@ DECLARE_MULTICAST_DELEGATE(E_FOnAttackHitCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(E_FOnRoarCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(E_FOnLeftCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(E_FOnRightCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(E_FOnHitCheckDelegate);
 
 
 
@@ -41,6 +42,11 @@ public:
 	void PlayLeftMontage();
 	void PlayRightMontage();
 
+	//HIT MOTION
+	void PlayHitMontage();
+	
+	void StopAllMontage();
+
 
 public:
 	E_FOnNextAttackCheckDelegate E_OnNextAttackCheck;
@@ -48,7 +54,7 @@ public:
 	E_FOnRoarCheckDelegate E_OnRoarCheck;
 	E_FOnLeftCheckDelegate E_OnLeftCheck;
 	E_FOnRightCheckDelegate E_OnRightCheck;
-
+	E_FOnHitCheckDelegate E_OnHitCheck;
 
 	void SetDeadAnim() { IsDead = true; }
 
@@ -67,6 +73,10 @@ private:
 
 	UFUNCTION()
 	void AnimNotify_RightDone();
+
+	UFUNCTION()
+	void AnimNotify_Hit();
+
 
 	FName GetAttackMontageSectionName(int32 Section);
 
@@ -89,12 +99,17 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* E_RightMontage;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* E_HitMontage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool IsDead;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool RoarOn;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pawn, Meta = (AllowPrivateAccess = true))
+	bool HitMotionOn;
 
 	
 };

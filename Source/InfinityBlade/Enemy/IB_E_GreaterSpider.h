@@ -56,7 +56,6 @@ private:
 
 	//공격모션
 	void AttackStartComboState();
-	void AttackEndComboState();
 
 	//공격 충돌처리
 	void AttackCheck();
@@ -105,10 +104,9 @@ public:
 private:
 	bool AttackOn;
 	bool IsLeft;
-	bool MoveLeftOn;
 	bool IsRight;
-	bool MoveRightOn;
 	bool IdleOn;
+	bool IsLeftOrRightMove;
 	float IdleTime;
 
 	bool IsStayHere;
@@ -122,7 +120,11 @@ public:
 	bool GetAttackOrIdle();
 	bool GetLeftOrRight();
 	bool GetIsAttacking();
+	void SetIsAttacking(bool NewState);
+	bool GetAttackOn();
+	bool GetIsLeftOrRightMove();
 	void SetbOrientRotationToMovement(bool NewRotation);
+	void PlayLeftOrRightMontage();
 
 	//dead State
 private:
@@ -130,5 +132,18 @@ private:
 
 public:
 	int32 GetExp() const;
+
+	//파티클 시스템
+
+public:
+	UPROPERTY(VisibleAnywhere, Category = Effect)
+	UParticleSystemComponent* HitEffect;
+
+	//hit montion
+public:
+	bool GetHitMotionOn();
+
+private:
+	bool HitMotionOn;
 
 };

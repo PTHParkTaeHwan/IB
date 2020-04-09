@@ -7,6 +7,8 @@ UIB_E_GreaterSpider_AnimInstance::UIB_E_GreaterSpider_AnimInstance()
 	CurrentPawnSpeed = 0.0f;
 	IsDead = false;
 	RoarOn = false;
+	
+	//Anim moatage init
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE(TEXT("/Game/dev/Enemy/Animation/SK_Greater_Spider_Skeleton_Montage.SK_Greater_Spider_Skeleton_Montage"));
 	if (ATTACK_MONTAGE.Succeeded())
 	{
@@ -31,6 +33,13 @@ UIB_E_GreaterSpider_AnimInstance::UIB_E_GreaterSpider_AnimInstance()
 		E_RightMontage = RIGHT_MONTAGE.Object;
 	}
 
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> HIT_MONTAGE(TEXT("/Game/dev/Enemy/Animation/SK_Greater_Spider_Skeleton_Montage_Hit.SK_Greater_Spider_Skeleton_Montage_Hit"));
+	if (HIT_MONTAGE.Succeeded())
+	{
+		E_HitMontage = HIT_MONTAGE.Object;
+	}
+
+
 }
 
 void UIB_E_GreaterSpider_AnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -50,6 +59,7 @@ void UIB_E_GreaterSpider_AnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 void UIB_E_GreaterSpider_AnimInstance::PlayAttackMontage()
 {
 	ABCHECK(!IsDead);
+	ABLOG(Warning, TEXT("PlayAttackMontage"));
 	Montage_Play(E_AttackMontage, 1.0f);
 }
 
@@ -121,24 +131,54 @@ FName UIB_E_GreaterSpider_AnimInstance::GetAttackMontageSectionName(int32 Sectio
 
 void UIB_E_GreaterSpider_AnimInstance::PlayLeftMontage()
 {
+	ABLOG(Warning, TEXT("PlayLeftMontage"));
 	Montage_Play(E_LeftMontage, 0.5f);
 }
 void UIB_E_GreaterSpider_AnimInstance::AnimNotify_LeftDone()
 {
-	E_OnLeftCheck.Broadcast();
 	ABLOG(Warning, TEXT("AnimNotify_LeftDone"));
+	E_OnLeftCheck.Broadcast();
 }
-
-
-
 
 void UIB_E_GreaterSpider_AnimInstance::PlayRightMontage()
 {
+	ABLOG(Warning, TEXT("PlayRightMontage"));
 	Montage_Play(E_RightMontage, 0.5f);
 }
 void UIB_E_GreaterSpider_AnimInstance::AnimNotify_RightDone()
 {
-	E_OnRightCheck.Broadcast();
 	ABLOG(Warning, TEXT("AnimNotify_RightDone"));
+	E_OnRightCheck.Broadcast();
+}
 
+void UIB_E_GreaterSpider_AnimInstance::PlayHitMontage()
+{
+	ABLOG(Warning, TEXT("PlayHitMontage"));
+	Montage_Play(E_HitMontage, 1.0f);
+}
+void UIB_E_GreaterSpider_AnimInstance::AnimNotify_Hit()
+{
+	ABLOG(Warning, TEXT("AnimNotify_Hit"));
+	E_OnHitCheck.Broadcast();
+}
+
+void UIB_E_GreaterSpider_AnimInstance::StopAllMontage()
+{
+	ABLOG(Warning, TEXT("StopAllMontage"));
+	ABLOG(Warning, TEXT("E_AttackMontage %d"), Montage_IsPlaying(E_AttackMontage));
+	ABLOG(Warning, TEXT("E_LeftMontage %d"), Montage_IsPlaying(E_LeftMontage));
+	ABLOG(Warning, TEXT("E_RightMontage %d"), Montage_IsPlaying(E_RightMontage));
+
+	if (Montage_IsPlaying(E_AttackMontage))
+	{
+		Montage_Stop(0.1f, E_AttackMontage);
+	}
+	else if (Montage_IsPlaying(E_LeftMontage))
+	{
+		Montage_Stop(0.1f, E_LeftMontage);
+	}
+	else if (Montage_IsPlaying(E_RightMontage))
+	{
+		Montage_Stop(0.1f, E_RightMontage);
+	}
 }
