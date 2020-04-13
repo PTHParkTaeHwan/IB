@@ -102,6 +102,16 @@ AIBCharacter::AIBCharacter()
 		FirstHitEffect->bAutoActivate = false;
 	}
 
+	HitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("HITEFFECTTEST"));
+	HitEffect->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HITTEST(TEXT("/Game/InfinityBladeEffects/Effects/FX_Skill_Leap/P_Skill_Leap_Fire_Impact_Suction.P_Skill_Leap_Fire_Impact_Suction"));
+	if (P_HITTEST.Succeeded())
+	{
+		HitEffect->SetTemplate(P_HITTEST.Object);
+		HitEffect->bAutoActivate = false;
+	}
+
+
 	//HP, SE UI
 	HPBarWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 180.0f));
 	HPBarWidget->SetWidgetSpace(EWidgetSpace::Screen);
@@ -131,6 +141,9 @@ AIBCharacter::AIBCharacter()
 
 	//dead System
 	DeadTimer = 3.0f;
+
+	//¹«±â ÀÌÆÑÆ® test
+
 }
 
 void AIBCharacter::SetCharacterState(ECharacterState NewState)
@@ -437,6 +450,7 @@ void AIBCharacter::SetWeapon(AIBWeapon * NewWeapon)
 		NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponSocket);
 		NewWeapon->SetOwner(this);
 		CurrentWeapon = NewWeapon;
+		SetHitEffect(CurrentWeapon);
 	}
 
 }
@@ -663,11 +677,18 @@ void AIBCharacter::AttackCheck()
 			if (CurrentCombo < 4)
 			{
 				FDamageEvent DamageEvent;
+				//HitEffect->SetupAttachment(HitResult.Actor->GetRootComponent());
+				//HitEffect->SetRelativeLocation(FVector::ZeroVector);
+				//HitEffect->Activate(true);
+				//ABLOG(Warning, TEXT("%s"), *HitEffect->GetRelativeTransform().ToString());
 				HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
 			}
 			else
 			{
 				FDamageEvent DamageEvent;
+				/*HitEffect->SetupAttachment(HitResult.Actor->GetRootComponent());
+				HitEffect->SetRelativeLocation(FVector::ZeroVector);
+				HitEffect->Activate(true);*/
 				HitResult.Actor->TakeDamage(CharacterStat->GetAttack()*2, DamageEvent, GetController(), this);
 			}
 		}
@@ -683,6 +704,41 @@ void AIBCharacter::OnAssetLoadCompleted()
 	
 	SetCharacterState(ECharacterState::READY);
 
+}
+
+void AIBCharacter::SetHitEffect(AIBWeapon * NewWeapon)
+{
+	/*FirstHitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("HITEFFECT"));
+	FirstHitEffect->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/Impact/P_ImpactSpark.P_ImpactSpark"));
+	if (P_HIT.Succeeded())
+	{
+		FirstHitEffect->SetTemplate(P_HIT.Object);
+		FirstHitEffect->bAutoActivate = false;
+	}*/
+
+
+	/*FName WeaponSocket(TEXT("hand_rSocket"));
+	if (nullptr != NewWeapon)
+	{
+		NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponSocket);
+		NewWeapon->SetOwner(this);
+		CurrentWeapon = NewWeapon;
+		SetHitEffect(CurrentWeapon);
+	}*/
+
+
+	//FName WeaponSocket(TEXT("hand_rSocket"));
+	//HitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("FIRSTHIT"));
+	///*NewWeapon->GetComponents();
+	//HitEffect->SetupAttachment(RootComponent);*/
+	//HitEffect->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponSocket);
+	//static ConstructorHelpers::FObjectFinder<UParticleSystem> P_FIRSTHIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Skill_RockBurst/P_RBurst_Fire_Burst_Area_01.P_RBurst_Fire_Burst_Area_01"));
+	//if (P_FIRSTHIT.Succeeded())
+	//{
+	//	HitEffect->SetTemplate(P_FIRSTHIT.Object);
+	//	HitEffect->bAutoActivate = false;
+	//}
 }
 
 

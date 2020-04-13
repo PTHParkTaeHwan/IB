@@ -170,6 +170,14 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Effect)
 	UParticleSystemComponent* FirstHitEffect;
 
+	UPROPERTY(VisibleAnywhere, Category = Effect)
+	UParticleSystemComponent* HitEffect;
+
+
+public:
+	void SetHitEffect(AIBWeapon * NewWeapon);
+
+
 //dead system
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = State, Meta = (AllowPrivateAccess = true))

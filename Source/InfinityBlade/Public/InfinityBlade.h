@@ -32,6 +32,13 @@ enum class EnemyMode
 	HIT
 };
 
+//플레이어 공격 모션
+enum class WeaponType
+{
+	LONGSWORD,
+	MIDDLESWORD
+};
+
 
 DECLARE_LOG_CATEGORY_EXTERN(InfinityBlade, Log, All);
 #define ABLOG_CALLINFO (FString(__FUNCTION__) + TEXT("(") + FString::FromInt(__LINE__)+TEXT(")"))

@@ -19,6 +19,8 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	GetCapsuleComponent()->SetCapsuleHalfHeight(100.0f);
+	GetCapsuleComponent()->SetCapsuleRadius(100.0f);
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -88.0f), FRotator(0.0f, -90.0f, 0.0f));
 
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> GREATERSPIDER(TEXT("/Game/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider.SK_Greater_Spider"));
@@ -92,12 +94,15 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 	//hit particle
 	HitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("HITEFFECT"));
 	HitEffect->SetupAttachment(RootComponent);
-	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/Impact/P_ImpactSpark.P_ImpactSpark"));
+	//static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/Impact/P_ImpactSpark.P_ImpactSpark"));
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/death/P_Impact_Gib_Poison.P_Impact_Gib_Poison"));
 	if (P_HIT.Succeeded())
 	{
 		HitEffect->SetTemplate(P_HIT.Object);
 		HitEffect->bAutoActivate = false;
 	}
+
+
 
 	HitMotionOn = false;
 
