@@ -27,6 +27,7 @@ void AIBPlayerController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
 	InputComponent->BindAction(TEXT("GamePause"), EInputEvent::IE_Pressed, this, &AIBPlayerController::OnGamePause);
+	ABLOG(Warning, TEXT("SetupInputComponent"));
 }
 
 void AIBPlayerController::OnGamePause()

@@ -130,7 +130,7 @@ private:
 
 	//공격모션
 	void AttackStartComboState();
-	void AttackEndComboState();
+	void AttackEndAttackState();
 
 	//공격 충돌처리
 	void AttackCheck();
@@ -173,6 +173,21 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Effect)
 	UParticleSystemComponent* HitEffect;
 
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* SkillEffect_1;
+
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* SkillEffect_1_Final;
+
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* ShieldSkill;
+
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* TestParticle;
+
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* TestParticle2;
+
 
 public:
 	void SetHitEffect(AIBWeapon * NewWeapon);
@@ -184,4 +199,72 @@ private:
 	float DeadTimer;
 
 	FTimerHandle DeadTimerHandle = {};
+
+//AttackStep
+
+
+
+private:
+	void AttackStepAddLambda();
+	void MoveAttackType1();
+	void InitAttackStep();
+
+	bool IsAttackType_1Step;
+	bool IsAttackType_2Step;
+
+	//AttackMode
+private:
+	LSAttackMode CurrentAttackMode = LSAttackMode::NONE;
+	float CheckIntervalTime;
+	bool FirstAttackClick;
+	bool SetAttackMode;
+	bool TimeCheckStart;
+
+	
+
+	bool SecondAttackClick;
+	bool CanComboAttack;
+	int32 CurrentBasicAttackSection;
+
+public:
+	LSAttackMode GetCurrentAttackMode();
+
+
+	//skill
+public:
+	void InitSkillParticle();
+	void InitFirstSkill();
+	void InitSecondSkill();
+	void Skill_3();
+
+private:
+	void SkillHub(float DeltaTime);
+
+	//1st
+	void InitGroundBurstSkillParameter();
+	bool bFirstSkillEffect;
+	bool bFirstSkillMontagePlay;
+	float EffectIntervalTime;
+	int32 EffectNum;
+
+	//2nd
+	void InitShieldSkillParameter();
+	bool bSecondSkillEffect;
+	float ShieldSkillActiveTime;
+
+
+	FVector SkillStartLocation = FVector::ZeroVector;
+	FVector SkillStartForwardVector = FVector::ZeroVector;
+	//테스트용 Parameter
+private:
+	void TestParameter();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Testparameter, Meta = (AllowPrivateAccess = true))
+	float TestFloat1;//거리
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Testparameter, Meta = (AllowPrivateAccess = true))
+	float TestFloat2; //스킬 발동 시간 간격
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Testparameter, Meta = (AllowPrivateAccess = true))
+	int32 TestInt1;
 };

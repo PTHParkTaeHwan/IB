@@ -50,20 +50,6 @@ AIBCharacter::AIBCharacter()
 		GetMesh()->SetAnimInstanceClass(WARRIOR_ANIM.Class);
 	}
 
-	//캐릭 생성되면서 무기 부착하기
-	/*FName WeaponSocket(TEXT("hand_rSocket"));
-	if (GetMesh()->DoesSocketExist(WeaponSocket))
-	{
-		Weapon = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WEAPON"));
-		static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword22/SK_Blade_HeroSword22.SK_Blade_HeroSword22"));
-		if (SK_WEAPON.Succeeded())
-		{
-			Weapon->SetSkeletalMesh(SK_WEAPON.Object);
-		}
-
-		Weapon->SetupAttachment(GetMesh(), WeaponSocket);
-	}*/
-
 	//카메라 모드 전환
 	SetControlMode(EControlMode::GTA);
 	ArmLengthSpeed = 3.0f;
@@ -76,20 +62,20 @@ AIBCharacter::AIBCharacter()
 	CurrentShiftButtonOn = false;
 	GetCharacterMovement()->MaxWalkSpeed = 400;
 	
-	
 
 	//공격 모션 관리
 	IsAttacking = false;
 
 	//공격 콤보 관리
 	MaxCombo = 4;
-	AttackEndComboState();
+	CurrentBasicAttackSection = 1;
+	AttackEndAttackState();
 
 	//콜리전 프리셋 설정
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("IBCharacter"));
 
 	//공격 범위 디버그
-	AttackRange = 250.0f;
+	AttackRange = 150.0f;
 	AttackRadius = 90.0f;
 
 	//파티클 시스템
@@ -111,6 +97,11 @@ AIBCharacter::AIBCharacter()
 		HitEffect->bAutoActivate = false;
 	}
 
+	//스킬 관리
+	InitSkillParticle();
+	InitGroundBurstSkillParameter();;
+	InitShieldSkillParameter();
+
 
 	//HP, SE UI
 	HPBarWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 180.0f));
@@ -122,15 +113,15 @@ AIBCharacter::AIBCharacter()
 		HPBarWidget->SetDrawSize(FVector2D(150.0f, 50.0f));
 	}
 
-	AIControllerClass = AIBAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+	//AIControllerClass = AIBAIController::StaticClass();
+	//AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
 	auto DefaultSetting = GetDefault<UIBCharacterSetting>();
 	if (DefaultSetting->CharacterAssets.Num() > 0)
 	{
 		for (auto CharacterAsset : DefaultSetting->CharacterAssets)
 		{
-			ABLOG(Warning, TEXT("Character Asset : %s"), *CharacterAsset.ToString());
+			//ABLOG(Warning, TEXT("Character Asset : %s"), *CharacterAsset.ToString());
 		}
 	}
 
@@ -144,6 +135,11 @@ AIBCharacter::AIBCharacter()
 
 	//무기 이팩트 test
 
+
+	//AttackStep
+	InitAttackStep();
+	
+	TestParameter();
 }
 
 void AIBCharacter::SetCharacterState(ECharacterState NewState)
@@ -330,7 +326,21 @@ void AIBCharacter::Tick(float DeltaTime)
 	case AIBCharacter::EControlMode::DEFENSE:
 		break;
 	}
-	//ABLOG(Warning, TEXT("%d"), GetCharacterMovement()->);
+	
+	//AttackStep
+	MoveAttackType1();
+	
+	//일반, 콤보 어택 관리
+	if (TimeCheckStart) CheckIntervalTime += DeltaTime;
+	if (CheckIntervalTime > 0.17f && !SetAttackMode)
+	{
+		TimeCheckStart = false;
+		SetAttackMode = true;
+		CurrentAttackMode = LSAttackMode::BASIC;
+		Attack();
+	}	
+
+	SkillHub(DeltaTime);
 	
 }
 
@@ -343,13 +353,7 @@ void AIBCharacter::PostInitializeComponents()
 	IBAnim->OnMontageEnded.AddDynamic(this, &AIBCharacter::OnAttackMontageEnded);
 
 	IBAnim->OnNextAttackCheck.AddLambda([this]() -> void {
-		CanNextCombo = false;
-
-		if (IsComboInputOn)
-		{
-			AttackStartComboState();
-			IBAnim->JumpToAttackMontageSection(CurrentCombo);
-		}
+		CanNextCombo = true;
 	});
 
 	IBAnim->OnAttackHitCheck.AddUObject(this, &AIBCharacter::AttackCheck);
@@ -364,7 +368,10 @@ void AIBCharacter::PostInitializeComponents()
 	{
 		CharacterWidget->BindCharacterStat(CharacterStat);
 	}
-
+	AttackStepAddLambda();
+	IBAnim->FOnFirstSkillStartCheck.AddLambda([this]() -> void {
+		bFirstSkillEffect = true;
+	});
 }
 
 float AIBCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
@@ -398,25 +405,11 @@ float AIBCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEv
 	return FinalDamage;
 }
 
-//void AIBCharacter::PossessedBy(AController * NewController)
-//{
-//	Super::PossessedBy(NewController);
-//	if (IsPlayerControlled())
-//	{
-//		SetControlMode(EControlMode::GTA);
-//	}
-//	else
-//	{
-//		SetControlMode(EControlMode::NPC);
-//		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-//	}
-//}
-
 // Called to bind functionality to input
 void AIBCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AIBCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &AIBCharacter::LeftRight);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AIBCharacter::LookUp);
@@ -427,6 +420,10 @@ void AIBCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Runing"), EInputEvent::IE_Pressed, this, &AIBCharacter::ShiftButtonChange);
 	PlayerInputComponent->BindAction(TEXT("Runing"), EInputEvent::IE_Released, this, &AIBCharacter::ShiftButtonChange);
 	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AIBCharacter::Attack);
+	PlayerInputComponent->BindAction(TEXT("Skill_1"), EInputEvent::IE_Pressed, this, &AIBCharacter::InitFirstSkill);
+	PlayerInputComponent->BindAction(TEXT("Skill_2"), EInputEvent::IE_Pressed, this, &AIBCharacter::InitSecondSkill);
+	PlayerInputComponent->BindAction(TEXT("Skill_3"), EInputEvent::IE_Pressed, this, &AIBCharacter::Skill_3);
+
 
 }
 bool AIBCharacter::GetIsRun()
@@ -457,15 +454,21 @@ void AIBCharacter::SetWeapon(AIBWeapon * NewWeapon)
 void AIBCharacter::UpDown(float NewAxisValue)
 {
 	if(!IsAttacking) AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::X), NewAxisValue);
-	else AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::X), NewAxisValue/100);
+	else
+	{
+		//AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::X), NewAxisValue);
+		AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::X), NewAxisValue/100);
+		//SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 30.0f, GetWorld()->GetDeltaSeconds(), 2.0f));
+	}
 }
 void AIBCharacter::LeftRight(float NewAxisValue)
 {
 	if (!IsAttacking) AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue);
-	else  AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue/100);
-
-	
-
+	else
+	{
+		//AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue);
+		AddMovementInput(FRotationMatrix(GetControlRotation()).GetUnitAxis(EAxis::Y), NewAxisValue / 100);
+	}
 }
 void AIBCharacter::LookUp(float NewAxisValue)
 {
@@ -488,7 +491,6 @@ void AIBCharacter::ModeChange()
 		SetControlMode(EControlMode::GTA);
 	}
 }
-
 void AIBCharacter::RunChange()
 {
 	switch (CurrentControlMode)
@@ -516,14 +518,14 @@ void AIBCharacter::RunChange()
 	}
 	
 }
-
 void AIBCharacter::ShiftButtonChange()
 {
+	ABLOG(Warning, TEXT("ShiftButtonChange"));
 	if (!CurrentShiftButtonOn)
 	{
 		CurrentShiftButtonOn = true;
 		IsAttacking = false;
-		AttackEndComboState();
+		AttackEndAttackState();
 		IBAnim->StopAttackMontage();
 	}
 	else if (CurrentShiftButtonOn)
@@ -531,84 +533,58 @@ void AIBCharacter::ShiftButtonChange()
 		CurrentShiftButtonOn = false;
 	}
 }
-
 void AIBCharacter::Attack()
-{
-	//////
-	/*
-	float temp = 200.0f;
-	FVector TraceVec = GetActorRightVector();
-	FVector Center = GetActorLocation() + GetActorRightVector() * temp;
-	float HalfHeight = 50.0f;
-	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
-	FColor DrawColor = FColor::Green;
-	float DebugLifeTime = 2.0f;
-
-	GetActorLocation() + GetActorRightVector() * temp;
-
-	DrawDebugCapsule(GetWorld(),
-		Center,
-		HalfHeight,
-		AttackRadius,
-		CapsuleRot,
-		DrawColor,
-		false,
-		DebugLifeTime);
-
-	
-	float temp = 200.0f;
-	FVector TraceVec = GetActorForwardVector() * temp;
-	FVector Center = GetActorLocation() + GetActorRightVector() * temp;
-	float HalfHeight = 50.0f;
-	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
-	FColor DrawColor = FColor::Green;
-	float DebugLifeTime = 2.0f;
-
-	DrawDebugCapsule(GetWorld(),
-		Center,
-		HalfHeight,
-		AttackRadius,
-		CapsuleRot,
-		DrawColor,
-		false,
-		DebugLifeTime);*/
-
-	switch (CurrentControlMode)
+{	
+	if (!SetAttackMode)
 	{
-	case AIBCharacter::EControlMode::NPC:
-		if (IsAttacking)
+		if (!FirstAttackClick)
 		{
-			ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 1, MaxCombo));
-			if (CanNextCombo)
-			{
-				IsComboInputOn = true;
-			}
+			FirstAttackClick = true;
+			TimeCheckStart = true;
 		}
-		else
+		else if (FirstAttackClick && CheckIntervalTime <= 0.17f)
 		{
-			ABCHECK(CurrentCombo == 0);
-			AttackStartComboState();
-			IBAnim->PlayAttackMontage();
-			IBAnim->JumpToAttackMontageSection(CurrentCombo);
-			IsAttacking = true;
+			TimeCheckStart = false;
+			SetAttackMode = true;
+			CurrentAttackMode = LSAttackMode::COMBO;
 		}
-		break;
+	}
+	switch (CurrentControlMode)
+	{	
 	case AIBCharacter::EControlMode::GTA:
-		if (IsAttacking)
+		switch (CurrentAttackMode)
 		{
-			ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 1, MaxCombo));
-			if (CanNextCombo)
+		case LSAttackMode::BASIC:
+			if (!IsAttacking)
 			{
-				IsComboInputOn = true;
+				IsAttacking = true;
+				IBAnim->PlayBasicAttackNontage();
+				IBAnim->JumpToAttackMontageSection(CurrentBasicAttackSection);
+				ABLOG(Warning, TEXT("CurrentBasicAttackSection %d"), CurrentBasicAttackSection);
+				CurrentBasicAttackSection++;
+				if (CurrentBasicAttackSection > 3) CurrentBasicAttackSection = 1;
+			}			
+			break;
+		case LSAttackMode::COMBO:
+			if (IsAttacking)
+			{
+				ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 1, MaxCombo));
+				if (CanNextCombo)
+				{
+					IsComboInputOn = true;
+				}
 			}
-		}
-		else
-		{
-			ABCHECK(CurrentCombo == 0);
-			AttackStartComboState();
-			IBAnim->PlayAttackMontage();
-			IBAnim->JumpToAttackMontageSection(CurrentCombo);
-			IsAttacking = true;
+			else
+			{
+				ABCHECK(CurrentCombo == 0);
+				AttackStartComboState();
+				IBAnim->PlayAttackMontage();
+				IBAnim->JumpToAttackMontageSection(CurrentCombo);
+				IsAttacking = true;
+			}
+			break;
+		case LSAttackMode::SKILL:
+			break;
 		}
 		break;
 	}
@@ -616,26 +592,55 @@ void AIBCharacter::Attack()
 
 void AIBCharacter::OnAttackMontageEnded(UAnimMontage * Montage, bool bInterrupted)
 {
-	ABCHECK(IsAttacking);
-	ABCHECK(CurrentCombo > 0);
-	IsAttacking = false;
-	AttackEndComboState();
-	OnAttackEnd.Broadcast();
+	switch (CurrentAttackMode)
+	{
+	case LSAttackMode::BASIC:
+		IsAttacking = false;
+		AttackEndAttackState();
+		break;
+	case LSAttackMode::COMBO:
+		if (IsComboInputOn && CurrentCombo < 4)
+		{
+			AttackStartComboState();
+			IBAnim->PlayAttackMontage();
+			IBAnim->JumpToAttackMontageSection(CurrentCombo);
+		}
+		else if (!IsComboInputOn)
+		{
+			ABCHECK(IsAttacking);
+			ABCHECK(CurrentCombo > 0);
+			IsAttacking = false;
+			AttackEndAttackState();
+			//OnAttackEnd.Broadcast();
+		}
+		break;
+	case LSAttackMode::SKILL:
+		break;
+	}
 }
 
 void AIBCharacter::AttackStartComboState()
 {
-	CanNextCombo = true;
+	CanNextCombo = false;
 	IsComboInputOn = false;
 	ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 0, MaxCombo - 1));
 	CurrentCombo = FMath::Clamp<int32>(CurrentCombo + 1, 1, MaxCombo);
 }
 
-void AIBCharacter::AttackEndComboState()
+void AIBCharacter::AttackEndAttackState()
 {
+	//일반, 콤보 확인용 변수들
+	CheckIntervalTime = 0.0f;
+	FirstAttackClick = false;
+	TimeCheckStart = false;
+	SetAttackMode = false;	   
+	   
+	//콤보공격용 변수들
 	IsComboInputOn = false;
 	CanNextCombo = false;
 	CurrentCombo = 0;
+
+	CurrentAttackMode = LSAttackMode::NONE;
 }
 
 void AIBCharacter::AttackCheck()
@@ -677,18 +682,11 @@ void AIBCharacter::AttackCheck()
 			if (CurrentCombo < 4)
 			{
 				FDamageEvent DamageEvent;
-				//HitEffect->SetupAttachment(HitResult.Actor->GetRootComponent());
-				//HitEffect->SetRelativeLocation(FVector::ZeroVector);
-				//HitEffect->Activate(true);
-				//ABLOG(Warning, TEXT("%s"), *HitEffect->GetRelativeTransform().ToString());
 				HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
 			}
 			else
 			{
 				FDamageEvent DamageEvent;
-				/*HitEffect->SetupAttachment(HitResult.Actor->GetRootComponent());
-				HitEffect->SetRelativeLocation(FVector::ZeroVector);
-				HitEffect->Activate(true);*/
 				HitResult.Actor->TakeDamage(CharacterStat->GetAttack()*2, DamageEvent, GetController(), this);
 			}
 		}
@@ -708,39 +706,229 @@ void AIBCharacter::OnAssetLoadCompleted()
 
 void AIBCharacter::SetHitEffect(AIBWeapon * NewWeapon)
 {
-	/*FirstHitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("HITEFFECT"));
-	FirstHitEffect->SetupAttachment(RootComponent);
-	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_HIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Combat_Base/Impact/P_ImpactSpark.P_ImpactSpark"));
-	if (P_HIT.Succeeded())
-	{
-		FirstHitEffect->SetTemplate(P_HIT.Object);
-		FirstHitEffect->bAutoActivate = false;
-	}*/
-
-
-	/*FName WeaponSocket(TEXT("hand_rSocket"));
-	if (nullptr != NewWeapon)
-	{
-		NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponSocket);
-		NewWeapon->SetOwner(this);
-		CurrentWeapon = NewWeapon;
-		SetHitEffect(CurrentWeapon);
-	}*/
-
-
-	//FName WeaponSocket(TEXT("hand_rSocket"));
-	//HitEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("FIRSTHIT"));
-	///*NewWeapon->GetComponents();
-	//HitEffect->SetupAttachment(RootComponent);*/
-	//HitEffect->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponSocket);
-	//static ConstructorHelpers::FObjectFinder<UParticleSystem> P_FIRSTHIT(TEXT("/Game/InfinityBladeEffects/Effects/FX_Skill_RockBurst/P_RBurst_Fire_Burst_Area_01.P_RBurst_Fire_Burst_Area_01"));
-	//if (P_FIRSTHIT.Succeeded())
-	//{
-	//	HitEffect->SetTemplate(P_FIRSTHIT.Object);
-	//	HitEffect->bAutoActivate = false;
-	//}
 }
 
+void AIBCharacter::TestParameter()
+{
+	TestInt1 = 1;
+	TestFloat1 = 200.0f;
+	TestFloat2 = 0.3f;
+}
+
+void AIBCharacter::AttackStepAddLambda()
+{
+	//1Step
+	IBAnim->FOnAttackType1_1StepStartCheck.AddLambda([this]() -> void {
+		IsAttackType_1Step = true;
+	}); 
+	IBAnim->FOnAttackType1_1StepDoneCheck.AddLambda([this]() -> void {
+		IsAttackType_1Step = false;
+	});
+	
+	IBAnim->FOnAttackType1_2StepStartCheck.AddLambda([this]() -> void {
+		IsAttackType_2Step = true;
+	});
+	IBAnim->FOnAttackType1_2StepDoneCheck.AddLambda([this]() -> void {
+		IsAttackType_2Step = false;
+	});
+
+
+}
+
+void AIBCharacter::MoveAttackType1()
+{
+	//SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 300.0f, DeltaTime, 2.0f));
+	switch (CurrentCombo)
+	{
+	case 1:
+		if (IsAttackType_1Step)
+		{
+			SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 400.0f, GetWorld()->GetDeltaSeconds(), 0.1f));
+		}
+		else if (IsAttackType_2Step)
+		{
+			SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 400.0f, GetWorld()->GetDeltaSeconds(), 0.1f));
+		}
+		break;
+	case 2:
+		if (IsAttackType_1Step)
+		{
+			SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 350, GetWorld()->GetDeltaSeconds(), 0.1f));
+		}
+		else if (IsAttackType_2Step)
+		{
+			SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 150, GetWorld()->GetDeltaSeconds(), 0.1f));
+		}
+		break;
+	case 3:
+		break;
+	case 4:
+		if (IsAttackType_1Step)
+		{
+			SetActorLocation(FMath::VInterpTo(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 3200, GetWorld()->GetDeltaSeconds(), 0.1f));
+		}
+		break;
+	}	
+}
+
+void AIBCharacter::InitAttackStep()
+{
+	IsAttackType_1Step = false;
+	IsAttackType_2Step = false;
+}
+
+LSAttackMode AIBCharacter::GetCurrentAttackMode()
+{
+	return CurrentAttackMode;
+}
+
+void AIBCharacter::InitSkillParticle()
+{
+	//스킬_1 지면폭발
+	SkillEffect_1 = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("SKILL_1"));
+	SkillEffect_1->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_SKILL_1(TEXT("/Game/InfinityBladeEffects/Effects/FX_Skill_Leap/P_Skill_Leap_Base_Impact.P_Skill_Leap_Base_Impact"));
+	if (P_SKILL_1.Succeeded())
+	{
+		SkillEffect_1->SetTemplate(P_SKILL_1.Object);
+		SkillEffect_1->bAutoActivate = false;
+		SkillEffect_1->bAbsoluteLocation = true;
+		SkillEffect_1->bAbsoluteRotation = true;
+	}
+
+	SkillEffect_1_Final = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("SKILL_1_Final"));
+	SkillEffect_1_Final->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_SKILL_1_Final(TEXT("/Game/InfinityBladeEffects/Effects/FX_Skill_Leap/P_Skill_Leap_Fire_Impact_Suction.P_Skill_Leap_Fire_Impact_Suction"));
+	if (P_SKILL_1_Final.Succeeded())
+	{
+		SkillEffect_1_Final->SetTemplate(P_SKILL_1_Final.Object);
+		SkillEffect_1_Final->bAutoActivate = false;
+		SkillEffect_1_Final->bAbsoluteLocation = true;
+		SkillEffect_1_Final->bAbsoluteRotation = true;
+	}
+
+	//스킬_2 쉴드
+	ShieldSkill = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ShieldSkill"));
+	ShieldSkill->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_SHIELD(TEXT("/Game/InfinityBladeEffects/Effects/FX_Ability/Defense/P_Shield_Sphere_Buff.P_Shield_Sphere_Buff"));
+	if (P_SHIELD.Succeeded())
+	{
+		ShieldSkill->SetTemplate(P_SHIELD.Object);
+		ShieldSkill->bAutoActivate = false;
+		ShieldSkill->bAbsoluteLocation = true;
+		ShieldSkill->bAbsoluteRotation = true;
+	}
+
+
+	TestParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("TestParticle"));
+	TestParticle->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_TEST(TEXT("/Game/InfinityBladeEffects/Effects/FX_Ability/Defense/P_Shield_Sphere_Buff.P_Shield_Sphere_Buff"));
+	if (P_TEST.Succeeded())
+	{
+		TestParticle->SetTemplate(P_TEST.Object);
+		TestParticle->bAutoActivate = false;
+	}
+	TestParticle->bAbsoluteLocation = true;
+	TestParticle->bAbsoluteRotation = true;
+
+	TestParticle2 = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("TestParticle2"));
+	TestParticle2->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> P_TEST2(TEXT("/Game/InfinityBladeEffects/Effects/FX_Ability/Heal/P_Heal_LongDistance_Start.P_Heal_LongDistance_Start"));
+	if (P_TEST2.Succeeded())
+	{
+		TestParticle2->SetTemplate(P_TEST2.Object);
+		TestParticle2->bAutoActivate = false;
+	}
+	TestParticle2->bAbsoluteLocation = true;
+	TestParticle2->bAbsoluteRotation = true;
+}
+
+void AIBCharacter::InitFirstSkill()
+{
+	ABLOG(Warning, TEXT("InitFirstSkill"));
+	
+	if (ShieldSkill->IsActive())
+	{
+		ShieldSkill->SetVisibility(false);
+	}
+
+	bFirstSkillMontagePlay = true;
+	IBAnim->PlayFirstSkillMontage(4);
+	SkillStartLocation = GetActorLocation() + FVector(0.0f, 0.0f, -90.0f);
+	SkillStartForwardVector = GetActorForwardVector();
+	IsAttacking = true;
+	
+}
+
+void AIBCharacter::InitSecondSkill()
+{
+	ABLOG(Warning, TEXT("Skill_2"));
+	if (!bSecondSkillEffect)
+	{
+		bSecondSkillEffect = true;
+		ShieldSkill->Activate(true);
+	}
+}
+
+void AIBCharacter::Skill_3()
+{
+	ABLOG(Warning, TEXT("Skill_3"));
+	TestParticle->SetWorldLocation(GetActorLocation()+GetActorForwardVector()*40.0f);
+	TestParticle2->Activate(true);
+}
+
+void AIBCharacter::InitGroundBurstSkillParameter()
+{
+	IsAttacking = false;
+	bFirstSkillEffect = false;
+	bFirstSkillMontagePlay = false;
+	EffectIntervalTime = 0.0f;
+	EffectNum = 1;
+}
+
+void AIBCharacter::InitShieldSkillParameter()
+{
+	ShieldSkillActiveTime = 0.0f;
+	bSecondSkillEffect = false;
+}
+
+void AIBCharacter::SkillHub(float DeltaTime)
+{
+	if (bFirstSkillEffect)
+	{
+		EffectIntervalTime += DeltaTime;
+		if (EffectIntervalTime >= 0.1)
+		{
+			
+			EffectIntervalTime = 0.0f;
+			SkillEffect_1->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
+			SkillEffect_1->Activate(true);
+			EffectNum++;
+			if (EffectNum >= 7)
+			{
+				SkillEffect_1_Final->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
+				SkillEffect_1_Final->Activate(true);
+				EffectNum = 1;
+				InitGroundBurstSkillParameter();
+				if(ShieldSkill->IsActive()) ShieldSkill->SetVisibility(true);
+				
+			}
+		}
+
+	}
+
+	if (bSecondSkillEffect)
+	{
+		ShieldSkill->SetWorldLocation(GetActorLocation() + FVector(0.0f, 0.0f, -48.0f));
+		ShieldSkillActiveTime += DeltaTime;
+		if (ShieldSkillActiveTime >= 5.0f)
+		{
+			InitShieldSkillParameter();
+			ShieldSkill->Activate(false);
+			ShieldSkill->Complete();
+		}
+	}
+}
 
 
 
