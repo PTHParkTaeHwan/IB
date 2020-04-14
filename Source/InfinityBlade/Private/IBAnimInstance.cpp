@@ -22,6 +22,13 @@ UIBAnimInstance::UIBAnimInstance()
 		LSAttackMontage = LSATTACK_MONTAGE.Object;
 	}
 
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> LSBASICATTACK_MONTAGE(TEXT("/Game/Book/Animations/Attack_Montage/LongSword_AttackMontage_BasicAttack.LongSword_AttackMontage_BasicAttack"));
+	if (LSBASICATTACK_MONTAGE.Succeeded())
+	{
+		LSBasicAttackMontage = LSBASICATTACK_MONTAGE.Object;
+	}
+
+
 }
 
 void UIBAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -56,7 +63,7 @@ void UIBAnimInstance::PlayAttackMontage()
 	switch (CurrentAttackMontageType)
 	{
 	case WeaponType::LONGSWORD:
-	Montage_Play(LSAttackMontage, 1.0f);
+	Montage_Play(LSAttackMontage, 1.2f);
 		break;
 	case WeaponType::MIDDLESWORD:
 		break;
@@ -78,15 +85,39 @@ void UIBAnimInstance::StopAttackMontage()
 void UIBAnimInstance::JumpToAttackMontageSection(int32 NewSection)
 {
 	ABCHECK(!IsDead);
+	auto Pawn = TryGetPawnOwner();
+	auto Player = Cast<AIBCharacter>(Pawn);
+
 	switch (CurrentAttackMontageType)
 	{
 	case WeaponType::LONGSWORD:
-		ABCHECK(Montage_IsPlaying(LSAttackMontage));
-		Montage_JumpToSection(GetAttackMontageSectionName(NewSection), LSAttackMontage);
+		if (Player->GetCurrentAttackMode() == LSAttackMode::BASIC)
+		{
+			Montage_JumpToSection(GetAttackMontageSectionName(NewSection), LSBasicAttackMontage);
+		}
+		else if (Player->GetCurrentAttackMode() == LSAttackMode::COMBO)
+		{
+			Montage_JumpToSection(GetAttackMontageSectionName(NewSection), LSAttackMontage);
+		}
 		break;
 	case WeaponType::MIDDLESWORD:
 		break;
 	}
+}
+
+void UIBAnimInstance::PlayBasicAttackNontage()
+{
+	Montage_Play(LSBasicAttackMontage, 1.4f);
+}
+
+void UIBAnimInstance::StopBasicAttackMontage()
+{
+	Montage_Stop(0.2f, LSBasicAttackMontage);
+}
+
+void UIBAnimInstance::JumpToBasicAttackMontageSection(int32 NewSection)
+{
+	Montage_JumpToSection(GetAttackMontageSectionName(NewSection), LSBasicAttackMontage);
 }
 
 void UIBAnimInstance::AnimNotify_AttackHitCheck()
@@ -116,18 +147,65 @@ void UIBAnimInstance::AnimNotify_NextAttackCheck()
 FName UIBAnimInstance::GetAttackMontageSectionName(int32 Section)
 {
 	ABCHECK(FMath::IsWithinInclusive<int32>(Section, 1, 4), NAME_None);
+
+	auto Pawn = TryGetPawnOwner();
+	auto Player = Cast<AIBCharacter>(Pawn);
+
 	switch (CurrentAttackMontageType)
 	{
 	case WeaponType::LONGSWORD:
-		return FName(*FString::Printf(TEXT("AttackType%d"), Section));
+		if (Player->GetCurrentAttackMode() == LSAttackMode::BASIC)
+		{
+			ABLOG(Warning, TEXT("Attack%d"), Section);
+			return FName(*FString::Printf(TEXT("Attack%d"), Section));
+		}
+		else if (Player->GetCurrentAttackMode() == LSAttackMode::COMBO)
+		{
+			return FName(*FString::Printf(TEXT("AttackType%d"), Section));
+		}
 		break;
 	case WeaponType::MIDDLESWORD:
 		return FName(*FString::Printf(TEXT("Attack%d"), Section));
 		break;
 	}
+	return FName(*FString::Printf(TEXT("AttackType%d"), Section));
+}
+
+void UIBAnimInstance::AnimNotify_AttackType1_1StepStart()
+{
+	FOnAttackType1_1StepStartCheck.Broadcast();
+}
+
+void UIBAnimInstance::AnimNotify_AttackType1_1StepDone()
+{
+	FOnAttackType1_1StepDoneCheck.Broadcast();
+}
+
+void UIBAnimInstance::AnimNotify_AttackType1_2StepStart()
+{
+	FOnAttackType1_2StepStartCheck.Broadcast();
+}
+
+void UIBAnimInstance::AnimNotify_AttackType1_2StepDone()
+{
+	FOnAttackType1_2StepDoneCheck.Broadcast();
+}
+
+void UIBAnimInstance::AnimNotify_FirstSkillStart()
+{
+	ABLOG(Warning, TEXT("AnimNotify_FirstSkillStart"));
+	FOnFirstSkillStartCheck.Broadcast();
 }
 
 void UIBAnimInstance::SetAttackMontageType(WeaponType NewType)
 {
 	CurrentAttackMontageType = NewType;
+}
+
+void UIBAnimInstance::PlayFirstSkillMontage(int32 SectionNum)
+{
+	ABLOG(Warning, TEXT("PlayFirstSkillMontage"));
+	Montage_Play(AttackMontage, 1.0f);
+	Montage_JumpToSection(FName(*FString::Printf(TEXT("Attack4"))), AttackMontage);
+	
 }

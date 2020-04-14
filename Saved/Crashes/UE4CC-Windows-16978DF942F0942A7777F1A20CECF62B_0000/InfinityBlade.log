@@ -1,0 +1,1131 @@
+﻿Log file open, 04/17/20 11:08:07
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: InfinityBlade
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-2060267490) SRandInit(-2060267489).
+LogInit: Read version file with build ID '3944462'
+LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
+LogInit: Registered custom module enumerator with build ID '3944462'
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.314126
+LogD3D11RHI: Aftermath initialized
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.172s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBladeSetting.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBlade.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLink.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLinkEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Win64/UE4Editor-CLionSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeys.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeysOpenSSL.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Win64/UE4Editor-DataValidation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Win64/UE4Editor-DatasmithContent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Win64/UE4Editor-LinearTimecode.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Win64/UE4Editor-NetcodeUnitTest.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Win64/UE4Editor-NUTUnrealEngine4.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCaptureEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3944462).
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: WinSock: I am DESKTOP-2UPP01C (192.168.0.137:0)
+LogInit: Build: ++UE4+Release-4.19-CL-4033788
+LogInit: Engine Version: 4.19.2-4033788+++UE4+Release-4.19
+LogInit: Compatible Engine Version: 4.19.0-3944462+++UE4+Release-4.19
+LogInit: Net CL: 3944462
+LogDevObjectVersion: Number of dev versions registered: 18
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 23
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 33
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 25
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 6
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 1
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 2
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 16
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogInit: Compiled (64-bit): Apr 27 2018 02:06:57
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.19
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogStreaming: Display: Took  0.009s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2020.04.17-02.08.10:719][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.17-02.08.10:719][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.17-02.08.10:728][  0]LogInit: Computer: DESKTOP-2UPP01C
+[2020.04.17-02.08.10:728][  0]LogInit: User: pth08
+[2020.04.17-02.08.10:728][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.04.17-02.08.10:728][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.17-02.08.10:728][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.04.17-02.08.10:728][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.17-02.08.10:728][  0]LogMemory: Process Physical Memory: 279.34 MB used, 279.34 MB peak
+[2020.04.17-02.08.10:728][  0]LogMemory: Process Virtual Memory: 276.70 MB used, 276.70 MB peak
+[2020.04.17-02.08.10:728][  0]LogMemory: Physical Memory: 8195.96 MB used,  8103.34 MB free, 16299.29 MB total
+[2020.04.17-02.08.10:728][  0]LogMemory: Virtual Memory: 4791.43 MB used,  8103.34 MB free, 134217728.00 MB total
+[2020.04.17-02.08.10:755][  0]LogInit: Using OS detected language (ko-KR).
+[2020.04.17-02.08.10:755][  0]LogInit: Using OS detected locale (ko-KR).
+[2020.04.17-02.08.10:759][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2020.04.17-02.08.11:129][  0]LogStreaming: Display: Took  0.374s to EndInitTextLocalization.
+[2020.04.17-02.08.11:129][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.17-02.08.11:227][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.17-02.08.11:227][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.17-02.08.11:606][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.17-02.08.11:623][  0]LogD3D11RHI:    0. 'Intel(R) UHD Graphics 620' (Feature Level 11_0)
+[2020.04.17-02.08.11:623][  0]LogD3D11RHI:       128/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x8086
+[2020.04.17-02.08.11:895][  0]LogD3D11RHI:    1. 'Radeon(TM) 540 Graphics' (Feature Level 11_0)
+[2020.04.17-02.08.11:895][  0]LogD3D11RHI:       1995/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2020.04.17-02.08.11:897][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.17-02.08.11:897][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.17-02.08.11:897][  0]LogD3D11RHI: Chosen D3D11 Adapter: 1
+[2020.04.17-02.08.11:906][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.17-02.08.11:906][  0]LogD3D11RHI:     GPU DeviceId: 0x699f (for the marketing name, search the web for "GPU Device Id")
+[2020.04.17-02.08.11:906][  0]LogWindows: EnumDisplayDevices:
+[2020.04.17-02.08.11:907][  0]LogWindows:    0. 'Intel(R) UHD Graphics 620' (P:0 D:1)
+[2020.04.17-02.08.11:908][  0]LogWindows:    1. 'Intel(R) UHD Graphics 620' (P:1 D:1)
+[2020.04.17-02.08.11:908][  0]LogWindows:    2. 'Intel(R) UHD Graphics 620' (P:0 D:0)
+[2020.04.17-02.08.11:909][  0]LogWindows:    3. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:909][  0]LogWindows:    4. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:910][  0]LogWindows:    5. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:911][  0]LogWindows:    6. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:911][  0]LogWindows:    7. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:912][  0]LogWindows:    8. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:913][  0]LogWindows:    9. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:913][  0]LogWindows:    10. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:914][  0]LogWindows:    11. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:915][  0]LogWindows:    12. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:915][  0]LogWindows:    13. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:916][  0]LogWindows:    14. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:917][  0]LogWindows:    15. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:917][  0]LogWindows:    16. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:918][  0]LogWindows:    17. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:919][  0]LogWindows:    18. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.17-02.08.11:919][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2020.04.17-02.08.11:919][  0]LogD3D11RHI:     Adapter Name: Radeon(TM) 540 Graphics
+[2020.04.17-02.08.11:919][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2020.04.17-02.08.11:919][  0]LogD3D11RHI:      Driver Date: Unknown
+[2020.04.17-02.08.11:919][  0]LogRHI: Texture pool is 1396 MB (70% of 1995 MB)
+[2020.04.17-02.08.12:059][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.17-02.08.12:070][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2020.04.17-02.08.12:072][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (../../../../../../dev/IB/Intermediate/Shaders/WorkingDirectory/26208/).
+[2020.04.17-02.08.12:072][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/pth08/AppData/Local/Temp/UnrealShaderWorkingDir/45F9A29F4B7636B2477233839034C3A1/'.
+[2020.04.17-02.08.12:388][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2020.04.17-02.08.12:406][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2020.04.17-02.08.12:425][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2020.04.17-02.08.12:442][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2020.04.17-02.08.12:460][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2020.04.17-02.08.12:478][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2020.04.17-02.08.12:495][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2020.04.17-02.08.12:512][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2020.04.17-02.08.12:521][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2020.04.17-02.08.12:535][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2020.04.17-02.08.12:549][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2020.04.17-02.08.12:565][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2020.04.17-02.08.12:581][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2020.04.17-02.08.12:596][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2020.04.17-02.08.12:610][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2020.04.17-02.08.12:640][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2020.04.17-02.08.12:640][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2020.04.17-02.08.12:655][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2020.04.17-02.08.12:658][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2020.04.17-02.08.12:699][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2020.04.17-02.08.12:712][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2020.04.17-02.08.12:725][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2020.04.17-02.08.12:738][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2020.04.17-02.08.12:751][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2020.04.17-02.08.12:765][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2020.04.17-02.08.12:765][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.17-02.08.12:936][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.17-02.08.12:936][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.17-02.08.12:936][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.17-02.08.13:828][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: Loaded boot cache 0.06s 74MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../dev/IB/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../dev/IB/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.17-02.08.13:888][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.17-02.08.13:904][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.17-02.08.13:917][  0]LogDerivedDataCache: Using Local data cache path C:/Users/pth08/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.17-02.08.13:917][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.17-02.08.13:917][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.17-02.08.13:928][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.17-02.08.13:928][  0]LogSlate: Using Freetype 2.6.0
+[2020.04.17-02.08.13:930][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.17-02.08.13:930][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.17-02.08.14:105][  0]LogAssetRegistry: FAssetRegistry took 0.0270 seconds to start up
+[2020.04.17-02.08.14:477][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.17-02.08.14:660][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2020.04.17-02.08.14:664][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2020.04.17-02.08.14:664][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.17-02.08.14:664][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2020.04.17-02.08.14:664][  0]LogMeshReduction: No automatic mesh merging module available
+[2020.04.17-02.08.14:664][  0]LogMeshMerging: No automatic mesh merging module available
+[2020.04.17-02.08.14:710][  0]LogNetVersion: InfinityBlade , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 376743747)
+[2020.04.17-02.08.15:161][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.067342 seconds
+[2020.04.17-02.08.15:165][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2020.04.17-02.08.15:166][  0]LogUObjectAllocator: 7314304 out of 0 bytes used by permanent object pool.
+[2020.04.17-02.08.15:166][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.17-02.08.17:133][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.17-02.08.17:169][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.04.17-02.08.17:504][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [1.513100ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider.SK_Greater_Spider
+[2020.04.17-02.08.17:530][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d3ffa95d8, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Game/dev/Enemy/Animation/GreaterSpiderAnimBlueprint.GreaterSpiderAnimBlueprint_C:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.17-02.08.17:533][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d3ffa95d8, Size=8
+[2020.04.17-02.08.17:533][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d3ffa95d8, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Engine/Transient.REINST_GreaterSpiderAnimBlueprint_C_0:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.17-02.08.17:535][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d3ffa94a0, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Game/dev/Enemy/Animation/GreaterSpiderAnimBlueprint.GreaterSpiderAnimBlueprint_C:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.17-02.08.17:705][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [2.768600ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.17-02.08.17:724][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d40fdae48, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.17-02.08.17:734][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d40fdae48, Size=20
+[2020.04.17-02.08.17:734][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d40fdae48, Size=20, Default__WarriorAnimBlueprint_C Function /Engine/Transient.REINST_WarriorAnimBlueprint_C_1:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.17-02.08.17:742][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d41556620, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.17-02.08.17:938][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.909600ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_BlackKnight/SK_Blade_BlackKnight.SK_Blade_BlackKnight
+[2020.04.17-02.08.17:976][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [2.266800ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.17-02.08.18:115][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [1.984900ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Wolf/SK_Enemy_Wolf_Armored.SK_Enemy_Wolf_Armored
+[2020.04.17-02.08.18:310][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.17-02.08.18:310][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.17-02.08.18:335][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.17-02.08.18:358][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.17-02.08.19:001][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.17-02.08.19:631][  0]LogOcInput: OculusInput pre-init called
+[2020.04.17-02.08.19:767][  0]LogEngine: Initializing Engine...
+[2020.04.17-02.08.19:769][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.17-02.08.19:771][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.17-02.08.19:771][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.17-02.08.19:996][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.17-02.08.20:336][  0]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.08.20:483][  0]LogInit: FAudioDevice initialized.
+[2020.04.17-02.08.20:541][  0]LogDerivedDataCache: Saved boot cache 0.06s 99MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.17-02.08.20:553][  0]LogInit: Texture streaming: Enabled
+[2020.04.17-02.08.20:576][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.17-02.08.20:594][  0]LogInit: Transaction tracking system initialized
+[2020.04.17-02.08.20:628][  0]BlueprintLog: New page: 에디터 로드
+[2020.04.17-02.08.20:748][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2020.04.17-02.08.21:176][  0]LogConsoleResponse: Display: 
+[2020.04.17-02.08.21:375][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.17-02.08.21:375][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.17-02.08.21:375][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2020.04.17-02.08.21:375][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.17-02.08.21:375][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.17-02.08.21:610][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/' took 0.12s
+[2020.04.17-02.08.21:926][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.17-02.08.21:926][  0]Cmd: MAP LOAD FILE="../../../../../../dev/IB/Content/dev/Maps/StartRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.17-02.08.21:926][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.17-02.08.21:930][  0]MapCheck: New page: 맵 체크
+[2020.04.17-02.08.21:930][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.17-02.08.21:941][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d3ffa95d8, Size=8
+[2020.04.17-02.08.21:941][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d40fdae48, Size=20
+[2020.04.17-02.08.22:019][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d1e6c7200, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.17-02.08.22:023][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d1e6c7200, Size=408
+[2020.04.17-02.08.22:023][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d1e6c7200, Size=408, Default__StartRoom_C Function /Engine/Transient.REINST_StartRoom_C_11:ExecuteUbergraph_StartRoom
+[2020.04.17-02.08.22:025][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022d1e6c65c0, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.17-02.08.22:129][  0]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.08.22:162][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/InfinityBladeGrassLands/Maps/ElvenRuins) is flushing async loading
+[2020.04.17-02.08.23:459][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.833000ms] /Game/InfinityBladeGrassLands/Environments/Earth/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag.SK_Env_Ice_Deco2_BlowingFlag
+[2020.04.17-02.08.23:460][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.740800ms] /Game/InfinityBladeGrassLands/Environments/Earth/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag3.SK_Env_Ice_Deco2_BlowingFlag3
+[2020.04.17-02.08.23:581][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/InfinityBladeIceLands/Maps/FrozenCove) is flushing async loading
+[2020.04.17-02.08.24:565][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_MelancholicTroll01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.24:565][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.24:849][  0]LogPackageName: SearchForPackageOnDisk took   0.284s, but failed to resolve Env_Ice_Rocky.
+[2020.04.17-02.08.24:849][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_MelancholicTroll01" could not be resolved.
+[2020.04.17-02.08.24:852][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.24:852][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.25:115][  0]LogPackageName: SearchForPackageOnDisk took   0.263s, but failed to resolve Env_Ice_Rocky.
+[2020.04.17-02.08.25:115][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" could not be resolved.
+[2020.04.17-02.08.25:119][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.25:120][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.25:367][  0]LogPackageName: SearchForPackageOnDisk took   0.247s, but failed to resolve Env_Ice_Rocky.
+[2020.04.17-02.08.25:367][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" could not be resolved.
+[2020.04.17-02.08.25:369][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Texture.Env_Ice_RockyStairs01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.25:369][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.25:633][  0]LogPackageName: SearchForPackageOnDisk took   0.264s, but failed to resolve Env_Ice_Rocky.
+[2020.04.17-02.08.25:634][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Texture.Env_Ice_RockyStairs01" could not be resolved.
+[2020.04.17-02.08.25:637][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_RuinedSteps001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.25:637][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.25:903][  0]LogPackageName: SearchForPackageOnDisk took   0.266s, but failed to resolve Env_Ice_Rocky.
+[2020.04.17-02.08.25:903][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_RuinedSteps001" could not be resolved.
+[2020.04.17-02.08.25:906][  0]LogPackageName: Warning: String asset reference "Env_Ice_RuinedWalls001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.25:906][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.26:167][  0]LogPackageName: SearchForPackageOnDisk took   0.262s, but failed to resolve Env_Ice_RuinedWalls001.
+[2020.04.17-02.08.26:167][  0]LogPackageName: Warning: String asset reference "Env_Ice_RuinedWalls001" could not be resolved.
+[2020.04.17-02.08.26:238][  0]LogPackageName: Warning: String asset reference "Env_ALL_Artifacts.Mesh.Env_ALL_Terminus001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.26:238][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.26:515][  0]LogPackageName: SearchForPackageOnDisk took   0.277s, but failed to resolve Env_ALL_Artifacts.
+[2020.04.17-02.08.26:515][  0]LogPackageName: Warning: String asset reference "Env_ALL_Artifacts.Mesh.Env_ALL_Terminus001" could not be resolved.
+[2020.04.17-02.08.26:517][  0]LogPackageName: Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.17-02.08.26:517][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.17-02.08.26:774][  0]LogPackageName: SearchForPackageOnDisk took   0.257s, but failed to resolve S_ClothTarps_03.
+[2020.04.17-02.08.26:774][  0]LogPackageName: Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" could not be resolved.
+[2020.04.17-02.08.27:383][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.997600ms] /Game/InfinityBladeIceLands/Environments/Ice/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag3.SK_Env_Ice_Deco2_BlowingFlag3
+[2020.04.17-02.08.27:552][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.17-02.08.27:567][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022d1e6c7200, Size=408
+[2020.04.17-02.08.27:568][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.17-02.08.27:851][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 283.125ms.
+[2020.04.17-02.08.27:851][  0]LogFileHelpers: Loading map 'StartRoom' took 5.924
+[2020.04.17-02.08.28:068][  0]LogCollectionManager: Loaded 0 collections in 0.002825 seconds
+[2020.04.17-02.08.28:121][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Saved/Collections/' took 0.01s
+[2020.04.17-02.08.28:121][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Developers/pth08/Collections/' took 0.01s
+[2020.04.17-02.08.28:121][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Collections/' took 0.01s
+[2020.04.17-02.08.28:121][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2020.04.17-02.08.28:141][  0]LogContentBrowser: Native class hierarchy populated in 0.0193 seconds. Added 2495 classes and 567 folders.
+[2020.04.17-02.08.28:161][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0108 seconds. Added 0 classes and 0 folders.
+[2020.04.17-02.08.28:281][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0103 seconds. Added 0 classes and 0 folders.
+[2020.04.17-02.08.28:299][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0104 seconds. Added 1 classes and 2 folders.
+[2020.04.17-02.08.28:378][  0]LogSlate: Took 0.000262 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.17-02.08.28:381][  0]LogSlate: Took 0.002436 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.04.17-02.08.28:384][  0]LogSlate: Took 0.002316 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2020.04.17-02.08.28:385][  0]LogSlate: Took 0.000348 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.17-02.08.28:392][  0]LogSlate: Took 0.001423 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.17-02.08.28:392][  0]LogSlate: Took 0.000300 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.04.17-02.08.28:480][  0]LogSlate: Took 0.002181 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2020.04.17-02.08.28:600][  0]LogRenderer: Reallocating scene render targets to support 920x476 Format 9 NumSamples 1 (Frame:1).
+[2020.04.17-02.08.28:810][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0122 seconds. Added 0 classes and 0 folders.
+[2020.04.17-02.08.28:810][  0]LogLoad: (Engine Initialization) Total time: 22.23 seconds
+[2020.04.17-02.08.28:810][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.17-02.08.28:862][  0]LogContentStreaming: Texture pool size now 600 MB
+[2020.04.17-02.08.28:878][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/dev/IB/Content/' took 0.03s
+[2020.04.17-02.08.29:290][  5]LogAssetRegistry: Asset discovery search completed in 15.2069 seconds
+[2020.04.17-02.08.29:302][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2020.04.17-02.08.29:302][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000300 seconds (updated 0 objects)
+[2020.04.17-02.08.29:861][ 36]LogSlate: Took 0.001448 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.17-02.08.29:889][ 36]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.04.17-02.08.29:930][ 36]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0163 seconds. Added 1 classes and 2 folders.
+[2020.04.17-02.08.30:219][ 36]LogSkeletalMesh: Skeletal Mesh found in DDC [0.882000ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword22/SK_Blade_HeroSword22.SK_Blade_HeroSword22
+[2020.04.17-02.08.30:221][ 36]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_0:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.04.17-02.08.30:236][ 36]LogContentBrowser: Native class hierarchy updated for 'PinnedCommandList' in 0.0109 seconds. Added 1 classes and 0 folders.
+[2020.04.17-02.08.30:673][ 36]LogContentBrowser: Native class hierarchy updated for 'ClothingSystemEditorInterface' in 0.0126 seconds. Added 1 classes and 0 folders.
+[2020.04.17-02.08.30:704][ 36]LogRenderer: Reallocating scene render targets to support 920x520 Format 9 NumSamples 1 (Frame:1).
+[2020.04.17-02.08.30:704][ 36]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.04.17-02.08.34:195][208]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-02.08.34:222][208]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.34:222][208]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.34:223][208]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.34:224][208]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-02.08.34:224][208]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 8:08:34)
+[2020.04.17-02.08.34:224][208]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-02.08.34:235][208]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010225s)
+[2020.04.17-02.08.34:236][208]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.08.34:236][208]LogPlayLevel: PIE: World Init took: (0.000941s)
+[2020.04.17-02.08.34:236][208]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.011844s)
+[2020.04.17-02.08.34:566][208]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.08.34:598][208]LogInit: FAudioDevice initialized.
+[2020.04.17-02.08.34:641][208]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-02.08.34:643][208]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-11.08.34
+[2020.04.17-02.08.34:649][208]LogWorld: Bringing up level for play took: 0.007740
+[2020.04.17-02.08.34:652][208]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-02.08.34:666][208]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0105 seconds. Added 11 classes and 0 folders.
+[2020.04.17-02.08.34:670][208]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-02.08.34:670][208]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-02.08.34:670][208]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: 1.117
+[2020.04.17-02.08.34:671][208]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.34:671][208]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.34:672][208]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.34:762][211]LogSkeletalMesh: Skeletal Mesh found in DDC [0.737500ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.17-02.08.35:598][261]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.08.35:598][261]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.08.36:498][315]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.08.38:916][460]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.38:917][460]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.38:919][460]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.38:963][460]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.38:964][460]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.38:965][460]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.39:937][511]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-02.08.40:053][518]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-02.08.40:082][518]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.40:082][518]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.40:083][518]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.40:084][518]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-02.08.40:084][518]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 8:08:40)
+[2020.04.17-02.08.40:084][518]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-02.08.40:094][518]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009147s)
+[2020.04.17-02.08.40:095][518]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.08.40:095][518]LogPlayLevel: PIE: World Init took: (0.000875s)
+[2020.04.17-02.08.40:095][518]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.010604s)
+[2020.04.17-02.08.40:443][518]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.08.40:477][518]LogInit: FAudioDevice initialized.
+[2020.04.17-02.08.40:505][518]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-02.08.40:508][518]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-11.08.40
+[2020.04.17-02.08.40:508][518]LogWorld: Bringing up level for play took: 0.002141
+[2020.04.17-02.08.40:511][518]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-02.08.40:515][518]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-02.08.40:515][518]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-02.08.40:515][518]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: 0.962
+[2020.04.17-02.08.40:515][518]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.40:516][518]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.40:516][518]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.41:747][591]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.08.41:747][591]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.08.42:648][645]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.08.49:333][ 46]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.08.49:333][ 46]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.08.50:233][100]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.08.53:701][308]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.53:702][308]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.53:703][308]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.53:738][308]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.08.53:738][308]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.08.53:739][308]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.08.55:909][430]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-02.09.31:365][543]LogHotReload: New module detected: UE4Editor-InfinityBlade-7910.dll
+[2020.04.17-02.09.32:714][548]LogHotReload: Starting Hot-Reload from IDE
+[2020.04.17-02.09.33:465][548]LogClass: ECharacterState HotReload.
+[2020.04.17-02.09.33:465][548]LogClass: IB_E_GSData HotReload.
+[2020.04.17-02.09.33:466][548]LogClass: IBCharacterData HotReload.
+[2020.04.17-02.09.33:467][548]LogHotReload: Re-instancing BTTask_E_GS_MoveTo after hot-reload.
+[2020.04.17-02.09.33:528][548]LogHotReload: Re-instancing IB_E_GreaterSpider after hot-reload.
+[2020.04.17-02.09.33:589][548]LogHotReload: Re-instancing IBCharacter after hot-reload.
+[2020.04.17-02.09.33:651][548]LogHotReload: Re-instancing IBItemWeapon after hot-reload.
+[2020.04.17-02.09.33:773][548]LogHotReload: Re-instancing IBPawn after hot-reload.
+[2020.04.17-02.09.33:835][548]LogHotReload: Re-instancing IBSection after hot-reload.
+[2020.04.17-02.09.33:966][548]LogContentBrowser: Native class hierarchy updated for 'InfinityBlade' in 0.0107 seconds. Added 40 classes and 3 folders.
+[2020.04.17-02.09.33:968][548]Display: HotReload successful (26 functions remapped  2 scriptstructs remapped)
+[2020.04.17-02.09.34:097][548]LogContentBrowser: Native class hierarchy populated in 0.0224 seconds. Added 2497 classes and 571 folders.
+[2020.04.17-02.09.34:129][548]Display: HotReload took  1.4s.
+[2020.04.17-02.09.40:692][667]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-02.09.40:724][667]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.09.40:725][667]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.09.40:726][667]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.09.40:727][667]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-02.09.40:727][667]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 8:09:40)
+[2020.04.17-02.09.40:727][667]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-02.09.40:737][667]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009629s)
+[2020.04.17-02.09.40:738][667]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.09.40:738][667]LogPlayLevel: PIE: World Init took: (0.001019s)
+[2020.04.17-02.09.40:738][667]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.011322s)
+[2020.04.17-02.09.41:100][667]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.09.41:133][667]LogInit: FAudioDevice initialized.
+[2020.04.17-02.09.41:165][667]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-02.09.41:167][667]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-11.09.41
+[2020.04.17-02.09.41:168][667]LogWorld: Bringing up level for play took: 0.002013
+[2020.04.17-02.09.41:171][667]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-02.09.41:175][667]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-02.09.41:175][667]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-02.09.41:175][667]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: -0.377
+[2020.04.17-02.09.41:176][667]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.09.41:176][667]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.09.41:177][667]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.09.41:904][709]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.09.41:904][709]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.09.42:808][754]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.09.45:635][899]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.46:871][960]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.47:057][970]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.09.47:057][970]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.09.47:960][ 24]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.09.48:953][ 83]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.50:364][167]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.51:247][220]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.09.51:248][220]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.09.52:147][274]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.09.53:683][366]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.56:338][525]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.56:535][537]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.09.56:535][537]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.09.57:438][591]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.09.57:822][614]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.09.59:857][736]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.10.03:647][949]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.10.03:648][949]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.10.05:132][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.10.05:133][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.10.05:134][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.10.05:172][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.10.05:173][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.10.05:174][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.10.07:916][178]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-02.10.08:003][178]LogSlate: Took 0.000255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.17-02.11.14:527][533]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{fbb94978-8ed9-4446-bf01-dbcf0ed30621} was removed. Shutting down audio device.
+[2020.04.17-02.11.14:528][533]LogInit: XAudio2 using '스피커(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.18:648][541]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.21:296][546]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{030da6e9-08df-479e-8700-1790b6c796e6} was removed. Shutting down audio device.
+[2020.04.17-02.11.21:297][546]LogInit: XAudio2 using '스피커(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.26:355][554]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.33:442][565]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.38:251][576]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{3e554006-93b9-4d51-b3d6-2c2246b1b52f} was removed. Shutting down audio device.
+[2020.04.17-02.11.38:252][576]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.53:650][612]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.11.55:657][615]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.01:139][623]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.02:804][625]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.09:159][633]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.11:537][636]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.16:150][643]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.20:530][651]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{cb737365-7665-4019-abbf-4f6d43b31421} was removed. Shutting down audio device.
+[2020.04.17-02.12.20:531][651]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.22:910][776]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-02.12.22:947][776]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.12.22:948][776]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.12.22:948][776]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.12.22:949][776]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-02.12.22:950][776]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 8:12:22)
+[2020.04.17-02.12.22:950][776]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-02.12.22:962][776]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011659s)
+[2020.04.17-02.12.22:963][776]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.12.22:963][776]LogPlayLevel: PIE: World Init took: (0.001196s)
+[2020.04.17-02.12.22:964][776]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.013647s)
+[2020.04.17-02.12.24:527][776]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.24:676][776]LogInit: FAudioDevice initialized.
+[2020.04.17-02.12.24:709][776]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-02.12.24:712][776]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-11.12.24
+[2020.04.17-02.12.24:713][776]LogWorld: Bringing up level for play took: 0.003272
+[2020.04.17-02.12.24:717][776]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-02.12.24:721][776]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-02.12.24:721][776]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-02.12.24:722][776]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: 1.168
+[2020.04.17-02.12.24:722][776]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.12.24:723][776]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.12.24:723][776]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.12.25:579][815]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.12.26:526][856]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.12.26:650][861]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.12.26:651][861]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.12.27:538][906]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.12.29:974][ 33]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.12.29:976][ 33]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.12.29:978][ 33]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.12.30:024][ 33]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.12.30:025][ 33]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.12.30:027][ 33]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.12.31:061][ 82]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-02.12.44:889][123]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.47:728][128]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{030da6e9-08df-479e-8700-1790b6c796e6} was removed. Shutting down audio device.
+[2020.04.17-02.12.47:728][128]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.52:233][136]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.12.56:747][145]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{3e554006-93b9-4d51-b3d6-2c2246b1b52f} was removed. Shutting down audio device.
+[2020.04.17-02.12.56:747][145]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.12:010][183]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.14:380][185]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.19:021][191]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.20:710][193]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.26:921][200]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.29:125][203]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.33:760][211]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.37:887][219]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{cb737365-7665-4019-abbf-4f6d43b31421} was removed. Shutting down audio device.
+[2020.04.17-02.13.37:887][219]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.57:563][272]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.13.57:596][272]LogAudio: Error: CreateMasteringVoice error: Device Invalidated
+[2020.04.17-02.13.57:597][272]LogInit: Warning: Failed to create the mastering voice for XAudio2
+[2020.04.17-02.14.00:486][276]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{030da6e9-08df-479e-8700-1790b6c796e6} was removed. Shutting down audio device.
+[2020.04.17-02.14.00:486][276]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.05:507][285]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.10:389][295]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{3e554006-93b9-4d51-b3d6-2c2246b1b52f} was removed. Shutting down audio device.
+[2020.04.17-02.14.10:389][295]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.28:256][339]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.30:246][341]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.36:002][350]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.37:964][352]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.45:328][362]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.45:749][364]LogHotReload: New module detected: UE4Editor-InfinityBlade-480.dll
+[2020.04.17-02.14.47:603][364]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.48:462][368]LogHotReload: Starting Hot-Reload from IDE
+[2020.04.17-02.14.49:373][368]LogClass: ECharacterState HotReload.
+[2020.04.17-02.14.49:373][368]LogClass: IB_E_GSData HotReload.
+[2020.04.17-02.14.49:373][368]LogClass: IBCharacterData HotReload.
+[2020.04.17-02.14.49:375][368]LogHotReload: Re-instancing BTTask_E_GS_MoveTo after hot-reload.
+[2020.04.17-02.14.49:462][368]LogHotReload: Re-instancing IB_E_GreaterSpider after hot-reload.
+[2020.04.17-02.14.49:558][368]LogHotReload: Re-instancing IBCharacter after hot-reload.
+[2020.04.17-02.14.49:655][368]LogHotReload: Re-instancing IBItemWeapon after hot-reload.
+[2020.04.17-02.14.49:807][368]LogHotReload: Re-instancing IBPawn after hot-reload.
+[2020.04.17-02.14.49:897][368]LogHotReload: Re-instancing IBSection after hot-reload.
+[2020.04.17-02.14.50:066][368]LogContentBrowser: Native class hierarchy updated for 'InfinityBlade' in 0.0119 seconds. Added 40 classes and 3 folders.
+[2020.04.17-02.14.50:068][368]Display: HotReload successful (26 functions remapped  2 scriptstructs remapped)
+[2020.04.17-02.14.50:181][368]LogContentBrowser: Native class hierarchy populated in 0.0676 seconds. Added 2497 classes and 571 folders.
+[2020.04.17-02.14.50:225][368]Display: HotReload took  1.8s.
+[2020.04.17-02.14.52:700][368]LogInit: XAudio2 using 'B246N(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.14.58:153][380]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{cb737365-7665-4019-abbf-4f6d43b31421} was removed. Shutting down audio device.
+[2020.04.17-02.14.58:154][380]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.15.03:640][449]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-02.15.03:687][449]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.15.03:689][449]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.15.03:690][449]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.15.03:691][449]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-02.15.03:691][449]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 8:15:03)
+[2020.04.17-02.15.03:691][449]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-02.15.03:704][449]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012721s)
+[2020.04.17-02.15.03:706][449]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-02.15.03:706][449]LogPlayLevel: PIE: World Init took: (0.001433s)
+[2020.04.17-02.15.03:707][449]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.015084s)
+[2020.04.17-02.15.04:744][449]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-02.15.04:889][449]LogInit: FAudioDevice initialized.
+[2020.04.17-02.15.04:917][449]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-02.15.04:919][449]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-11.15.04
+[2020.04.17-02.15.04:920][449]LogWorld: Bringing up level for play took: 0.002912
+[2020.04.17-02.15.04:925][449]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-02.15.04:928][449]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-02.15.04:929][449]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-02.15.04:929][449]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: 1.376
+[2020.04.17-02.15.04:929][449]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.15.04:930][449]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.15.04:931][449]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.15.05:606][481]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-02.15.05:607][481]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-02.15.06:502][517]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-02.15.08:873][628]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.15.08:873][628]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.15.10:323][699]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack2
+[2020.04.17-02.15.10:324][699]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 2
+[2020.04.17-02.15.11:535][760]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack3
+[2020.04.17-02.15.11:536][760]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 3
+[2020.04.17-02.15.12:791][825]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.15.12:792][825]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.15.14:074][896]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack2
+[2020.04.17-02.15.14:075][896]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 2
+[2020.04.17-02.15.15:311][963]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack3
+[2020.04.17-02.15.15:311][963]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 3
+[2020.04.17-02.15.17:261][ 65]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.15.17:262][ 65]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.15.18:262][109]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.15.19:018][144]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-02.15.23:998][410]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack2
+[2020.04.17-02.15.23:998][410]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 2
+[2020.04.17-02.15.26:420][535]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack3
+[2020.04.17-02.15.26:420][535]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 3
+[2020.04.17-02.15.28:191][633]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.15.28:191][633]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.15.29:759][719]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack2
+[2020.04.17-02.15.29:760][719]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 2
+[2020.04.17-02.15.31:326][807]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack3
+[2020.04.17-02.15.31:327][807]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 3
+[2020.04.17-02.15.33:001][895]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack1
+[2020.04.17-02.15.33:002][895]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 1
+[2020.04.17-02.15.34:592][984]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack2
+[2020.04.17-02.15.34:593][984]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 2
+[2020.04.17-02.15.43:670][477]InfinityBlade: Warning: UIBAnimInstance::GetAttackMontageSectionName(159)Attack3
+[2020.04.17-02.15.43:670][477]InfinityBlade: Warning: AIBCharacter::Attack(561)CurrentBasicAttackSection 3
+[2020.04.17-02.15.44:631][527]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.15.44:633][527]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.15.44:636][527]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.15.44:686][527]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-02.15.44:687][527]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-02.15.44:691][527]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-02.15.51:384][776]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-03.42.08:856][449]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-03.42.24:039][251]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_5:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2020.04.17-03.42.27:933][409]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.04.17-03.42.28:192][425]LogSlate: Window 'bindpose' being destroyed
+[2020.04.17-03.43.24:249][ 92]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-03.45.58:555][571]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-03.46.58:479][445]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-03.48.53:979][569]LogSlate: Window '새 애니메이션 애셋 생성' being destroyed
+[2020.04.17-03.49.27:851][  9]LogSlate: Window '새 애니메이션 애셋 생성' being destroyed
+[2020.04.17-03.49.42:060][744]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:061][744]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:061][744]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:061][744]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:080][745]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:081][745]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:081][745]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:081][745]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:432][760]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:432][760]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:433][760]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.49.42:433][760]LogAnimMontage: Warning: SetNextSectionName None to None failed for Montage LongSword_AttackMontage_Type1
+[2020.04.17-03.58.54:374][936]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/dev/Maps/StartRoom' took 0.137
+[2020.04.17-03.58.54:379][936]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage] ([1] browsable assets)...
+[2020.04.17-03.58.54:407][936]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage.SK_Mannequin_Skeleton_DodgeMontage]
+[2020.04.17-03.58.54:408][936]OBJ SavePackage: Finished generating thumbnails for package [/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage]
+[2020.04.17-03.58.54:434][936]LogSavePackage: Save=21.68ms
+[2020.04.17-03.58.54:434][936]LogSavePackage: Moving '../../../../../../dev/IB/Saved/SK_Mannequin_Skeleton_DodgeMontaEF66B107485FBD0855B8CE9F1A5D074A.tmp' to '../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage_Auto1.uasset'
+[2020.04.17-03.58.54:438][936]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage_Auto1.uasset
+[2020.04.17-03.58.54:439][936]LogFileHelpers: Auto-saving content packages took 0.063
+[2020.04.17-04.29.46:493][781]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.17-04.29.46:558][781]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-04.29.46:559][781]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-04.29.46:560][781]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-04.29.46:562][781]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-04.29.46:563][781]PIE: New page: PIE 세션: StartRoom (2020. 4. 17. 오후 10:29:46)
+[2020.04.17-04.29.46:565][781]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_StartRoom
+[2020.04.17-04.29.46:592][781]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026203s)
+[2020.04.17-04.29.46:593][781]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.17-04.29.46:594][781]LogPlayLevel: PIE: World Init took: (0.001989s)
+[2020.04.17-04.29.46:594][781]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/StartRoom.StartRoom to /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom (0.029455s)
+[2020.04.17-04.29.47:273][781]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.17-04.29.47:387][781]LogInit: FAudioDevice initialized.
+[2020.04.17-04.29.47:415][781]LogLoad: Game class is 'IBGameMode'
+[2020.04.17-04.29.47:418][781]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_StartRoom.StartRoom up for play (max tick rate 60) at 2020.04.17-13.29.47
+[2020.04.17-04.29.47:419][781]LogWorld: Bringing up level for play took: 0.002610
+[2020.04.17-04.29.47:423][781]InfinityBlade: Warning: AIBPlayerController::SetupInputComponent(30)SetupInputComponent
+[2020.04.17-04.29.47:426][781]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 0.100000
+[2020.04.17-04.29.47:427][781]InfinityBlade: Warning: UIBHUDWidget::UpdateCharacterStat(54)SEBar 1.000000
+[2020.04.17-04.29.47:427][781]PIE: /Game/dev/Maps/UEDPIE_0_StartRoom 에 대한 에디터에서 플레이 시작 시간: -0.126
+[2020.04.17-04.29.47:427][781]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-04.29.47:428][781]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-04.29.47:429][781]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-04.29.48:296][830]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-04.29.48:462][840]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-04.29.49:234][885]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.29.49:234][885]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.29.50:139][939]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.29.52:117][ 49]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.29.52:118][ 49]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.29.53:020][102]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.29.55:988][257]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.29.55:989][257]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.29.56:891][305]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.00:415][484]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.30.00:416][484]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.30.01:317][525]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.06:087][765]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.30.06:087][765]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.30.06:996][813]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.11:925][102]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.30.11:925][102]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.30.12:825][156]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.14:406][248]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.30.14:406][248]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.30.15:313][296]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.16:651][374]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-04.30.17:512][421]InfinityBlade: Warning: AIBCharacter::ShiftButtonChange(521)ShiftButtonChange
+[2020.04.17-04.30.17:743][434]InfinityBlade: Warning: AIBCharacter::InitFirstSkill(825)InitFirstSkill
+[2020.04.17-04.30.17:743][434]InfinityBlade: Warning: UIBAnimInstance::PlayFirstSkillMontage(207)PlayFirstSkillMontage
+[2020.04.17-04.30.18:636][484]InfinityBlade: Warning: UIBAnimInstance::AnimNotify_FirstSkillStart(196)AnimNotify_FirstSkillStart
+[2020.04.17-04.30.21:093][608]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-04.30.21:095][608]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-04.30.21:098][608]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-04.30.21:148][608]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom' with GeneratedClass '/Game/dev/Maps/StartRoom.StartRoom_C' with ClassGeneratedBy '/Game/dev/Maps/StartRoom.StartRoom:PersistentLevel.StartRoom'
+[2020.04.17-04.30.21:150][608]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins' with GeneratedClass '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins_C' with ClassGeneratedBy '/Game/InfinityBladeGrassLands/Maps/ElvenRuins.ElvenRuins:PersistentLevel.ElvenRuins'
+[2020.04.17-04.30.21:151][608]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel' has LevelScriptBlueprint '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove' with GeneratedClass '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove_C' with ClassGeneratedBy '/Game/InfinityBladeIceLands/Maps/FrozenCove.FrozenCove:PersistentLevel.FrozenCove'
+[2020.04.17-04.30.23:835][722]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.32.54:168][723]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_63:PersistentLevel.Actor_2.DebugSkelMeshComponent_60) Already registered. Aborting.
+[2020.04.17-04.32.54:540][724]LogRenderer: Reallocating scene render targets to support 1084x888 Format 9 NumSamples 1 (Frame:1).
+[2020.04.17-04.32.57:246][828]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_64:PersistentLevel.Actor_3.DebugSkelMeshComponent_61) Already registered. Aborting.
+[2020.04.17-04.32.57:725][828]LogSlate: Took 0.001248 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.04.17-04.32.57:842][829]LogRenderer: Reallocating scene render targets to support 1144x888 Format 9 NumSamples 1 (Frame:1).
+[2020.04.17-04.33.05:947][122]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.33.10:555][270]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.33.25:469][787]Cmd: TRANSACTION UNDO
+[2020.04.17-04.33.25:469][787]LogEditorTransaction: Undo 본 회전
+[2020.04.17-04.33.26:148][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_5:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2020.04.17-04.33.26:154][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_63:PersistentLevel.Actor_2.DebugSkelMeshComponent_60) Already registered. Aborting.
+[2020.04.17-04.33.26:162][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_64:PersistentLevel.Actor_3.DebugSkelMeshComponent_61) Already registered. Aborting.
+[2020.04.17-04.33.42:852][488]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.34.27:011][876]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.34.39:708][327]Cmd: TRANSACTION UNDO
+[2020.04.17-04.34.39:709][327]LogEditorTransaction: Undo 본 회전
+[2020.04.17-04.34.40:470][327]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_5:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2020.04.17-04.34.40:474][327]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_63:PersistentLevel.Actor_2.DebugSkelMeshComponent_60) Already registered. Aborting.
+[2020.04.17-04.34.40:483][327]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_64:PersistentLevel.Actor_3.DebugSkelMeshComponent_61) Already registered. Aborting.
+[2020.04.17-04.34.41:930][369]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.37.28:294][704]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.37.37:910][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:912][106]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:913][106]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit
+[2020.04.17-04.37.37:914][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:915][106]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:917][106]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail
+[2020.04.17-04.37.37:918][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:919][106]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:920][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:920][106]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:922][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:923][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit.P_Hit 레퍼런싱한 것: AnimNotify_PlayParticleEffect_0
+[2020.04.17-04.37.37:924][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:925][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:925][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit.P_Hit 레퍼런싱한 것: AnimNotify_PlayParticleEffect_1
+[2020.04.17-04.37.37:926][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:927][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:927][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit.P_Hit 레퍼런싱한 것: AnimNotify_PlayParticleEffect_2
+[2020.04.17-04.37.37:928][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:929][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:930][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail.P_Trail 레퍼런싱한 것: AnimNotifyState_Trail_0
+[2020.04.17-04.37.37:930][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:931][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:932][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail.P_Trail 레퍼런싱한 것: AnimNotifyState_Trail_1
+[2020.04.17-04.37.37:933][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:934][106]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.37:934][106]LoadErrors: 로드에 실패했습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail.P_Trail 레퍼런싱한 것: AnimNotifyState_Trail_2
+[2020.04.17-04.37.37:935][106]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.37.38:150][107]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.38:196][110]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.38:580][133]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.38:750][143]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.39:221][166]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.39:348][170]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.41:471][261]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.41:536][265]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.41:916][285]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.42:086][295]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.42:543][320]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.42:672][327]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.47:695][575]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.47:862][585]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.48:148][591]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.48:231][596]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.48:257][597]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.48:423][607]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.48:615][619]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.48:781][629]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.48:883][634]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.49:003][641]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.49:245][656]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.49:363][663]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.51:045][753]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.51:203][761]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.51:414][767]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.51:568][775]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.51:951][798]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.52:117][808]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.52:567][835]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.52:701][843]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.54:735][965]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.54:901][975]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.55:284][998]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.55:451][  8]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.55:908][ 29]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.56:035][ 36]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.57:678][105]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.58:083][121]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.58:270][125]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.58:304][127]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.58:449][134]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.58:620][145]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.58:834][155]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.58:842][155]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.59:020][164]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.59:597][178]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.59:663][180]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.37.59:717][184]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.37.59:792][188]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.01:768][260]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.01:882][263]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.01:918][266]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.02:039][271]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.02:303][279]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.02:499][287]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.02:504][288]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.02:622][294]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.02:920][311]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.03:037][318]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.03:062][319]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.03:179][326]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.05:090][408]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.05:254][417]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.05:629][430]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.05:799][440]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.06:249][467]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.06:382][475]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.08:411][562]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.10:240][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:241][645]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:242][645]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit
+[2020.04.17-04.38.10:244][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:245][645]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:246][645]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail
+[2020.04.17-04.38.10:248][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:249][645]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:251][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:252][645]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:256][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:257][645]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:258][645]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:260][645]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.10:871][661]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A'
+[2020.04.17-04.38.11:738][705]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A
+[2020.04.17-04.38.12:701][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:701][762]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher01_B_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:702][762]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Finisher01_B_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit
+[2020.04.17-04.38.12:703][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:703][762]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher01_B_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:704][762]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Finisher01_B_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail
+[2020.04.17-04.38.12:705][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:705][762]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher01_B_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:706][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:707][762]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher01_B_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:709][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:709][762]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:710][762]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.12:711][762]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.13:095][774]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A'
+[2020.04.17-04.38.13:725][799]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.14:052][813]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A
+[2020.04.17-04.38.16:262][941]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A'
+[2020.04.17-04.38.17:334][972]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A
+[2020.04.17-04.38.18:354][  5]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A
+[2020.04.17-04.38.18:520][ 14]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Defence_Finisher_F01_A.Defence_Finisher_F01_A'
+[2020.04.17-04.38.19:512][ 44]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A'
+[2020.04.17-04.38.19:651][ 52]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.38.20:091][ 67]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A'
+[2020.04.17-04.38.20:430][ 88]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A'
+[2020.04.17-04.38.20:956][119]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A
+[2020.04.17-04.38.21:311][138]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A
+[2020.04.17-04.38.23:649][245]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A'
+[2020.04.17-04.38.24:511][277]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A
+[2020.04.17-04.38.27:359][398]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Dodge_Finisher_F_A.Dodge_Finisher_F_A'
+[2020.04.17-04.38.28:898][471]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher01_B_A.Finisher01_B_A'
+[2020.04.17-04.38.46:589][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:590][306]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher09_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:591][306]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Finisher09_F_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Hit
+[2020.04.17-04.38.46:591][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:592][306]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher09_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:593][306]LoadErrors: Error: /Game/Book/Animations/Sword_Finisher/Finisher09_F_A : 애셋에 대한 파일을 찾을 수 없습니다. /Game/Cruel_Sword_Finisher/Particles/P_Trail
+[2020.04.17-04.38.46:594][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:595][306]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher09_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:596][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:596][306]LogLinker: Warning: ../../../../../../dev/IB/Content/Book/Animations/Sword_Finisher/Finisher09_F_A.uasset 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:599][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:600][306]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Hit' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:600][306]LogLinker: Warning: '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.46:601][306]LogLinker: Warning: NULL 로드중 '/Game/Cruel_Sword_Finisher/Particles/P_Trail' 애셋에 대한 파일을 찾을 수 없습니다.
+[2020.04.17-04.38.47:475][343]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher09_F_A.Finisher09_F_A'
+[2020.04.17-04.38.47:994][369]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Finisher09_F_A.Finisher09_F_A
+[2020.04.17-04.38.50:725][511]LogParticles: Warning: Particle Notify: Particle system is null for particle notify 'PlayParticleEffect' in anim: '/Game/Book/Animations/Sword_Finisher/Finisher09_F_A.Finisher09_F_A'
+[2020.04.17-04.38.51:226][537]LogParticles: Warning: Trail Notify: Null PSTemplate for trail notify in anim: /Game/Book/Animations/Sword_Finisher/Finisher09_F_A.Finisher09_F_A
+[2020.04.17-04.39.43:442][858]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.17-04.41.29:721][382]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/dev/Maps/StartRoom' took 0.077
+[2020.04.17-04.41.29:735][382]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage] ([1] browsable assets)...
+[2020.04.17-04.41.29:764][382]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage.SK_Mannequin_Skeleton_DodgeMontage]
+[2020.04.17-04.41.29:764][382]OBJ SavePackage: Finished generating thumbnails for package [/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage]
+[2020.04.17-04.41.29:778][382]LogSavePackage: Save=11.40ms
+[2020.04.17-04.41.29:778][382]LogSavePackage: Moving '../../../../../../dev/IB/Saved/SK_Mannequin_Skeleton_DodgeMontaAF9CC9804E9E53E4C6BA65A585F6638E.tmp' to '../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage_Auto2.uasset'
+[2020.04.17-04.41.29:780][382]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_DodgeMontage_Auto2.uasset
+[2020.04.17-04.41.29:780][382]LogFileHelpers: Auto-saving content packages took 0.047
+[2020.04.17-04.42.43:345][190]LogSkeletalMesh: Skeletal Mesh found in DDC [4.834200ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Bear/Enemy_Bear.Enemy_Bear
+[2020.04.17-04.42.43:362][190]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_157:PersistentLevel.Actor_4.DebugSkelMeshComponent_152) Already registered. Aborting.
+[2020.04.17-04.42.43:810][190]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.04.17-04.42.57:255][782]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Enter_Jump.ExoGame_Fire_Golem_Ball_Enter_Jump
+[2020.04.17-04.42.57:259][782]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Enter_Jump.ExoGame_Fire_Golem_Ball_Enter_Jump) using current/default (AnimCompress_BitwiseCompressOnly_164) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.42.57:377][782]LogSkeletalMesh: Skeletal Mesh found in DDC [2.843000ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/SK_Fire_Golem.SK_Fire_Golem
+[2020.04.17-04.42.57:394][782]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_160:PersistentLevel.Actor_5.DebugSkelMeshComponent_155) Already registered. Aborting.
+[2020.04.17-04.42.57:887][782]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.04.17-04.43.00:886][897]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Enter_JumpTuck.ExoGame_Fire_Golem_Ball_Enter_JumpTuck
+[2020.04.17-04.43.00:887][897]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Enter_JumpTuck.ExoGame_Fire_Golem_Ball_Enter_JumpTuck) using current/default (AnimCompress_BitwiseCompressOnly_165) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.43.02:658][982]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Idle.ExoGame_Fire_Golem_Ball_Idle
+[2020.04.17-04.43.02:659][982]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_Idle.ExoGame_Fire_Golem_Ball_Idle) using current/default (AnimCompress_BitwiseCompressOnly_166) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.43.04:717][ 55]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_JumpSmash.ExoGame_Fire_Golem_Ball_JumpSmash
+[2020.04.17-04.43.04:718][ 55]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Ball_JumpSmash.ExoGame_Fire_Golem_Ball_JumpSmash) using current/default (AnimCompress_BitwiseCompressOnly_167) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.43.13:969][399]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Idle.ExoGame_Fire_Golem_Idle
+[2020.04.17-04.43.13:970][399]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_Idle.ExoGame_Fire_Golem_Idle) using current/default (AnimCompress_BitwiseCompressOnly_174) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.43.18:215][571]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_React_Stunned_Enter.ExoGame_Fire_Golem_React_Stunned_Enter
+[2020.04.17-04.43.18:216][571]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_React_Stunned_Enter.ExoGame_Fire_Golem_React_Stunned_Enter) using current/default (AnimCompress_BitwiseCompressOnly_181) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.43.20:181][656]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_TurnRight_90.ExoGame_Fire_Golem_TurnRight_90
+[2020.04.17-04.43.20:182][656]LogAnimationCompression: Recompressing (AnimSequence /Game/InfinityBladeAdversaries/Enemy/Enemy_Golem/Enemy_Golem_Animations/ExoGame_Fire_Golem_TurnRight_90.ExoGame_Fire_Golem_TurnRight_90) using current/default (AnimCompress_BitwiseCompressOnly_185) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.50.08:417][130]LogSlate: Window '애니메이션 압축' being destroyed
+[2020.04.17-04.52.55:994][252]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Book/Animations/Sword_Anim/Sword1h_Surrender.Sword1h_Surrender
+[2020.04.17-04.52.56:003][252]LogAnimationCompression: Recompressing (AnimSequence /Engine/Transient.Sword1h_Surrender) using current/default (AnimCompress_BitwiseCompressOnly_434) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2020.04.17-04.53.54:990][891]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/dev/Maps/StartRoom' took 0.125
+[2020.04.17-04.53.54:993][891]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Book/Animations/Sword_Anim/Sword1h_Surrender] ([1] browsable assets)...
+[2020.04.17-04.53.55:011][891]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Book/Animations/Sword_Anim/Sword1h_Surrender.Sword1h_Surrender]
+[2020.04.17-04.53.55:011][891]OBJ SavePackage: Finished generating thumbnails for package [/Game/Book/Animations/Sword_Anim/Sword1h_Surrender]
+[2020.04.17-04.53.55:070][891]LogSavePackage: Save=25.45ms
+[2020.04.17-04.53.55:070][891]LogSavePackage: Moving '../../../../../../dev/IB/Saved/Sword1h_Surrender_Auto3325B426D4CF008B0D10C31883298F77F.tmp' to '../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Sword_Anim/Sword1h_Surrender_Auto3.uasset'
+[2020.04.17-04.53.55:072][891]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Saved/Autosaves/Game/Book/Animations/Sword_Anim/Sword1h_Surrender_Auto3.uasset
+[2020.04.17-04.53.55:072][891]LogFileHelpers: Auto-saving content packages took 0.081
+[2020.04.17-05.11.18:734][546]LogStats: FPlatformStackWalk::StackWalkAndDump -  8.928 s
+[2020.04.17-05.11.18:734][546]LogOutputDevice: Error: === Handled ensure: ===
+[2020.04.17-05.11.18:734][546]LogOutputDevice: Error: 
+[2020.04.17-05.11.18:734][546]LogOutputDevice: Error: Ensure condition failed: Interval == SequenceLength/NumFrames [File:D:\Build\++UE4+Release-4.19+Compile\Sync\Engine\Source\Runtime\Engine\Private\Animation\AnimSequence.cpp] [Line: 1711]
+[2020.04.17-05.11.18:735][546]LogOutputDevice: Error: 
+[2020.04.17-05.11.18:735][546]LogOutputDevice: Error: Stack: 
+[2020.04.17-05.11.18:735][546]LogOutputDevice: Error: [Callstack] 0x00000000DD1FB706 UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:234]
+[2020.04.17-05.11.18:735][546]LogOutputDevice: Error: [Callstack] 0x00000000DCF5AE3A UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\misc\assertionmacros.cpp:299]
+[2020.04.17-05.11.18:736][546]LogOutputDevice: Error: [Callstack] 0x00000000DCF6ECD6 UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\private\misc\assertionmacros.cpp:430]
+[2020.04.17-05.11.18:736][546]LogOutputDevice: Error: [Callstack] 0x00000000CC2A3E55 UE4Editor-Engine.dll!UAnimSequence::ResizeSequence() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\engine\private\animation\animsequence.cpp:1711]
+[2020.04.17-05.11.18:736][546]LogOutputDevice: Error: [Callstack] 0x00000000CC26E645 UE4Editor-Engine.dll!UAnimSequence::CropRawAnimData() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\engine\private\animation\animsequence.cpp:1939]
+[2020.04.17-05.11.18:737][546]LogOutputDevice: Error: [Callstack] 0x00000000C10C918B UE4Editor-Persona.dll!SAnimationScrubPanel::OnCropAnimSequence() [d:\build\++ue4+release-4.19+compile\sync\engine\source\editor\persona\private\sanimationscrubpanel.cpp:481]
+[2020.04.17-05.11.18:737][546]LogOutputDevice: Error: [Callstack] 0x00000000C109DBC8 UE4Editor-Persona.dll!TBaseSPMethodDelegateInstance<0,SAnimationScrubPanel,0,TTypeWrapper<void> __cdecl(bool,float)>::Execute() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:269]
+[2020.04.17-05.11.18:737][546]LogOutputDevice: Error: [Callstack] 0x00000000C10A2878 UE4Editor-Persona.dll!TBaseSPMethodDelegateInstance<0,SAnimationScrubPanel,0,void __cdecl(bool,float)>::ExecuteIfSafe() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:345]
+[2020.04.17-05.11.18:738][546]LogOutputDevice: Error: [Callstack] 0x00000000D17691E9 UE4Editor-KismetWidgets.dll!SScrubWidget::OnSequenceCroppedCalled() [d:\build\++ue4+release-4.19+compile\sync\engine\source\editor\kismetwidgets\private\sscrubwidget.cpp:526]
+[2020.04.17-05.11.18:738][546]LogOutputDevice: Error: [Callstack] 0x00000000D174908A UE4Editor-KismetWidgets.dll!TBaseSPMethodDelegateInstance<0,SScrubWidget,0,TTypeWrapper<void> __cdecl(void),bool,float>::Execute() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:269]
+[2020.04.17-05.11.18:739][546]LogOutputDevice: Error: [Callstack] 0x00000000D174A846 UE4Editor-KismetWidgets.dll!TBaseSPMethodDelegateInstance<0,SScrubWidget,0,void __cdecl(void),bool,float>::ExecuteIfSafe() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:345]
+[2020.04.17-05.11.18:739][546]LogOutputDevice: Error: [Callstack] 0x00000000DC34F26B UE4Editor-Slate.dll!SMenuEntryBlock::OnClicked() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\multibox\smenuentryblock.cpp:1037]
+[2020.04.17-05.11.18:740][546]LogOutputDevice: Error: [Callstack] 0x00000000DC355D48 UE4Editor-Slate.dll!SMenuEntryBlock::OnMenuItemButtonClicked() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\multibox\smenuentryblock.cpp:988]
+[2020.04.17-05.11.18:740][546]LogOutputDevice: Error: [Callstack] 0x00000000DC2B4422 UE4Editor-Slate.dll!TMemberFunctionCaller<SMenuEntryBlock,FReply (__cdecl SMenuEntryBlock::*)(void) __ptr64>::operator()<>() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstanceinterface.h:156]
+[2020.04.17-05.11.18:740][546]LogOutputDevice: Error: [Callstack] 0x00000000DC2B5A29 UE4Editor-Slate.dll!UE4Tuple_Private::TTupleImpl<TIntegerSequence<unsigned int> >::ApplyAfter<TMemberFunctionCaller<SMenuEntryBlock,FReply (__cdecl SMenuEntryBlock::*)(void) __ptr64> >() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\templates\tuple.h:498]
+[2020.04.17-05.11.18:741][546]LogOutputDevice: Error: [Callstack] 0x00000000DC330E65 UE4Editor-Slate.dll!TBaseSPMethodDelegateInstance<0,SMenuEntryBlock,0,FReply __cdecl(void)>::Execute() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:269]
+[2020.04.17-05.11.18:741][546]LogOutputDevice: Error: [Callstack] 0x00000000DC3EB7F7 UE4Editor-Slate.dll!TBaseDelegate<FReply>::Execute() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\core\public\delegates\delegatesignatureimpl.inl:537]
+[2020.04.17-05.11.18:742][546]LogOutputDevice: Error: [Callstack] 0x00000000DC4119E8 UE4Editor-Slate.dll!SButton::OnMouseButtonUp() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\widgets\input\sbutton.cpp:282]
+[2020.04.17-05.11.18:742][546]LogOutputDevice: Error: [Callstack] 0x00000000DC357E3D UE4Editor-Slate.dll!SMenuEntryButton::OnMouseButtonUp() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\multibox\smenuentryblock.cpp:385]
+[2020.04.17-05.11.18:742][546]LogOutputDevice: Error: [Callstack] 0x00000000DC23485C UE4Editor-Slate.dll!<lambda_1002768c627006711ef2f351a87ec0e7>::operator()() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5440]
+[2020.04.17-05.11.18:743][546]LogOutputDevice: Error: [Callstack] 0x00000000DC207D75 UE4Editor-Slate.dll!FEventRouter::Route<FReply,FEventRouter::FToLeafmostPolicy,FPointerEvent,<lambda_1002768c627006711ef2f351a87ec0e7> >() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:266]
+[2020.04.17-05.11.18:743][546]LogOutputDevice: Error: [Callstack] 0x00000000DC29F617 UE4Editor-Slate.dll!FSlateApplication::RoutePointerUpEvent() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5429]
+[2020.04.17-05.11.18:743][546]LogOutputDevice: Error: [Callstack] 0x00000000DC287D0D UE4Editor-Slate.dll!FSlateApplication::ProcessMouseButtonUpEvent() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5927]
+[2020.04.17-05.11.18:744][546]LogOutputDevice: Error: [Callstack] 0x00000000DC27B3E2 UE4Editor-Slate.dll!FSlateApplication::OnMouseUp() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5907]
+[2020.04.17-05.11.18:744][546]LogOutputDevice: Error: [Callstack] 0x0000000025A4E69B UE4Editor-ApplicationCore.dll!FWindowsApplication::ProcessDeferredMessage() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\applicationcore\private\windows\windowsapplication.cpp:1726]
+[2020.04.17-05.11.18:744][546]LogOutputDevice: Error: [Callstack] 0x0000000025A41B78 UE4Editor-ApplicationCore.dll!FWindowsApplication::DeferMessage() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\applicationcore\private\windows\windowsapplication.cpp:2172]
+[2020.04.17-05.11.18:745][546]LogOutputDevice: Error: [Callstack] 0x0000000025A5052C UE4Editor-ApplicationCore.dll!FWindowsApplication::ProcessMessage() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\applicationcore\private\windows\windowsapplication.cpp:889]
+[2020.04.17-05.11.18:745][546]LogOutputDevice: Error: [Callstack] 0x0000000025A3D679 UE4Editor-ApplicationCore.dll!FWindowsApplication::AppWndProc() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\applicationcore\private\windows\windowsapplication.cpp:726]
+[2020.04.17-05.11.18:745][546]LogOutputDevice: Error: [Callstack] 0x0000000039E45C0D USER32.dll!UnknownFunction []
+[2020.04.17-05.11.18:746][546]LogOutputDevice: Error: [Callstack] 0x0000000039E45602 USER32.dll!UnknownFunction []
+[2020.04.17-05.11.18:746][546]LogOutputDevice: Error: [Callstack] 0x0000000025A51666 UE4Editor-ApplicationCore.dll!FWindowsPlatformApplicationMisc::PumpMessages() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\applicationcore\private\windows\windowsplatformapplicationmisc.cpp:129]
+[2020.04.17-05.11.18:746][546]LogOutputDevice: Error: [Callstack] 0x00000000E8D65475 UE4Editor.exe!FEngineLoop::Tick() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\launchengineloop.cpp:3263]
+[2020.04.17-05.11.18:746][546]LogOutputDevice: Error: [Callstack] 0x00000000E8D76BD0 UE4Editor.exe!GuardedMain() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\launch.cpp:166]
+[2020.04.17-05.11.18:747][546]LogOutputDevice: Error: [Callstack] 0x00000000E8D76C4A UE4Editor.exe!GuardedMainWrapper() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:144]
+[2020.04.17-05.11.18:747][546]LogOutputDevice: Error: [Callstack] 0x00000000E8D84177 UE4Editor.exe!WinMain() [d:\build\++ue4+release-4.19+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:223]
+[2020.04.17-05.11.18:747][546]LogOutputDevice: Error: [Callstack] 0x00000000E8D85B87 UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:253]
+[2020.04.17-05.11.18:747][546]LogOutputDevice: Error: [Callstack] 0x000000003B5B7BD4 KERNEL32.DLL!UnknownFunction []
+[2020.04.17-05.11.18:748][546]LogOutputDevice: Error: [Callstack] 0x000000003BA2CE51 ntdll.dll!UnknownFunction []
+[2020.04.17-05.11.18:748][546]LogOutputDevice: Error: 
+[2020.04.17-05.11.18:755][546]LogStats:                SubmitErrorReport -  0.000 s

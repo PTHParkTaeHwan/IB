@@ -8,6 +8,15 @@
 
 DECLARE_MULTICAST_DELEGATE(FOnNextAttackCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnAttackHitCheckDelegate);
+
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_1StepStartCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_1StepDoneCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepStartCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepDoneCheckDelegate);
+
+DECLARE_MULTICAST_DELEGATE(FOnFirstSkillStartCheckDelegate);
+
+
 /**
  * 
  */
@@ -17,7 +26,7 @@ UCLASS()
 class INFINITYBLADE_API UIBAnimInstance : public UAnimInstance
 {
 	GENERATED_BODY()
-	
+
 
 public:
 	UIBAnimInstance();
@@ -27,6 +36,11 @@ public:
 	void StopAttackMontage();
 	void JumpToAttackMontageSection(int32 NewSection);
 
+	//LS BASIC 
+	void PlayBasicAttackNontage();
+	void StopBasicAttackMontage();
+	void JumpToBasicAttackMontageSection(int32 NewSection);
+
 public:
 	FOnNextAttackCheckDelegate OnNextAttackCheck;
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
@@ -34,38 +48,74 @@ public:
 
 private:
 	UFUNCTION()
-	void AnimNotify_AttackHitCheck();
+		void AnimNotify_AttackHitCheck();
 
 	UFUNCTION()
-	void AnimNotify_NextAttackCheck();
+		void AnimNotify_NextAttackCheck();
 
 	FName GetAttackMontageSectionName(int32 Section);
+
+	//공격모션에서 맴 이동 관리
+public:
+	FOnAttackType1_1StepStartCheckDelegate FOnAttackType1_1StepStartCheck;
+	FOnAttackType1_1StepDoneCheckDelegate FOnAttackType1_1StepDoneCheck;
+	FOnAttackType1_2StepStartCheckDelegate FOnAttackType1_2StepStartCheck;
+	FOnAttackType1_2StepDoneCheckDelegate FOnAttackType1_2StepDoneCheck;
+
+private:
+	//AttackType1
+	UFUNCTION()
+		void AnimNotify_AttackType1_1StepStart();
+
+	UFUNCTION()
+		void AnimNotify_AttackType1_1StepDone();
+
+	UFUNCTION()
+		void AnimNotify_AttackType1_2StepStart();
+
+	UFUNCTION()
+		void AnimNotify_AttackType1_2StepDone();
+
+	UFUNCTION()
+		void AnimNotify_FirstSkillStart();
+
 
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
-	float CurrentPawnSpeed;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
-	bool IsInAir;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
-	bool IsRun;
+		float CurrentPawnSpeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
-	bool IsDefense;
+		bool IsInAir;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
+		bool IsRun;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
+		bool IsDefense;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
-	UAnimMontage* AttackMontage;
+		UAnimMontage* AttackMontage;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
-	UAnimMontage* LSAttackMontage;
+		UAnimMontage* LSAttackMontage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+		UAnimMontage* LSBasicAttackMontage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
-	bool IsDead;
+		bool IsDead;
 
+
+private:
 	WeaponType CurrentAttackMontageType = WeaponType::LONGSWORD;
 
 public:
 	void SetAttackMontageType(WeaponType NewType);
+
+	//스킬
+
+public:
+	void PlayFirstSkillMontage(int32 SectionNum);
+	FOnFirstSkillStartCheckDelegate FOnFirstSkillStartCheck;
 };

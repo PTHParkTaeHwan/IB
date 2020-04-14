@@ -32,11 +32,19 @@ enum class EnemyMode
 	HIT
 };
 
-//플레이어 공격 모션
+//플레이어 무기 타입
 enum class WeaponType
 {
 	LONGSWORD,
 	MIDDLESWORD
+};
+
+enum class LSAttackMode
+{
+	NONE,
+	BASIC,
+	COMBO,
+	SKILL
 };
 
 
