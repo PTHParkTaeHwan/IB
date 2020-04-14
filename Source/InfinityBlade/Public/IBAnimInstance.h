@@ -8,6 +8,15 @@
 
 DECLARE_MULTICAST_DELEGATE(FOnNextAttackCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnAttackHitCheckDelegate);
+
+
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_1StepStartCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_1StepDoneCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepStartCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepDoneCheckDelegate);
+
+
+
 /**
  * 
  */
@@ -27,6 +36,11 @@ public:
 	void StopAttackMontage();
 	void JumpToAttackMontageSection(int32 NewSection);
 
+	//LS BASIC 
+	void PlayBasicAttackNontage();
+	void StopBasicAttackMontage();
+	void JumpToBasicAttackMontageSection(int32 NewSection);
+
 public:
 	FOnNextAttackCheckDelegate OnNextAttackCheck;
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
@@ -40,6 +54,30 @@ private:
 	void AnimNotify_NextAttackCheck();
 
 	FName GetAttackMontageSectionName(int32 Section);
+	
+	//공격모션에서 맴 이동 관리
+public:
+	FOnAttackType1_1StepStartCheckDelegate FOnAttackType1_1StepStartCheck;
+	FOnAttackType1_1StepDoneCheckDelegate FOnAttackType1_1StepDoneCheck;
+	FOnAttackType1_2StepStartCheckDelegate FOnAttackType1_2StepStartCheck;
+	FOnAttackType1_2StepDoneCheckDelegate FOnAttackType1_2StepDoneCheck;
+
+private:
+	//AttackType1
+	UFUNCTION()
+	void AnimNotify_AttackType1_1StepStart();
+	
+	UFUNCTION()
+	void AnimNotify_AttackType1_1StepDone();
+	
+	UFUNCTION()
+	void AnimNotify_AttackType1_2StepStart();
+
+	UFUNCTION()
+	void AnimNotify_AttackType1_2StepDone();
+
+
+	
 
 
 private:
@@ -61,9 +99,14 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* LSAttackMontage;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* LSBasicAttackMontage;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool IsDead;
 
+
+private:
 	WeaponType CurrentAttackMontageType = WeaponType::LONGSWORD;
 
 public:

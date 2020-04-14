@@ -21,7 +21,7 @@ AIBItemWeapon::AIBItemWeapon()
 	Effect->SetupAttachment(RootComponent);
 
 	Trigger->SetBoxExtent(FVector(40.0f, 42.0f, 30.0f));
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SM_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword17/SK_Blade_HeroSword17.SK_Blade_HeroSword17"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SM_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_BlackKnight/SK_Blade_BlackKnight.SK_Blade_BlackKnight"));
 	if (SM_WEAPON.Succeeded())
 	{
 		Weapon->SetSkeletalMesh(SM_WEAPON.Object);

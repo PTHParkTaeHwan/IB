@@ -130,7 +130,7 @@ private:
 
 	//공격모션
 	void AttackStartComboState();
-	void AttackEndComboState();
+	void AttackEndAttackState();
 
 	//공격 충돌처리
 	void AttackCheck();
@@ -173,6 +173,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Effect)
 	UParticleSystemComponent* HitEffect;
 
+	UPROPERTY(VisibleAnywhere, Category = Skill)
+	UParticleSystemComponent* SkillEffect_1;
+
 
 public:
 	void SetHitEffect(AIBWeapon * NewWeapon);
@@ -184,4 +187,50 @@ private:
 	float DeadTimer;
 
 	FTimerHandle DeadTimerHandle = {};
+
+//AttackStep
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = State, Meta = (AllowPrivateAccess = true))
+	float TestSpeed1;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = State, Meta = (AllowPrivateAccess = true))
+	float TestSpeed2;
+
+
+private:
+	void AttackStepAddLambda();
+	void MoveAttackType1();
+	void MoveAttackType2();
+	void InitAttackStep();
+
+	bool IsAttackType_1Step;
+	bool IsAttackType_2Step;
+
+	//AttackMode
+private:
+	LSAttackMode CurrentAttackMode = LSAttackMode::NONE;
+	float CheckIntervalTime;
+	bool FirstAttackClick;
+	bool SetAttackMode;
+	bool TimeCheckStart;
+
+
+	bool SecondAttackClick;
+	bool CanComboAttack;
+	int32 CurrentBasicAttackSection;
+
+public:
+	LSAttackMode GetCurrentAttackMode();
+
+
+	//skill
+public:
+	void InitSkillParticle();
+	void Skill_1();
+	void Skill_2();
+	void Skill_3();
+
+private:
+	bool FirstSkillOn;
+	int32 temp;
 };
