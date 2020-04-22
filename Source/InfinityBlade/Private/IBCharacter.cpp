@@ -13,6 +13,7 @@
 #include "IBPlayerController.h"
 #include "IBPlayerState.h"
 #include "IBHUDWidget.h"
+#include "Enemy/IB_E_GreaterSpider.h"
 
 
 // Sets default values
@@ -31,7 +32,7 @@ AIBCharacter::AIBCharacter()
 	HPBarWidget->SetupAttachment(GetMesh());
 
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -88.0f), FRotator(0.0f, -90.0f, 0.0f));
-	SpringArm->TargetArmLength = 400.0f;
+	SpringArm->TargetArmLength = 700.0f;
 	SpringArm->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 	
 
@@ -101,7 +102,7 @@ AIBCharacter::AIBCharacter()
 	InitSkillParticle();
 	InitGroundBurstSkillParameter();;
 	InitShieldSkillParameter();
-
+	InitUltimateSkillParameter();
 
 	//HP, SE UI
 	HPBarWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 180.0f));
@@ -161,7 +162,7 @@ void AIBCharacter::SetCharacterState(ECharacterState NewState)
 			CharacterStat->SetNewLevel(IBPlayerState->GetCharacterLevel());
 		}
 
-		SetActorHiddenInGame(true);
+		SetActorHiddenInGame(false);
 		HPBarWidget->SetHiddenInGame(true);
 		bCanBeDamaged = false;
 		break;
@@ -278,7 +279,7 @@ void AIBCharacter::SetControlMode(EControlMode NewControlMode)
 	{
 	case EControlMode::GTA:
 		IsDefense = false;
-		ArmLengthTo = 450.0f;
+		ArmLengthTo = 700.0f;
 		CameraLocationTo = FVector(0.0f, 0.0f, 0.0f);
 		SpringArm->SetRelativeRotation(FRotator::ZeroRotator);
 		SpringArm->bUsePawnControlRotation = true;
@@ -292,7 +293,7 @@ void AIBCharacter::SetControlMode(EControlMode NewControlMode)
 		break;
 	case EControlMode::DEFENSE:
 		IsDefense = true;
-		ArmLengthTo = 180.0f;
+		ArmLengthTo = 400.0f;
 		CameraLocationTo = FVector(0.0f, -30.0f, 50.0f);
 		SpringArm->bUsePawnControlRotation = true;
 		SpringArm->bInheritPitch = true;
@@ -371,7 +372,16 @@ void AIBCharacter::PostInitializeComponents()
 	AttackStepAddLambda();
 	IBAnim->FOnFirstSkillStartCheck.AddLambda([this]() -> void {
 		bFirstSkillEffect = true;
+		SkillStartLocation = GetActorLocation() + FVector(0.0f, 0.0f, -90.0f);
+		SkillStartForwardVector = GetActorForwardVector();
 		if (ShieldSkill->IsActive()) ShieldSkill->SetVisibility(true);
+	});
+
+	IBAnim->FOnSecondSkillDoneCheck.AddLambda([this]() -> void {
+		IsAttacking = false;
+	});
+	IBAnim->FOnForthSkillStartCheck.AddLambda([this]()->void {
+		bForthSkillEffect = true;
 	});
 }
 
@@ -424,6 +434,7 @@ void AIBCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Skill_1"), EInputEvent::IE_Pressed, this, &AIBCharacter::InitFirstSkill);
 	PlayerInputComponent->BindAction(TEXT("Skill_2"), EInputEvent::IE_Pressed, this, &AIBCharacter::InitSecondSkill);
 	PlayerInputComponent->BindAction(TEXT("Skill_3"), EInputEvent::IE_Pressed, this, &AIBCharacter::Skill_3);
+	PlayerInputComponent->BindAction(TEXT("Skill_4"), EInputEvent::IE_Pressed, this, &AIBCharacter::InitForthSkill);
 
 
 }
@@ -684,6 +695,8 @@ void AIBCharacter::AttackCheck()
 			{
 				FDamageEvent DamageEvent;
 				HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
+				//AIB_E_GreaterSpider* Test = Cast<AIB_E_GreaterSpider>(HitResult.Actor);
+				//Test->Jump();
 			}
 			else
 			{
@@ -818,8 +831,29 @@ void AIBCharacter::InitSkillParticle()
 		ShieldSkill->bAutoActivate = false;
 		ShieldSkill->bAbsoluteLocation = true;
 		ShieldSkill->bAbsoluteRotation = true;
+		ShieldSkill->SetWorldScale3D(FVector(1.0f, 1.0f, 1.2f));
 	}
+	
+	//½ºÅ³_4
+	for (int i = 0; i < 8; i++)
+	{
+		UltimateParticle UP;
+		UP.FirstParticle = CreateDefaultSubobject<UParticleSystemComponent>(FName(*FString::Printf(TEXT("FirstParticle_%d"), i)));
+		UP.FirstParticle->SetupAttachment(RootComponent);
+		UP.FirstParticle->SetTemplate(P_SKILL_1.Object);
+		UP.FirstParticle->bAbsoluteLocation = true;
+		UP.FirstParticle->bAbsoluteRotation = true;
 
+		UP.SecondParticle = CreateDefaultSubobject<UParticleSystemComponent>(FName(*FString::Printf(TEXT("SecondParticle_%d"), i)));
+		UP.SecondParticle->SetupAttachment(RootComponent);
+		UP.SecondParticle->SetTemplate(P_SKILL_1_Final.Object);
+		UP.SecondParticle->bAbsoluteLocation = true;
+		UP.SecondParticle->bAbsoluteRotation = true;
+
+
+		UP.SkillStartVector = FVector::ZeroVector;
+		m_vUSParticleVector.push_back(UP);		
+	}
 
 	TestParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("TestParticle"));
 	TestParticle->SetupAttachment(RootComponent);
@@ -853,10 +887,7 @@ void AIBCharacter::InitFirstSkill()
 		ShieldSkill->SetVisibility(false);
 	}
 
-	bFirstSkillMontagePlay = true;
 	IBAnim->PlayFirstSkillMontage(4);
-	SkillStartLocation = GetActorLocation() + FVector(0.0f, 0.0f, -90.0f);
-	SkillStartForwardVector = GetActorForwardVector();
 	IsAttacking = true;
 	
 }
@@ -867,8 +898,35 @@ void AIBCharacter::InitSecondSkill()
 	if (!bSecondSkillEffect)
 	{
 		bSecondSkillEffect = true;
+		IBAnim->PlayShieldSkillMontage();
 		ShieldSkill->Activate(true);
+		IsAttacking = true;
 	}
+}
+
+void AIBCharacter::InitForthSkill()
+{
+	ABLOG(Warning, TEXT("Skill_4"));
+	if (ShieldSkill->IsActive())
+	{
+		ShieldSkill->SetVisibility(false);
+	}
+
+	IBAnim->PlayUltimateSkillMontage();
+	SkillStartLocation = GetActorLocation() + FVector(0.0f, 0.0f, -90.0f);
+	SkillStartForwardVector = GetActorForwardVector();
+	IsAttacking = true;
+
+	SkillStartLocation = GetActorLocation() + FVector(0.0f, 0.0f, -90.0f);
+	SkillStartForwardVector = GetActorForwardVector();
+	SkillStartForwardLeftVector = GetActorForwardVector() + GetActorRightVector();
+	SkillStartForwardRightVector = GetActorForwardVector() - GetActorRightVector();
+	SkillStartBackVector = -1.0f*GetActorForwardVector();
+	SkillStartBackLeftVector = -1.0f*GetActorForwardVector() + GetActorRightVector();;
+	SkillStartBackRightVector = -1.0f*GetActorForwardVector() - GetActorRightVector();;
+	SkillStartRightVector = GetActorRightVector();
+	SkillStartLeftVector = -1.0f*GetActorRightVector();
+
 }
 
 void AIBCharacter::Skill_3()
@@ -882,7 +940,6 @@ void AIBCharacter::InitGroundBurstSkillParameter()
 {
 	IsAttacking = false;
 	bFirstSkillEffect = false;
-	bFirstSkillMontagePlay = false;
 	EffectIntervalTime = 0.0f;
 	EffectNum = 1;
 }
@@ -893,29 +950,31 @@ void AIBCharacter::InitShieldSkillParameter()
 	bSecondSkillEffect = false;
 }
 
+void AIBCharacter::InitUltimateSkillParameter()
+{
+	IsAttacking = false;
+	bForthSkillEffect = false;
+	bBasicUltimateSkill = false;
+	EffectIntervalTime = 0.0f;
+	EffectNum = 1;
+}
+
 void AIBCharacter::SkillHub(float DeltaTime)
 {
 	if (bFirstSkillEffect)
 	{
 		EffectIntervalTime += DeltaTime;
-		if (EffectIntervalTime >= 0.02)
+		if (EffectIntervalTime >= 0.05)
 		{
 			
 			EffectIntervalTime = 0.0f;
 			
-			//SkillEffect_1->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
-			//SkillEffect_1->SetWorldLocation(SkillStartLocation + (-1.0f*GetActorForwardVector()+ GetActorRightVector()*TestFloat1) * (float)EffectNum*130.0f);
-			
-			UNavigationSystem* NavSystem = UNavigationSystem::GetNavigationSystem(GetWorld());
-			FNavLocation NextPatrol;
-			NavSystem->GetRandomPointInNavigableRadius(GetActorLocation(), 500.0f, NextPatrol);
-			NavSystem->SimpleMoveToLocation(GetController(), GetActorRightVector()*TestFloat1);
-			SkillEffect_1->SetWorldLocation(NextPatrol.Location);			
+			SkillEffect_1->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
 			SkillEffect_1->Activate(true);
 			EffectNum++;
-			if (EffectNum >= 70)
+			if (EffectNum >= 7)
 			{
-				SkillEffect_1_Final->SetWorldLocation(SkillStartLocation + SkillStartForwardVector/* * (float)EffectNum*/*130.0f);
+				SkillEffect_1_Final->SetWorldLocation(SkillStartLocation + SkillStartForwardVector* (float)EffectNum*130.0f);
 				SkillEffect_1_Final->Activate(true);
 				EffectNum = 1;
 				InitGroundBurstSkillParameter();
@@ -934,6 +993,170 @@ void AIBCharacter::SkillHub(float DeltaTime)
 			InitShieldSkillParameter();
 			ShieldSkill->Activate(false);
 			ShieldSkill->Complete();
+		}
+	}
+
+	if (bForthSkillEffect)
+	{
+		EffectIntervalTime += DeltaTime;
+		
+		//±âº» ±Ã
+		if (!bBasicUltimateSkill)
+		{
+			if (EffectIntervalTime >= 0.05)
+			{
+				EffectIntervalTime = 0.0f;
+				for (auto it = m_vUSParticleVector.begin(); it != m_vUSParticleVector.end(); ++it)
+				{
+					switch (ParticelNum)
+					{
+					case 0:
+						ABLOG(Warning, TEXT("m_vUSParticleVector 0"));
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 1:
+						ABLOG(Warning, TEXT("m_vUSParticleVector 1"));
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardLeftVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 2:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardRightVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 3:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartBackVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 4:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartBackLeftVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 5:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartBackRightVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 6:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartLeftVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					case 7:
+						it->FirstParticle->SetWorldLocation(SkillStartLocation + SkillStartRightVector * (float)EffectNum*130.0f);
+						it->FirstParticle->Activate(true);
+						break;
+					}
+					ParticelNum++;
+				}
+				ParticelNum = 0;
+				EffectNum++;
+				if (EffectNum >= 7)
+				{
+					for (auto it = m_vUSParticleVector.begin(); it != m_vUSParticleVector.end(); ++it)
+					{
+						switch (ParticelNum)
+						{
+						case 0:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 1:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 2:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 3:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 4:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 5:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 6:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 7:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						}
+						ParticelNum++;
+					}
+					ParticelNum = 0;
+					InitUltimateSkillParameter();
+				}
+			}
+		}
+		else if (bBasicUltimateSkill)
+		{
+			//°­È­ ±Ã
+			//·£´ý Æø¹ß
+			EffectIntervalTime += DeltaTime;
+			if (EffectIntervalTime >= 0.01)
+			{
+
+				EffectIntervalTime = 0.0f;
+
+				UNavigationSystem* NavSystem = UNavigationSystem::GetNavigationSystem(GetWorld());
+				FNavLocation NextPatrol;
+				NavSystem->GetRandomPointInNavigableRadius(GetActorLocation(), 500.0f, NextPatrol);
+				SkillEffect_1->SetWorldLocation(NextPatrol.Location);			
+				SkillEffect_1->Activate(true);
+				EffectNum++;
+				if (EffectNum >= 70)
+				{
+					EffectNum = 7;
+					for (auto it = m_vUSParticleVector.begin(); it != m_vUSParticleVector.end(); ++it)
+					{
+						switch (ParticelNum)
+						{
+						case 0:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 1:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 2:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartForwardRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 3:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 4:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 5:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartBackRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 6:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartLeftVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						case 7:
+							it->SecondParticle->SetWorldLocation(SkillStartLocation + SkillStartRightVector * (float)EffectNum*130.0f);
+							it->SecondParticle->Activate(true);
+							break;
+						}
+						ParticelNum++;
+					}
+					InitGroundBurstSkillParameter();
+					InitUltimateSkillParameter();
+				}
+			}
 		}
 	}
 }

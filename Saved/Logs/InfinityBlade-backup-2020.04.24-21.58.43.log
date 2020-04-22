@@ -1,0 +1,1211 @@
+﻿Log file open, 04/24/20 15:59:43
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: InfinityBlade
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1921497459) SRandInit(1921497459).
+LogInit: Read version file with build ID '3944462'
+LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
+LogInit: Registered custom module enumerator with build ID '3944462'
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.314282
+LogD3D11RHI: Aftermath initialized
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.153s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBladeSetting.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../../../../dev/IB/Binaries/Win64/UE4Editor-InfinityBlade.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLink.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLinkEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Win64/UE4Editor-CLionSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeys.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeysOpenSSL.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Win64/UE4Editor-DataValidation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Win64/UE4Editor-DatasmithContent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Win64/UE4Editor-LinearTimecode.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Win64/UE4Editor-NetcodeUnitTest.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Win64/UE4Editor-NUTUnrealEngine4.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCaptureEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3944462).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3944462).
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: WinSock: I am DESKTOP-2UPP01C (192.168.0.42:0)
+LogInit: Build: ++UE4+Release-4.19-CL-4033788
+LogInit: Engine Version: 4.19.2-4033788+++UE4+Release-4.19
+LogInit: Compatible Engine Version: 4.19.0-3944462+++UE4+Release-4.19
+LogInit: Net CL: 3944462
+LogDevObjectVersion: Number of dev versions registered: 18
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 23
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 33
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 25
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 6
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 1
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 2
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 16
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogInit: Compiled (64-bit): Apr 27 2018 02:06:57
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.19
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogStreaming: Display: Took  0.006s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2020.04.24-06.59.46:613][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.24-06.59.46:613][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.24-06.59.46:624][  0]LogInit: Computer: DESKTOP-2UPP01C
+[2020.04.24-06.59.46:624][  0]LogInit: User: pth08
+[2020.04.24-06.59.46:624][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.04.24-06.59.46:624][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.24-06.59.46:624][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.04.24-06.59.46:624][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.24-06.59.46:624][  0]LogMemory: Process Physical Memory: 278.85 MB used, 278.86 MB peak
+[2020.04.24-06.59.46:624][  0]LogMemory: Process Virtual Memory: 264.68 MB used, 264.68 MB peak
+[2020.04.24-06.59.46:624][  0]LogMemory: Physical Memory: 7751.46 MB used,  8547.83 MB free, 16299.29 MB total
+[2020.04.24-06.59.46:624][  0]LogMemory: Virtual Memory: 4779.43 MB used,  8547.83 MB free, 134217728.00 MB total
+[2020.04.24-06.59.46:652][  0]LogInit: Using OS detected language (ko-KR).
+[2020.04.24-06.59.46:652][  0]LogInit: Using OS detected locale (ko-KR).
+[2020.04.24-06.59.46:656][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2020.04.24-06.59.47:083][  0]LogStreaming: Display: Took  0.431s to EndInitTextLocalization.
+[2020.04.24-06.59.47:084][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.24-06.59.47:216][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.24-06.59.47:216][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.24-06.59.47:685][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.24-06.59.47:706][  0]LogD3D11RHI:    0. 'Intel(R) UHD Graphics 620' (Feature Level 11_0)
+[2020.04.24-06.59.47:707][  0]LogD3D11RHI:       128/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x8086
+[2020.04.24-06.59.47:743][  0]LogD3D11RHI:    1. 'Radeon(TM) 540 Graphics' (Feature Level 11_0)
+[2020.04.24-06.59.47:743][  0]LogD3D11RHI:       1995/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2020.04.24-06.59.47:746][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.24-06.59.47:746][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.24-06.59.47:746][  0]LogD3D11RHI: Chosen D3D11 Adapter: 1
+[2020.04.24-06.59.47:761][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.24-06.59.47:761][  0]LogD3D11RHI:     GPU DeviceId: 0x699f (for the marketing name, search the web for "GPU Device Id")
+[2020.04.24-06.59.47:761][  0]LogWindows: EnumDisplayDevices:
+[2020.04.24-06.59.47:762][  0]LogWindows:    0. 'Intel(R) UHD Graphics 620' (P:0 D:1)
+[2020.04.24-06.59.47:762][  0]LogWindows:    1. 'Intel(R) UHD Graphics 620' (P:1 D:1)
+[2020.04.24-06.59.47:763][  0]LogWindows:    2. 'Intel(R) UHD Graphics 620' (P:0 D:0)
+[2020.04.24-06.59.47:764][  0]LogWindows:    3. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:765][  0]LogWindows:    4. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:766][  0]LogWindows:    5. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:767][  0]LogWindows:    6. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:768][  0]LogWindows:    7. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:768][  0]LogWindows:    8. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:769][  0]LogWindows:    9. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:770][  0]LogWindows:    10. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:770][  0]LogWindows:    11. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:771][  0]LogWindows:    12. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:772][  0]LogWindows:    13. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:773][  0]LogWindows:    14. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:774][  0]LogWindows:    15. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:774][  0]LogWindows:    16. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:775][  0]LogWindows:    17. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:776][  0]LogWindows:    18. 'Radeon(TM) 540 Graphics' (P:0 D:0)
+[2020.04.24-06.59.47:776][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2020.04.24-06.59.47:776][  0]LogD3D11RHI:     Adapter Name: Radeon(TM) 540 Graphics
+[2020.04.24-06.59.47:776][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2020.04.24-06.59.47:776][  0]LogD3D11RHI:      Driver Date: Unknown
+[2020.04.24-06.59.47:776][  0]LogRHI: Texture pool is 1396 MB (70% of 1995 MB)
+[2020.04.24-06.59.48:728][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.24-06.59.48:742][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2020.04.24-06.59.48:744][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (../../../../../../dev/IB/Intermediate/Shaders/WorkingDirectory/11528/).
+[2020.04.24-06.59.48:744][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/pth08/AppData/Local/Temp/UnrealShaderWorkingDir/27785B904C8B98AB36AD31BF906436A6/'.
+[2020.04.24-06.59.49:161][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2020.04.24-06.59.49:192][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2020.04.24-06.59.49:215][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2020.04.24-06.59.49:233][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2020.04.24-06.59.49:251][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2020.04.24-06.59.49:270][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2020.04.24-06.59.49:287][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2020.04.24-06.59.49:307][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2020.04.24-06.59.49:317][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2020.04.24-06.59.49:334][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2020.04.24-06.59.49:350][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2020.04.24-06.59.49:367][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2020.04.24-06.59.49:382][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2020.04.24-06.59.49:398][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2020.04.24-06.59.49:413][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2020.04.24-06.59.49:444][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2020.04.24-06.59.49:444][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2020.04.24-06.59.49:461][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2020.04.24-06.59.49:465][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2020.04.24-06.59.49:508][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2020.04.24-06.59.49:523][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2020.04.24-06.59.49:539][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2020.04.24-06.59.49:555][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2020.04.24-06.59.49:570][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2020.04.24-06.59.49:586][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2020.04.24-06.59.49:586][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.24-06.59.49:773][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.24-06.59.49:774][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.24-06.59.49:774][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.24-06.59.50:770][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: Loaded boot cache 0.08s 100MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../dev/IB/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../dev/IB/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.24-06.59.50:855][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.24-06.59.50:873][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.24-06.59.50:885][  0]LogDerivedDataCache: Using Local data cache path C:/Users/pth08/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.24-06.59.50:885][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.24-06.59.50:885][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.24-06.59.50:897][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.24-06.59.50:897][  0]LogSlate: Using Freetype 2.6.0
+[2020.04.24-06.59.50:898][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.24-06.59.50:898][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.24-06.59.51:065][  0]LogAssetRegistry: FAssetRegistry took 0.0265 seconds to start up
+[2020.04.24-06.59.51:487][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.24-06.59.51:682][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2020.04.24-06.59.51:687][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2020.04.24-06.59.51:687][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.24-06.59.51:687][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2020.04.24-06.59.51:687][  0]LogMeshReduction: No automatic mesh merging module available
+[2020.04.24-06.59.51:687][  0]LogMeshMerging: No automatic mesh merging module available
+[2020.04.24-06.59.51:748][  0]LogNetVersion: InfinityBlade , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 376743747)
+[2020.04.24-06.59.52:332][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.090979 seconds
+[2020.04.24-06.59.52:338][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2020.04.24-06.59.52:338][  0]LogUObjectAllocator: 7314304 out of 0 bytes used by permanent object pool.
+[2020.04.24-06.59.52:338][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.24-06.59.54:704][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.24-06.59.54:747][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.04.24-06.59.55:527][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.186000ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider.SK_Greater_Spider
+[2020.04.24-06.59.55:561][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022718f1d538, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Game/dev/Enemy/Animation/GreaterSpiderAnimBlueprint.GreaterSpiderAnimBlueprint_C:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.24-06.59.55:564][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022718f1d538, Size=8
+[2020.04.24-06.59.55:564][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022718f1d538, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Engine/Transient.REINST_GreaterSpiderAnimBlueprint_C_0:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.24-06.59.55:567][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022718f1d400, Size=8, Default__GreaterSpiderAnimBlueprint_C Function /Game/dev/Enemy/Animation/GreaterSpiderAnimBlueprint.GreaterSpiderAnimBlueprint_C:ExecuteUbergraph_GreaterSpiderAnimBlueprint
+[2020.04.24-06.59.55:698][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.199700ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Bladed.SK_CharM_Bladed
+[2020.04.24-06.59.55:721][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022718a710a8, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.24-06.59.55:730][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022718a710a8, Size=20
+[2020.04.24-06.59.55:730][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022718a710a8, Size=20, Default__WarriorAnimBlueprint_C Function /Engine/Transient.REINST_WarriorAnimBlueprint_C_1:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.24-06.59.55:740][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002272763d450, Size=20, Default__WarriorAnimBlueprint_C Function /Game/Book/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint_C:ExecuteUbergraph_WarriorAnimBlueprint
+[2020.04.24-06.59.55:989][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.072500ms] /Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_BlackKnight/SK_Blade_BlackKnight.SK_Blade_BlackKnight
+[2020.04.24-06.59.56:018][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.323600ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Cardboard.SK_CharM_Cardboard
+[2020.04.24-06.59.56:132][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.144300ms] /Game/InfinityBladeAdversaries/Enemy/Enemy_Wolf/SK_Enemy_Wolf_Armored.SK_Enemy_Wolf_Armored
+[2020.04.24-06.59.56:341][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.24-06.59.56:341][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.24-06.59.56:373][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.24-06.59.56:407][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.24-06.59.57:144][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.24-06.59.58:074][  0]LogOcInput: OculusInput pre-init called
+[2020.04.24-06.59.58:243][  0]LogEngine: Initializing Engine...
+[2020.04.24-06.59.58:245][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.24-06.59.58:247][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.24-06.59.58:247][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.24-06.59.58:502][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.24-06.59.58:981][  0]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-06.59.59:200][  0]LogInit: FAudioDevice initialized.
+[2020.04.24-06.59.59:273][  0]LogDerivedDataCache: Saved boot cache 0.07s 100MB C:/Users/pth08/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2020.04.24-06.59.59:283][  0]LogInit: Texture streaming: Enabled
+[2020.04.24-06.59.59:307][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.24-06.59.59:324][  0]LogInit: Transaction tracking system initialized
+[2020.04.24-06.59.59:357][  0]BlueprintLog: New page: 에디터 로드
+[2020.04.24-06.59.59:475][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2020.04.24-06.59.59:935][  0]LogConsoleResponse: Display: 
+[2020.04.24-07.00.00:145][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.24-07.00.00:145][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.24-07.00.00:145][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2020.04.24-07.00.00:145][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2020.04.24-07.00.00:145][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2020.04.24-07.00.00:386][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/' took 0.13s
+[2020.04.24-07.00.00:799][  0]SourceControl: 소스 콘트롤이 꺼졌습니다.
+[2020.04.24-07.00.00:799][  0]Cmd: MAP LOAD FILE="../../../../../../dev/IB/Content/dev/Maps/StartRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.24-07.00.00:800][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.24-07.00.00:805][  0]MapCheck: New page: 맵 체크
+[2020.04.24-07.00.00:805][  0]LightingResults: New page: 라이팅 빌드
+[2020.04.24-07.00.00:817][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022718f1d538, Size=8
+[2020.04.24-07.00.00:817][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022718a710a8, Size=20
+[2020.04.24-07.00.00:924][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002272761acc0, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.24-07.00.00:930][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002272761acc0, Size=408
+[2020.04.24-07.00.00:930][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002272761acc0, Size=408, Default__StartRoom_C Function /Engine/Transient.REINST_StartRoom_C_11:ExecuteUbergraph_StartRoom
+[2020.04.24-07.00.00:932][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002272761a080, Size=408, Default__StartRoom_C Function /Game/dev/Maps/StartRoom.StartRoom_C:ExecuteUbergraph_StartRoom
+[2020.04.24-07.00.01:086][  0]LogAIModule: Creating AISystem for world StartRoom
+[2020.04.24-07.00.01:145][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/InfinityBladeGrassLands/Maps/ElvenRuins) is flushing async loading
+[2020.04.24-07.00.03:172][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [1.023500ms] /Game/InfinityBladeGrassLands/Environments/Earth/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag.SK_Env_Ice_Deco2_BlowingFlag
+[2020.04.24-07.00.03:173][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.860400ms] /Game/InfinityBladeGrassLands/Environments/Earth/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag3.SK_Env_Ice_Deco2_BlowingFlag3
+[2020.04.24-07.00.03:301][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/InfinityBladeIceLands/Maps/FrozenCove) is flushing async loading
+[2020.04.24-07.00.05:200][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_MelancholicTroll01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.05:200][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.05:505][  0]LogPackageName: SearchForPackageOnDisk took   0.301s, but failed to resolve Env_Ice_Rocky.
+[2020.04.24-07.00.05:505][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_MelancholicTroll01" could not be resolved.
+[2020.04.24-07.00.05:509][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.05:509][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.05:790][  0]LogPackageName: SearchForPackageOnDisk took   0.282s, but failed to resolve Env_Ice_Rocky.
+[2020.04.24-07.00.05:790][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" could not be resolved.
+[2020.04.24-07.00.05:796][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.05:797][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.06:064][  0]LogPackageName: SearchForPackageOnDisk took   0.267s, but failed to resolve Env_Ice_Rocky.
+[2020.04.24-07.00.06:064][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_NordHeed01" could not be resolved.
+[2020.04.24-07.00.06:069][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Texture.Env_Ice_RockyStairs01" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.06:069][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.06:325][  0]LogPackageName: SearchForPackageOnDisk took   0.256s, but failed to resolve Env_Ice_Rocky.
+[2020.04.24-07.00.06:325][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Texture.Env_Ice_RockyStairs01" could not be resolved.
+[2020.04.24-07.00.06:330][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_RuinedSteps001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.06:330][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.06:574][  0]LogPackageName: SearchForPackageOnDisk took   0.244s, but failed to resolve Env_Ice_Rocky.
+[2020.04.24-07.00.06:574][  0]LogPackageName: Warning: String asset reference "Env_Ice_Rocky.Mesh.Env_Ice_RuinedSteps001" could not be resolved.
+[2020.04.24-07.00.06:580][  0]LogPackageName: Warning: String asset reference "Env_Ice_RuinedWalls001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.06:580][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.06:854][  0]LogPackageName: SearchForPackageOnDisk took   0.274s, but failed to resolve Env_Ice_RuinedWalls001.
+[2020.04.24-07.00.06:854][  0]LogPackageName: Warning: String asset reference "Env_Ice_RuinedWalls001" could not be resolved.
+[2020.04.24-07.00.06:935][  0]LogPackageName: Warning: String asset reference "Env_ALL_Artifacts.Mesh.Env_ALL_Terminus001" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.06:935][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.07:214][  0]LogPackageName: SearchForPackageOnDisk took   0.279s, but failed to resolve Env_ALL_Artifacts.
+[2020.04.24-07.00.07:214][  0]LogPackageName: Warning: String asset reference "Env_ALL_Artifacts.Mesh.Env_ALL_Terminus001" could not be resolved.
+[2020.04.24-07.00.07:216][  0]LogPackageName: Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2020.04.24-07.00.07:216][  0]LogPackageName: Warning: Please consider resaving package in order to speed-up loading.
+[2020.04.24-07.00.07:537][  0]LogPackageName: SearchForPackageOnDisk took   0.320s, but failed to resolve S_ClothTarps_03.
+[2020.04.24-07.00.07:537][  0]LogPackageName: Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" could not be resolved.
+[2020.04.24-07.00.08:163][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.919800ms] /Game/InfinityBladeIceLands/Environments/Ice/EX_EnvAssets/Meshes/SK_Env_Ice_Deco2_BlowingFlag3.SK_Env_Ice_Deco2_BlowingFlag3
+[2020.04.24-07.00.08:324][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.24-07.00.08:341][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002272761acc0, Size=408
+[2020.04.24-07.00.08:341][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.24-07.00.08:652][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 310.391ms.
+[2020.04.24-07.00.08:652][  0]LogFileHelpers: Loading map 'StartRoom' took 7.853
+[2020.04.24-07.00.08:921][  0]LogCollectionManager: Loaded 0 collections in 0.003068 seconds
+[2020.04.24-07.00.08:975][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Saved/Collections/' took 0.01s
+[2020.04.24-07.00.08:975][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Developers/pth08/Collections/' took 0.01s
+[2020.04.24-07.00.08:975][  0]LogFileCache: Scanning file cache for directory 'C:/dev/IB/Content/Collections/' took 0.01s
+[2020.04.24-07.00.08:975][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2020.04.24-07.00.08:997][  0]LogContentBrowser: Native class hierarchy populated in 0.0225 seconds. Added 2493 classes and 564 folders.
+[2020.04.24-07.00.09:020][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0122 seconds. Added 0 classes and 0 folders.
+[2020.04.24-07.00.09:148][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0107 seconds. Added 0 classes and 0 folders.
+[2020.04.24-07.00.09:166][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0107 seconds. Added 1 classes and 2 folders.
+[2020.04.24-07.00.09:253][  0]LogSlate: Took 0.000367 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.24-07.00.09:257][  0]LogSlate: Took 0.002474 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.04.24-07.00.09:260][  0]LogSlate: Took 0.002831 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2020.04.24-07.00.09:261][  0]LogSlate: Took 0.000276 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.24-07.00.09:267][  0]LogSlate: Took 0.001459 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.24-07.00.09:391][  0]LogRenderer: Reallocating scene render targets to support 1112x472 Format 9 NumSamples 1 (Frame:1).
+[2020.04.24-07.00.09:664][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0128 seconds. Added 0 classes and 0 folders.
+[2020.04.24-07.00.09:664][  0]LogLoad: (Engine Initialization) Total time: 27.15 seconds
+[2020.04.24-07.00.09:664][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.24-07.00.09:722][  0]LogContentStreaming: Texture pool size now 600 MB
+[2020.04.24-07.00.09:802][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/dev/IB/Content/' took 0.10s
+[2020.04.24-07.00.10:237][  6]LogAssetRegistry: Asset discovery search completed in 19.1944 seconds
+[2020.04.24-07.00.10:250][  6]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2020.04.24-07.00.10:250][  6]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000122 seconds (updated 0 objects)
+[2020.04.24-07.00.10:734][ 29]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022753aa51c0, Size=4, Default__UI_Select_C Function /Game/Book/UI/UI_Select.UI_Select_C:ExecuteUbergraph_UI_Select
+[2020.04.24-07.00.10:743][ 29]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022753aa51c0, Size=4
+[2020.04.24-07.00.10:743][ 29]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022753aa51c0, Size=4, Default__UI_Select_C Function /Engine/Transient.REINST_UI_Select_C_4:ExecuteUbergraph_UI_Select
+[2020.04.24-07.00.10:746][ 29]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022753aa52c8, Size=4, Default__UI_Select_C Function /Game/Book/UI/UI_Select.UI_Select_C:ExecuteUbergraph_UI_Select
+[2020.04.24-07.00.10:833][ 29]LogSlate: Took 0.005786 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.24-07.00.10:894][ 29]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.04.24-07.00.11:372][ 29]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0145 seconds. Added 116 classes and 0 folders.
+[2020.04.24-07.00.11:714][ 29]LogUObjectGlobals: Created PersistentFrame Addr=0x000002278f0afbb0, Size=4, Default__SKEL_PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.SKEL_PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2020.04.24-07.00.11:715][ 29]LogUObjectGlobals: Created PersistentFrame Addr=0x000002278f0afb78, Size=4, Default__PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2020.04.24-07.00.12:205][ 29]LogSlate: Took 0.000333 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.04.24-07.00.12:226][ 29]LogSlate: Took 0.002108 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/../../Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.04.24-07.00.21:485][367]LogSkeletalMesh: Skeletal Mesh found in DDC [2.485100ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Barbarous.SK_CharM_Barbarous
+[2020.04.24-07.00.21:492][367]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.00.21:531][367]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022753aa51c0, Size=4
+[2020.04.24-07.00.21:535][367]Cmd: MAP LOAD FILE="../../../../../../dev/IB/Content/dev/Maps/Select.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.24-07.00.21:535][367]LightingResults: New page: 라이팅 빌드
+[2020.04.24-07.00.21:536][367]LoadErrors: New page: 맵 로드중: Select.umap
+[2020.04.24-07.00.21:540][367]MapCheck: New page: 맵 체크
+[2020.04.24-07.00.21:540][367]LightingResults: New page: 라이팅 빌드
+[2020.04.24-07.00.21:581][367]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002272761a080, Size=408
+[2020.04.24-07.00.21:686][367]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.24-07.00.21:750][367]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.24-07.00.22:137][367]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 387.531ms.
+[2020.04.24-07.00.22:140][367]LogFileHelpers: Loading map 'Select' took 0.606
+[2020.04.24-07.03.25:112][479]LogHotReload: New module detected: UE4Editor-InfinityBlade-5447.dll
+[2020.04.24-07.03.26:156][483]LogHotReload: Starting Hot-Reload from IDE
+[2020.04.24-07.03.27:018][483]LogClass: ECharacterState HotReload.
+[2020.04.24-07.03.27:018][483]LogClass: IB_E_GSData HotReload.
+[2020.04.24-07.03.27:018][483]LogClass: IBCharacterData HotReload.
+[2020.04.24-07.03.27:019][483]LogHotReload: Re-instancing BTTask_E_GS_MoveTo after hot-reload.
+[2020.04.24-07.03.27:100][483]LogHotReload: Re-instancing IB_E_GreaterSpider after hot-reload.
+[2020.04.24-07.03.27:189][483]LogHotReload: Re-instancing IBItemWeapon after hot-reload.
+[2020.04.24-07.03.27:263][483]LogHotReload: Re-instancing IBPawn after hot-reload.
+[2020.04.24-07.03.27:335][483]LogHotReload: Re-instancing IBSection after hot-reload.
+[2020.04.24-07.03.27:418][483]LogContentBrowser: Native class hierarchy updated for 'InfinityBlade' in 0.0110 seconds. Added 40 classes and 3 folders.
+[2020.04.24-07.03.27:420][483]Display: HotReload successful (28 functions remapped  2 scriptstructs remapped)
+[2020.04.24-07.03.27:816][483]LogContentBrowser: Native class hierarchy populated in 0.0199 seconds. Added 2494 classes and 566 folders.
+[2020.04.24-07.03.27:852][483]Display: HotReload took  1.7s.
+[2020.04.24-07.03.31:046][528]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.03.31:123][528]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.31:123][528]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.03.31:124][528]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:03:31)
+[2020.04.24-07.03.31:124][528]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.03.31:138][528]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013710s)
+[2020.04.24-07.03.31:139][528]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.03.31:140][528]LogPlayLevel: PIE: World Init took: (0.001580s)
+[2020.04.24-07.03.31:140][528]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.015732s)
+[2020.04.24-07.03.31:897][528]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.03.32:001][528]LogInit: FAudioDevice initialized.
+[2020.04.24-07.03.32:045][528]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.03.32:047][528]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.03.32
+[2020.04.24-07.03.32:061][528]LogWorld: Bringing up level for play took: 0.015120
+[2020.04.24-07.03.32:111][528]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0122 seconds. Added 11 classes and 0 folders.
+[2020.04.24-07.03.32:113][528]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 0.063
+[2020.04.24-07.03.32:113][528]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.37:873][859]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.03.38:007][866]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.38:051][866]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.44:272][ 40]LogEditorActor: Deleted Actor: LevelSequenceActor
+[2020.04.24-07.03.44:318][ 40]LogEditorActor: Deleted 1 Actors (0.059 secs)
+[2020.04.24-07.03.48:759][148]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.03.48:820][148]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.48:821][148]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.03.48:821][148]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:03:48)
+[2020.04.24-07.03.48:821][148]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.03.48:830][148]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008693s)
+[2020.04.24-07.03.48:831][148]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.03.48:831][148]LogPlayLevel: PIE: World Init took: (0.000959s)
+[2020.04.24-07.03.48:831][148]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.009982s)
+[2020.04.24-07.03.49:411][148]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.03.49:495][148]LogInit: FAudioDevice initialized.
+[2020.04.24-07.03.49:528][148]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.03.49:529][148]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.03.49
+[2020.04.24-07.03.49:530][148]LogWorld: Bringing up level for play took: 0.000982
+[2020.04.24-07.03.49:531][148]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 1.482
+[2020.04.24-07.03.49:531][148]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.03.51:943][256]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.03.51:950][256]LogSlate: Took 0.002499 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.04.24-07.03.52:062][256]LogSlate: Took 0.014463 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2020.04.24-07.03.52:973][301]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.03.53:022][301]LogSkeletalMesh: Skeletal Mesh found in DDC [2.872300ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior
+[2020.04.24-07.03.53:044][301]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(80)SkeletalMeshComponent0
+[2020.04.24-07.04.14:545][281]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.04.14:612][281]LogSkeletalMesh: Skeletal Mesh found in DDC [2.787900ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Tusk.SK_CharM_Tusk
+[2020.04.24-07.04.14:616][281]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(80)SkeletalMeshComponent0
+[2020.04.24-07.04.15:492][334]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.04.15:561][334]LogSkeletalMesh: Skeletal Mesh found in DDC [3.823200ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Standard.SK_CharM_Standard
+[2020.04.24-07.04.15:566][334]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(80)SkeletalMeshComponent0
+[2020.04.24-07.04.16:227][374]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.04.16:280][374]LogSkeletalMesh: Skeletal Mesh found in DDC [3.132700ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_solid.SK_CharM_solid
+[2020.04.24-07.04.16:304][374]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(80)SkeletalMeshComponent0
+[2020.04.24-07.04.20:726][582]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.04.20:771][582]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.04.23:959][675]LogSlate: Took 0.000562 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.04.24-07.04.43:010][205]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.04.43:082][205]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.04.43:084][205]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.04.43:084][205]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:04:43)
+[2020.04.24-07.04.43:085][205]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.04.43:097][205]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011559s)
+[2020.04.24-07.04.43:098][205]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.04.43:099][205]LogPlayLevel: PIE: World Init took: (0.001409s)
+[2020.04.24-07.04.43:099][205]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.014342s)
+[2020.04.24-07.04.43:786][205]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.04.43:869][205]LogInit: FAudioDevice initialized.
+[2020.04.24-07.04.43:904][205]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.04.43:905][205]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.04.43
+[2020.04.24-07.04.43:906][205]LogWorld: Bringing up level for play took: 0.001254
+[2020.04.24-07.04.43:908][205]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: -0.141
+[2020.04.24-07.04.43:908][205]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.04.46:726][315]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.04.52:664][560]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.04.55:558][657]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.04.55:635][657]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.11.15:022][349]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2020.04.24-07.11.15:233][349]LogSavePackage: Save=186.37ms
+[2020.04.24-07.11.15:233][349]LogSavePackage: Moving '../../../../../../dev/IB/Saved/Select_Auto193F5EAA440890F7D287416B4B54E82C4.tmp' to '../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto1.umap'
+[2020.04.24-07.11.15:235][349]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto1.umap
+[2020.04.24-07.11.15:237][349]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/dev/Maps/Select' took 0.242
+[2020.04.24-07.11.15:237][349]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.242
+[2020.04.24-07.24.43:091][487]LogHotReload: New module detected: UE4Editor-InfinityBlade-2264.dll
+[2020.04.24-07.24.46:254][554]LogHotReload: Starting Hot-Reload from IDE
+[2020.04.24-07.24.47:194][554]LogClass: Could not find existing class IBCharacterSelecterWidget in package /Script/InfinityBlade for HotReload, assuming new class
+[2020.04.24-07.24.47:195][554]LogClass: Function NextCharacter is new.
+[2020.04.24-07.24.47:195][554]LogClass: Function OnConfirmClicked is new.
+[2020.04.24-07.24.47:195][554]LogClass: Function OnNextClicked is new.
+[2020.04.24-07.24.47:195][554]LogClass: Function OnPrevClicked is new.
+[2020.04.24-07.24.47:212][554]LogClass: ECharacterState HotReload.
+[2020.04.24-07.24.47:212][554]LogClass: IB_E_GSData HotReload.
+[2020.04.24-07.24.47:213][554]LogClass: IBCharacterData HotReload.
+[2020.04.24-07.24.47:214][554]LogHotReload: Re-instancing BTTask_E_GS_MoveTo after hot-reload.
+[2020.04.24-07.24.47:303][554]LogHotReload: Re-instancing IB_E_GreaterSpider after hot-reload.
+[2020.04.24-07.24.47:392][554]LogHotReload: Re-instancing IBCharacterSelecterWidget after hot-reload.
+[2020.04.24-07.24.47:396][554]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022753aa52c8, Size=4
+[2020.04.24-07.24.47:396][554]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022788d93a18, Size=4, Default__UI_Select_C Function /Engine/Transient.REINST_UI_Select_C_6:ExecuteUbergraph_UI_Select
+[2020.04.24-07.24.47:398][554]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022788d936b0, Size=4, Default__UI_Select_C Function /Game/Book/UI/UI_Select.UI_Select_C:ExecuteUbergraph_UI_Select
+[2020.04.24-07.24.47:512][554]LogHotReload: Re-instancing IBItemWeapon after hot-reload.
+[2020.04.24-07.24.47:606][554]LogHotReload: Re-instancing IBPawn after hot-reload.
+[2020.04.24-07.24.47:692][554]LogHotReload: Re-instancing IBSection after hot-reload.
+[2020.04.24-07.24.47:786][554]LogContentBrowser: Native class hierarchy updated for 'InfinityBlade' in 0.0106 seconds. Added 40 classes and 3 folders.
+[2020.04.24-07.24.47:789][554]Display: HotReload successful (24 functions remapped  2 scriptstructs remapped)
+[2020.04.24-07.24.47:841][554]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022788d93a18, Size=4
+[2020.04.24-07.24.48:152][554]LogContentBrowser: Native class hierarchy populated in 0.0219 seconds. Added 2494 classes and 566 folders.
+[2020.04.24-07.24.48:193][554]Display: HotReload took  1.9s.
+[2020.04.24-07.24.49:325][595]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.24.49:392][595]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.24.49:393][595]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.24.49:393][595]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:24:49)
+[2020.04.24-07.24.49:394][595]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.24.49:404][595]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010372s)
+[2020.04.24-07.24.49:406][595]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.24.49:407][595]LogPlayLevel: PIE: World Init took: (0.001990s)
+[2020.04.24-07.24.49:407][595]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.013393s)
+[2020.04.24-07.24.50:096][595]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.24.50:208][595]LogInit: FAudioDevice initialized.
+[2020.04.24-07.24.50:239][595]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.24.50:241][595]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.24.50
+[2020.04.24-07.24.50:242][595]LogWorld: Bringing up level for play took: 0.001876
+[2020.04.24-07.24.50:245][595]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 0.196
+[2020.04.24-07.24.50:246][595]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.24.54:601][743]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.26.02:785][112]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.26.02:917][120]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.26.02:960][120]LogSkeletalMesh: Skeletal Mesh found in DDC [1.286000ms] /Game/InfinityBladeWarriors/Character/CompleteCharacters/sk_CharM_Base.sk_CharM_Base
+[2020.04.24-07.26.03:980][181]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.26.04:998][242]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.26.04:998][242]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(87)SkeletalMeshComponent0
+[2020.04.24-07.26.05:814][291]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.26.05:815][291]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(87)SkeletalMeshComponent0
+[2020.04.24-07.26.06:414][327]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.26.06:415][327]InfinityBlade: Warning: UIBCharacterSelecterWidget::OnPrevClicked(87)SkeletalMeshComponent0
+[2020.04.24-07.27.41:023][284]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.27.41:107][289]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.27.41:149][289]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.27.45:591][460]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.28.37:990][695]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor2)
+[2020.04.24-07.28.47:960][942]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.28.48:087][947]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.28.48:198][947]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.28.48:199][947]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.28.48:200][947]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:28:48)
+[2020.04.24-07.28.48:201][947]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.28.48:219][947]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017548s)
+[2020.04.24-07.28.48:220][947]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.28.48:221][947]LogPlayLevel: PIE: World Init took: (0.002171s)
+[2020.04.24-07.28.48:222][947]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.021206s)
+[2020.04.24-07.28.49:519][947]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.28.49:635][947]LogInit: FAudioDevice initialized.
+[2020.04.24-07.28.49:669][947]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.28.49:672][947]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.28.49
+[2020.04.24-07.28.49:672][947]LogWorld: Bringing up level for play took: 0.001874
+[2020.04.24-07.28.49:675][947]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 1.626
+[2020.04.24-07.28.49:676][947]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.28.51:767][ 14]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.30.37:069][865]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.30.37:108][865]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.30.51:990][480]LogVSAccessor: Couldn't get item operations. Visual Studio may still be initializing.
+[2020.04.24-07.31.19:527][640]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2020.04.24-07.31.19:734][640]LogSavePackage: Save=183.25ms
+[2020.04.24-07.31.19:734][640]LogSavePackage: Moving '../../../../../../dev/IB/Saved/Select_Auto28B58C42E4CFC3385AC4F2EB8F37486C2.tmp' to '../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto2.umap'
+[2020.04.24-07.31.19:736][640]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Saved/Autosaves/Game/dev/Maps/Select_Auto2.umap
+[2020.04.24-07.31.19:737][640]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/dev/Maps/Select' took 0.234
+[2020.04.24-07.31.19:737][640]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.234
+[2020.04.24-07.40.48:586][645]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.40.48:661][645]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.40.48:663][645]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.40.48:664][645]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:40:48)
+[2020.04.24-07.40.48:664][645]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.40.48:678][645]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012786s)
+[2020.04.24-07.40.48:679][645]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.40.48:680][645]LogPlayLevel: PIE: World Init took: (0.002069s)
+[2020.04.24-07.40.48:681][645]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.016204s)
+[2020.04.24-07.40.49:339][645]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.40.49:422][645]LogInit: FAudioDevice initialized.
+[2020.04.24-07.40.49:453][645]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.40.49:456][645]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.40.49
+[2020.04.24-07.40.49:456][645]LogWorld: Bringing up level for play took: 0.001320
+[2020.04.24-07.40.49:458][645]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 1.409
+[2020.04.24-07.40.49:458][645]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.40.50:971][706]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.40.54:447][841]Cmd: SELECT NONE
+[2020.04.24-07.40.56:094][877]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.40.56:140][877]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.41.00:478][ 10]LogRenderer: Reallocating scene render targets to support 1112x568 Format 9 NumSamples 1 (Frame:11517).
+[2020.04.24-07.41.01:629][ 27]LogRenderer: Reallocating scene render targets to support 1916x1016 Format 9 NumSamples 1 (Frame:11536).
+[2020.04.24-07.41.05:102][109]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-07.41.05:194][109]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.41.05:196][109]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-07.41.05:196][109]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 1:41:05)
+[2020.04.24-07.41.05:196][109]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-07.41.05:210][109]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012742s)
+[2020.04.24-07.41.05:211][109]LogAIModule: Creating AISystem for world Select
+[2020.04.24-07.41.05:212][109]LogPlayLevel: PIE: World Init took: (0.001733s)
+[2020.04.24-07.41.05:212][109]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.015690s)
+[2020.04.24-07.41.05:870][109]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-07.41.05:954][109]LogInit: FAudioDevice initialized.
+[2020.04.24-07.41.06:006][109]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-07.41.06:008][109]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-16.41.06
+[2020.04.24-07.41.06:008][109]LogWorld: Bringing up level for play took: 0.001541
+[2020.04.24-07.41.06:010][109]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: -0.04
+[2020.04.24-07.41.06:010][109]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.41.08:419][164]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.41.08:519][166]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.41.11:827][228]InfinityBlade: Warning: UIBCharacterSelecterWidget::NextCharacter(16)NextCharacter
+[2020.04.24-07.41.13:991][268]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.41.14:096][268]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-07.41.19:456][391]LogSlate: Window '뷰포트 2' being destroyed
+[2020.04.24-07.41.27:395][657]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor2)
+[2020.04.24-07.41.32:678][797]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.42.01:524][841]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2020.04.24-07.42.03:528][891]Cmd: SELECT NONE
+[2020.04.24-07.42.05:674][959]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.04.24-07.42.07:712][ 31]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.56.38:678][268]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor2)
+[2020.04.24-07.56.43:445][394]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2020.04.24-07.56.57:843][969]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.57.43:546][ 75]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (SK_CharM_Barbarous2)
+[2020.04.24-07.57.44:192][ 93]Cmd: SELECT NONE
+[2020.04.24-07.57.45:001][119]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.58.33:102][779]LogUObjectGlobals: Created PersistentFrame Addr=0x000002279f16ee80, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-07.58.37:510][ 24]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002279f16ee80, Size=4
+[2020.04.24-07.58.37:510][ 24]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a8a207b8, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_42:ExecuteUbergraph_Select
+[2020.04.24-07.58.37:510][ 24]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a8a21cf8, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-07.58.40:324][157]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (SK_CharM_Barbarous)
+[2020.04.24-07.58.41:978][214]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-07.58.45:110][358]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a8a21cf8, Size=4
+[2020.04.24-07.58.45:110][358]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b07e2990, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_44:ExecuteUbergraph_Select
+[2020.04.24-07.58.45:112][358]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b07e2958, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-07.59.09:678][728]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b07e2958, Size=4
+[2020.04.24-07.59.09:678][728]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227c24139d0, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_46:ExecuteUbergraph_Select
+[2020.04.24-07.59.09:679][728]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227c2413a20, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-07.59.10:521][777]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227c2413a20, Size=4
+[2020.04.24-07.59.10:522][777]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227c2413a20, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_48:ExecuteUbergraph_Select
+[2020.04.24-07.59.22:750][471]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227c2098cc8, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.01.32:687][776]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227c2098cc8, Size=4
+[2020.04.24-08.01.32:687][776]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a677d338, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_52:ExecuteUbergraph_Select
+[2020.04.24-08.01.32:689][776]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a677d248, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.01.51:961][740]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a677d248, Size=4
+[2020.04.24-08.01.51:961][740]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227389f3128, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_54:ExecuteUbergraph_Select
+[2020.04.24-08.01.51:963][740]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227389f31f8, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.02.38:881][279]BlueprintLog: New page: Select 컴파일
+[2020.04.24-08.02.38:885][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227389f31f8, Size=4
+[2020.04.24-08.02.38:886][279]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227acb35dd8, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_56:ExecuteUbergraph_Select
+[2020.04.24-08.02.38:890][279]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a906af70, Size=80, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.02.38:997][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227acb35dd8, Size=4
+[2020.04.24-08.02.38:997][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227389f3128, Size=4
+[2020.04.24-08.02.38:997][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a677d338, Size=4
+[2020.04.24-08.02.38:997][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227c2413a20, Size=4
+[2020.04.24-08.02.38:997][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227c24139d0, Size=4
+[2020.04.24-08.02.38:998][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b07e2990, Size=4
+[2020.04.24-08.02.38:998][279]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a8a207b8, Size=4
+[2020.04.24-08.02.40:091][308]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Content/dev/Maps/Select.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.04.24-08.02.40:145][308]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a906af70, Size=80
+[2020.04.24-08.02.40:145][308]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022743f09ad0, Size=80, Select_C_1 Function /Engine/Transient.REINST_Select_C_62:ExecuteUbergraph_Select
+[2020.04.24-08.02.40:146][308]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022743f0a520, Size=80, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.02.40:346][308]LogSavePackage: Save=206.57ms
+[2020.04.24-08.02.40:346][308]LogSavePackage: Moving '../../../../../../dev/IB/Saved/Select63FAB6FD4E4384B5BF6360AA580BA529.tmp' to '../../../../../../dev/IB/Content/dev/Maps/Select.umap'
+[2020.04.24-08.02.40:349][308]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Content/dev/Maps/Select.umap
+[2020.04.24-08.02.40:379][308]LogFileHelpers: Saving map 'Select' took 0.712
+[2020.04.24-08.02.42:090][374]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-08.02.42:166][374]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.02.42:167][374]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-08.02.42:168][374]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 2:02:42)
+[2020.04.24-08.02.42:168][374]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-08.02.42:179][374]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010831s)
+[2020.04.24-08.02.42:181][374]LogAIModule: Creating AISystem for world Select
+[2020.04.24-08.02.42:181][374]LogPlayLevel: PIE: World Init took: (0.001686s)
+[2020.04.24-08.02.42:182][374]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.013577s)
+[2020.04.24-08.02.42:227][374]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022743f09ad0, Size=80
+[2020.04.24-08.02.42:863][374]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-08.02.42:947][374]LogInit: FAudioDevice initialized.
+[2020.04.24-08.02.42:976][374]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-08.02.42:977][374]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-17.02.42
+[2020.04.24-08.02.42:978][374]LogWorld: Bringing up level for play took: 0.001263
+[2020.04.24-08.02.42:980][374]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 0.93
+[2020.04.24-08.02.42:980][374]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.02.47:796][630]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.02.50:524][755]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.02.50:635][760]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.02.50:687][760]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.03.33:070][950]BlueprintLog: New page: Select 컴파일
+[2020.04.24-08.03.33:074][950]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022743f0a520, Size=80
+[2020.04.24-08.03.33:074][950]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b9bd3060, Size=80, Default__Select_C Function /Engine/Transient.REINST_Select_C_66:ExecuteUbergraph_Select
+[2020.04.24-08.03.33:076][950]LogBlueprint: Error: [Compiler PersistentLevel.Select] 이 블루프린트(self)는 ParticleSystemComponent 가 아니라, ' 타겟 ' 에는 연결이 있어야 합니다.
+[2020.04.24-08.03.33:077][950]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b9bd2e80, Size=80, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.03.33:193][950]LogBlueprint: Warning: [Compiler PersistentLevel.Select] [3830.68] PersistentLevel.Select 컴파일에 실패했습니다. 치명적 오류 1 회, 경고 0 회, [소요시간 122 ms] (/Game/dev/Maps/Select.Select:PersistentLevel.Select)
+[2020.04.24-08.03.34:033][978]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Content/dev/Maps/Select.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.04.24-08.03.34:055][978]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b9bd3060, Size=80
+[2020.04.24-08.03.34:072][978]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b9bd2e80, Size=80
+[2020.04.24-08.03.34:072][978]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b8d1b010, Size=80, Default__Select_C Function /Engine/Transient.REINST_Select_C_70:ExecuteUbergraph_Select
+[2020.04.24-08.03.34:074][978]LogBlueprint: Error: [Compiler PersistentLevel.Select] 이 블루프린트(self)는 ParticleSystemComponent 가 아니라, ' 타겟 ' 에는 연결이 있어야 합니다.
+[2020.04.24-08.03.34:075][978]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b8d1a930, Size=80, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.03.34:075][978]LogBlueprint: Warning: [Compiler PersistentLevel.Select] [3831.56] PersistentLevel.Select 컴파일에 실패했습니다. 치명적 오류 1 회, 경고 0 회, [소요시간 4 ms] (/Game/dev/Maps/Select.Select:PersistentLevel.Select)
+[2020.04.24-08.03.34:259][978]LogSavePackage: Save=191.59ms
+[2020.04.24-08.03.34:260][978]LogSavePackage: Moving '../../../../../../dev/IB/Saved/SelectFB7CEB794E2E8558F79DA9ABE13C4E1C.tmp' to '../../../../../../dev/IB/Content/dev/Maps/Select.umap'
+[2020.04.24-08.03.34:262][978]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Content/dev/Maps/Select.umap
+[2020.04.24-08.03.34:290][978]LogFileHelpers: Saving map 'Select' took 0.461
+[2020.04.24-08.03.53:026][991]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b7c572b8, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.04.08:810][818]BlueprintLog: New page: Select 컴파일
+[2020.04.24-08.04.08:812][818]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b7c572b8, Size=4
+[2020.04.24-08.04.08:812][818]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b07e0c80, Size=4, SKEL_Select_C_0 Function /Engine/Transient.REINST_SKEL_Select_C_74:ExecuteUbergraph_Select
+[2020.04.24-08.04.08:813][818]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b8d1a930, Size=80
+[2020.04.24-08.04.08:813][818]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022751ae1620, Size=80, Select_C_2 Function /Engine/Transient.REINST_Select_C_76:ExecuteUbergraph_Select
+[2020.04.24-08.04.08:814][818]LogUObjectGlobals: Created PersistentFrame Addr=0x0000022751afa080, Size=48, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.04.08:925][818]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b07e0c80, Size=4
+[2020.04.24-08.04.08:925][818]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b8d1b010, Size=80
+[2020.04.24-08.04.09:908][853]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Content/dev/Maps/Select.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.04.24-08.04.09:932][853]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022751ae1620, Size=80
+[2020.04.24-08.04.09:947][853]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022751afa080, Size=48
+[2020.04.24-08.04.09:947][853]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b7d09270, Size=48, Default__Select_C Function /Engine/Transient.REINST_Select_C_80:ExecuteUbergraph_Select
+[2020.04.24-08.04.09:949][853]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227ba671180, Size=48, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.04.10:134][853]LogSavePackage: Save=188.14ms
+[2020.04.24-08.04.10:134][853]LogSavePackage: Moving '../../../../../../dev/IB/Saved/SelectBA8A3E6C4E45B6F072E75EAB72825523.tmp' to '../../../../../../dev/IB/Content/dev/Maps/Select.umap'
+[2020.04.24-08.04.10:136][853]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Content/dev/Maps/Select.umap
+[2020.04.24-08.04.10:165][853]LogFileHelpers: Saving map 'Select' took 0.484
+[2020.04.24-08.04.15:111][ 65]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-08.04.15:198][ 65]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.04.15:199][ 65]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-08.04.15:200][ 65]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 2:04:15)
+[2020.04.24-08.04.15:201][ 65]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-08.04.15:215][ 65]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014109s)
+[2020.04.24-08.04.15:217][ 65]LogAIModule: Creating AISystem for world Select
+[2020.04.24-08.04.15:217][ 65]LogPlayLevel: PIE: World Init took: (0.001673s)
+[2020.04.24-08.04.15:218][ 65]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.017176s)
+[2020.04.24-08.04.15:267][ 65]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b7d09270, Size=48
+[2020.04.24-08.04.15:937][ 65]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-08.04.16:019][ 65]LogInit: FAudioDevice initialized.
+[2020.04.24-08.04.16:050][ 65]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-08.04.16:052][ 65]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-17.04.16
+[2020.04.24-08.04.16:053][ 65]LogWorld: Bringing up level for play took: 0.001746
+[2020.04.24-08.04.16:054][ 65]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 0.005
+[2020.04.24-08.04.16:055][ 65]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.04.18:607][202]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.04.20:401][267]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.04.20:450][267]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.04.25:572][525]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (SK_CharM_Barbarous)
+[2020.04.24-08.04.26:440][547]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.04.43:830][523]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227be5706b8, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.05.00:082][403]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227be5706b8, Size=4
+[2020.04.24-08.05.00:082][403]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a8a21a28, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_84:ExecuteUbergraph_Select
+[2020.04.24-08.05.00:083][403]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a8a20608, Size=4, Default__SKEL_Select_C Function /Game/dev/Maps/Select.SKEL_Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.05.06:213][741]BlueprintLog: New page: Select 컴파일
+[2020.04.24-08.05.06:215][741]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a8a20608, Size=4
+[2020.04.24-08.05.06:215][741]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b8d0d520, Size=4, Default__SKEL_Select_C Function /Engine/Transient.REINST_SKEL_Select_C_86:ExecuteUbergraph_Select
+[2020.04.24-08.05.06:216][741]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227ba671180, Size=48
+[2020.04.24-08.05.06:216][741]LogUObjectGlobals: Created PersistentFrame Addr=0x000002273a48dfc0, Size=48, Default__Select_C Function /Engine/Transient.REINST_Select_C_88:ExecuteUbergraph_Select
+[2020.04.24-08.05.06:217][741]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a680aec0, Size=16, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.05.06:326][741]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b8d0d520, Size=4
+[2020.04.24-08.05.06:326][741]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a8a21a28, Size=4
+[2020.04.24-08.05.08:288][849]BlueprintLog: New page: Select 컴파일
+[2020.04.24-08.05.08:291][849]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a680aec0, Size=16
+[2020.04.24-08.05.08:291][849]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a6a6a460, Size=16, Select_C_3 Function /Engine/Transient.REINST_Select_C_92:ExecuteUbergraph_Select
+[2020.04.24-08.05.08:293][849]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227a6a692f0, Size=16, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.05.08:407][849]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002273a48dfc0, Size=48
+[2020.04.24-08.05.09:257][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/dev/Maps/Select" FILE="../../../../../../dev/IB/Content/dev/Maps/Select.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.04.24-08.05.09:284][878]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a6a6a460, Size=16
+[2020.04.24-08.05.09:301][878]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227a6a692f0, Size=16
+[2020.04.24-08.05.09:301][878]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b97984b0, Size=16, Default__Select_C Function /Engine/Transient.REINST_Select_C_96:ExecuteUbergraph_Select
+[2020.04.24-08.05.09:303][878]LogUObjectGlobals: Created PersistentFrame Addr=0x00000227b979a820, Size=16, Default__Select_C Function /Game/dev/Maps/Select.Select_C:ExecuteUbergraph_Select
+[2020.04.24-08.05.09:486][878]LogSavePackage: Save=186.94ms
+[2020.04.24-08.05.09:487][878]LogSavePackage: Moving '../../../../../../dev/IB/Saved/Select86C4DA2445BC93DD234B0DB67922C1AA.tmp' to '../../../../../../dev/IB/Content/dev/Maps/Select.umap'
+[2020.04.24-08.05.09:489][878]LogSavePackage: Display: Finished SavePackage ../../../../../../dev/IB/Content/dev/Maps/Select.umap
+[2020.04.24-08.05.09:518][878]LogFileHelpers: Saving map 'Select' took 0.477
+[2020.04.24-08.05.11:052][934]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.04.24-08.05.11:154][934]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.05.11:156][934]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-08.05.11:157][934]PIE: New page: PIE 세션: Select (2020. 4. 25. 오전 2:05:11)
+[2020.04.24-08.05.11:158][934]LogPlayLevel: Creating play world package: /Game/dev/Maps/UEDPIE_0_Select
+[2020.04.24-08.05.11:171][934]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013934s)
+[2020.04.24-08.05.11:173][934]LogAIModule: Creating AISystem for world Select
+[2020.04.24-08.05.11:174][934]LogPlayLevel: PIE: World Init took: (0.001822s)
+[2020.04.24-08.05.11:174][934]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/dev/Maps/Select.Select to /Game/dev/Maps/UEDPIE_0_Select.Select (0.017096s)
+[2020.04.24-08.05.11:231][934]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b97984b0, Size=16
+[2020.04.24-08.05.11:942][934]LogInit: XAudio2 using '헤드폰(Realtek(R) Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.04.24-08.05.12:024][934]LogInit: FAudioDevice initialized.
+[2020.04.24-08.05.12:057][934]LogLoad: Game class is 'BP_SelectGameMode_C'
+[2020.04.24-08.05.12:059][934]LogWorld: Bringing World /Game/dev/Maps/UEDPIE_0_Select.Select up for play (max tick rate 60) at 2020.04.24-17.05.12
+[2020.04.24-08.05.12:060][934]LogWorld: Bringing up level for play took: 0.001286
+[2020.04.24-08.05.12:062][934]PIE: /Game/dev/Maps/UEDPIE_0_Select 에 대한 에디터에서 플레이 시작 시간: 0.013
+[2020.04.24-08.05.12:062][934]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.05.17:636][244]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.05.20:448][410]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.05.34:068][169]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.04.24-08.05.34:157][174]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.05.34:223][174]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/dev/Maps/Select.Select:PersistentLevel' has LevelScriptBlueprint '/Game/dev/Maps/Select.Select:PersistentLevel.Select' with GeneratedClass '/Game/dev/Maps/Select.Select_C' with ClassGeneratedBy '/Game/dev/Maps/Select.Select:PersistentLevel.Select'
+[2020.04.24-08.05.44:463][449]LogUProjectInfo: Found projects:
+[2020.04.24-08.05.45:591][483]Cmd: CLOSE_SLATE_MAINFRAME
+[2020.04.24-08.05.46:209][483]LogSlate: Window '프로젝트 열기' being destroyed
+[2020.04.24-08.05.46:229][483]LogSlate: Window 'InfinityBlade - 언리얼 에디터' being destroyed
+[2020.04.24-08.05.46:465][484]Cmd: QUIT_EDITOR
+[2020.04.24-08.05.46:973][484]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft 입력기).
+[2020.04.24-08.05.46:989][484]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.04.24-08.05.46:990][484]LogExit: Preparing to exit.
+[2020.04.24-08.05.48:008][484]LogDirectoryWatcher: A directory notification for 'C:/dev/IB/Content/' was aborted.
+[2020.04.24-08.05.48:285][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022718f1d400, Size=8
+[2020.04.24-08.05.48:285][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002272763d450, Size=20
+[2020.04.24-08.05.48:288][484]LogExit: Editor shut down
+[2020.04.24-08.05.48:319][484]LogExit: Transaction tracking system shut down
+[2020.04.24-08.05.48:343][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000227b979a820, Size=16
+[2020.04.24-08.05.48:343][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000022788d936b0, Size=4
+[2020.04.24-08.05.48:345][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002278f0afbb0, Size=4
+[2020.04.24-08.05.48:345][484]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002278f0afb78, Size=4
+[2020.04.24-08.05.48:577][484]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../../../../../dev/IB/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/2D/Paper2D/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/Enterprise/DatasmithContent/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/Media/MediaCompositing/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/AppleARKit/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2020.04.24-08.05.48:578][484]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2020.04.24-08.05.48:926][484]LogExit: Object subsystem successfully closed.
+[2020.04.24-08.05.48:960][484]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.04.24-08.05.48:977][484]LogD3D11RHI: Shutdown
+[2020.04.24-08.05.48:977][484]LogD3D11RHI: CleanupD3DDevice
+[2020.04.24-08.05.48:986][484]LogD3D11RHI: ~FD3D11DynamicRHI
+[2020.04.24-08.05.49:040][484]LogModuleManager: Shutting down and abandoning module InfinityBlade (586)
+[2020.04.24-08.05.49:040][484]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (585)
+[2020.04.24-08.05.49:040][484]LogModuleManager: Shutting down and abandoning module SequencerWidgets (582)
+[2020.04.24-08.05.49:040][484]LogModuleManager: Shutting down and abandoning module BlueprintGraph (580)
+[2020.04.24-08.05.49:040][484]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (578)
+[2020.04.24-08.05.49:041][484]LogModuleManager: Shutting down and abandoning module DesktopPlatform (576)
+[2020.04.24-08.05.49:041][484]LogModuleManager: Shutting down and abandoning module SceneOutliner (574)
+[2020.04.24-08.05.49:041][484]LogModuleManager: Shutting down and abandoning module AddContentDialog (572)
+[2020.04.24-08.05.49:041][484]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.19/FeaturePacks/' was aborted.
+[2020.04.24-08.05.49:046][484]LogModuleManager: Shutting down and abandoning module WidgetCarousel (571)
+[2020.04.24-08.05.49:046][484]LogModuleManager: Shutting down and abandoning module EditorWidgets (568)
+[2020.04.24-08.05.49:047][484]LogModuleManager: Shutting down and abandoning module CollectionManager (566)
+[2020.04.24-08.05.49:047][484]LogDirectoryWatcher: A directory notification for 'C:/dev/IB/Content/Collections/' was aborted.
+[2020.04.24-08.05.49:047][484]LogDirectoryWatcher: A directory notification for 'C:/dev/IB/Content/Developers/pth08/Collections/' was aborted.
+[2020.04.24-08.05.49:047][484]LogDirectoryWatcher: A directory notification for 'C:/dev/IB/Saved/Collections/' was aborted.
+[2020.04.24-08.05.49:047][484]LogModuleManager: Shutting down and abandoning module StatsViewer (564)
+[2020.04.24-08.05.49:048][484]LogModuleManager: Shutting down and abandoning module FoliageEdit (562)
+[2020.04.24-08.05.49:048][484]LogModuleManager: Shutting down and abandoning module LandscapeEditor (560)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module MeshPaintMode (558)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (556)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module ActorPickerMode (554)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module GeometryMode (552)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module TextureAlignMode (550)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module BspMode (548)
+[2020.04.24-08.05.49:049][484]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (546)
+[2020.04.24-08.05.49:050][484]LogModuleManager: Shutting down and abandoning module HardwareSurvey (544)
+[2020.04.24-08.05.49:050][484]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (542)
+[2020.04.24-08.05.49:050][484]LogModuleManager: Shutting down and abandoning module AutomationWorker (540)
+[2020.04.24-08.05.49:050][484]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (538)
+[2020.04.24-08.05.49:050][484]LogModuleManager: Shutting down and abandoning module SequenceRecorder (537)
+[2020.04.24-08.05.49:051][484]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (534)
+[2020.04.24-08.05.49:051][484]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (532)
+[2020.04.24-08.05.49:053][484]LogModuleManager: Shutting down and abandoning module PlacementMode (531)
+[2020.04.24-08.05.49:053][484]LogModuleManager: Shutting down and abandoning module MaterialEditor (530)
+[2020.04.24-08.05.49:056][484]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (526)
+[2020.04.24-08.05.49:056][484]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (524)
+[2020.04.24-08.05.49:056][484]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (522)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (520)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (518)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (516)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (514)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (512)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (510)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (508)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module CharacterAI (506)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module SmartSnapping (504)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module SessionServices (502)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module ViewportSnapping (500)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module ViewportInteraction (498)
+[2020.04.24-08.05.49:057][484]LogModuleManager: Shutting down and abandoning module ClothPainter (496)
+[2020.04.24-08.05.49:058][484]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (495)
+[2020.04.24-08.05.49:059][484]LogModuleManager: Shutting down and abandoning module LogVisualizer (492)
+[2020.04.24-08.05.49:061][484]LogModuleManager: Shutting down and abandoning module IntroTutorials (490)
+[2020.04.24-08.05.49:062][484]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (489)
+[2020.04.24-08.05.49:062][484]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (486)
+[2020.04.24-08.05.49:062][484]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (484)
+[2020.04.24-08.05.49:062][484]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (482)
+[2020.04.24-08.05.49:062][484]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (481)
+[2020.04.24-08.05.49:898][484]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (478)
+[2020.04.24-08.05.49:898][484]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (476)
+[2020.04.24-08.05.49:898][484]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (474)
+[2020.04.24-08.05.49:898][484]LogModuleManager: Shutting down and abandoning module InputBindingEditor (472)
+[2020.04.24-08.05.49:899][484]LogModuleManager: Shutting down and abandoning module MergeActors (470)
+[2020.04.24-08.05.49:899][484]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (468)
+[2020.04.24-08.05.49:900][484]LogModuleManager: Shutting down and abandoning module LocalizationService (467)
+[2020.04.24-08.05.49:900][484]LogModuleManager: Shutting down and abandoning module HardwareTargeting (464)
+[2020.04.24-08.05.49:900][484]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (462)
+[2020.04.24-08.05.49:900][484]LogModuleManager: Shutting down and abandoning module UndoHistory (460)
+[2020.04.24-08.05.49:900][484]LogModuleManager: Shutting down and abandoning module XmlParser (458)
+[2020.04.24-08.05.49:901][484]LogModuleManager: Shutting down and abandoning module Blutility (456)
+[2020.04.24-08.05.49:901][484]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (454)
+[2020.04.24-08.05.49:901][484]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (453)
+[2020.04.24-08.05.49:901][484]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (450)
+[2020.04.24-08.05.49:901][484]LogModuleManager: Shutting down and abandoning module SettingsEditor (448)
+[2020.04.24-08.05.49:903][484]LogModuleManager: Shutting down and abandoning module ProjectLauncher (446)
+[2020.04.24-08.05.49:903][484]LogModuleManager: Shutting down and abandoning module SessionFrontend (444)
+[2020.04.24-08.05.49:903][484]LogModuleManager: Shutting down and abandoning module ProfilerClient (442)
+[2020.04.24-08.05.49:903][484]LogModuleManager: Shutting down and abandoning module DeviceManager (440)
+[2020.04.24-08.05.49:904][484]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (439)
+[2020.04.24-08.05.49:959][484]LogModuleManager: Shutting down and abandoning module AutomationController (436)
+[2020.04.24-08.05.49:959][484]LogModuleManager: Shutting down and abandoning module AutomationWindow (434)
+[2020.04.24-08.05.49:960][484]LogModuleManager: Shutting down and abandoning module Layers (432)
+[2020.04.24-08.05.49:962][484]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (430)
+[2020.04.24-08.05.49:962][484]LogModuleManager: Shutting down and abandoning module DetailCustomizations (428)
+[2020.04.24-08.05.49:963][484]LogModuleManager: Shutting down and abandoning module PackagesDialog (426)
+[2020.04.24-08.05.49:963][484]LogModuleManager: Shutting down and abandoning module Persona (424)
+[2020.04.24-08.05.49:964][484]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (423)
+[2020.04.24-08.05.49:964][484]LogModuleManager: Shutting down and abandoning module AnimGraph (421)
+[2020.04.24-08.05.49:964][484]LogModuleManager: Shutting down and abandoning module Kismet (418)
+[2020.04.24-08.05.49:975][484]LogModuleManager: Shutting down and abandoning module GraphEditor (416)
+[2020.04.24-08.05.49:975][484]LogModuleManager: Shutting down and abandoning module ClassViewer (414)
+[2020.04.24-08.05.49:975][484]LogModuleManager: Shutting down and abandoning module Toolbox (412)
+[2020.04.24-08.05.49:975][484]LogModuleManager: Shutting down and abandoning module ModuleUI (410)
+[2020.04.24-08.05.49:975][484]LogModuleManager: Shutting down and abandoning module MovieSceneTools (408)
+[2020.04.24-08.05.49:976][484]LogModuleManager: Shutting down and abandoning module OutputLog (406)
+[2020.04.24-08.05.49:976][484]LogModuleManager: Shutting down and abandoning module GammaUI (404)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module Documentation (402)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (400)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module MovieScene (398)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (396)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module LauncherPlatform (394)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module AnalyticsET (392)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module PortalServices (390)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module PortalRpc (388)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module MessagingRpc (386)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module AIModule (384)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module GameplayDebugger (383)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module AITestSuite (381)
+[2020.04.24-08.05.49:977][484]LogModuleManager: Shutting down and abandoning module ProfilerService (378)
+[2020.04.24-08.05.50:136][484]LogModuleManager: Shutting down and abandoning module TaskGraph (376)
+[2020.04.24-08.05.50:137][484]LogModuleManager: Shutting down and abandoning module SteamVRController (374)
+[2020.04.24-08.05.50:137][484]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (372)
+[2020.04.24-08.05.50:137][484]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (370)
+[2020.04.24-08.05.50:137][484]LogModuleManager: Shutting down and abandoning module OculusInput (368)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (366)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (364)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module CableComponent (362)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module AudioCapture (360)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (358)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module AndroidPermission (356)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (352)
+[2020.04.24-08.05.50:138][484]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (350)
+[2020.04.24-08.05.50:140][484]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (348)
+[2020.04.24-08.05.50:140][484]LogModuleManager: Shutting down and abandoning module MediaCompositing (346)
+[2020.04.24-08.05.50:140][484]LogModuleManager: Shutting down and abandoning module LinearTimecode (344)
+[2020.04.24-08.05.50:140][484]LogModuleManager: Shutting down and abandoning module ImgMedia (342)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module HTML5Networking (340)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module AlembicImporter (338)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module AlembicLibrary (337)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module GeometryCache (336)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (335)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module DatasmithContent (330)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (328)
+[2020.04.24-08.05.50:144][484]LogModuleManager: Shutting down and abandoning module PluginBrowser (326)
+[2020.04.24-08.05.50:145][484]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (324)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (322)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module CryptoKeys (320)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (318)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (316)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module UObjectPlugin (314)
+[2020.04.24-08.05.50:146][484]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (312)
+[2020.04.24-08.05.50:147][484]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (310)
+[2020.04.24-08.05.50:148][484]LogModuleManager: Shutting down and abandoning module GitSourceControl (308)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module SourceControl (307)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (304)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (302)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (300)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (298)
+[2020.04.24-08.05.50:149][484]LogModuleManager: Shutting down and abandoning module Paper2DEditor (296)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module MeshPaint (295)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (290)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (288)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module PhysXVehicles (286)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module OculusEditor (284)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (282)
+[2020.04.24-08.05.50:150][484]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (280)
+[2020.04.24-08.05.50:151][484]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (278)
+[2020.04.24-08.05.50:151][484]LogModuleManager: Shutting down and abandoning module ActorSequence (276)
+[2020.04.24-08.05.50:151][484]LogModuleManager: Shutting down and abandoning module UdpMessaging (274)
+[2020.04.24-08.05.50:252][484]LogModuleManager: Shutting down and abandoning module TcpMessaging (272)
+[2020.04.24-08.05.50:352][484]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (270)
+[2020.04.24-08.05.50:352][484]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (268)
+[2020.04.24-08.05.50:352][484]LogModuleManager: Shutting down and abandoning module FacialAnimation (266)
+[2020.04.24-08.05.50:352][484]LogModuleManager: Shutting down and abandoning module DataValidation (264)
+[2020.04.24-08.05.50:352][484]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (262)
+[2020.04.24-08.05.50:353][484]LogModuleManager: Shutting down and abandoning module LevelEditor (261)
+[2020.04.24-08.05.50:355][484]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (260)
+[2020.04.24-08.05.50:355][484]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (258)
+[2020.04.24-08.05.50:355][484]LogModuleManager: Shutting down and abandoning module MainFrame (256)
+[2020.04.24-08.05.50:355][484]LogModuleManager: Shutting down and abandoning module HotReload (255)
+[2020.04.24-08.05.50:355][484]LogDirectoryWatcher: A directory notification for 'C:/dev/IB/Binaries/Win64' was aborted.
+[2020.04.24-08.05.50:356][484]LogModuleManager: Shutting down and abandoning module ContentBrowser (251)
+[2020.04.24-08.05.50:358][484]LogModuleManager: Shutting down and abandoning module TreeMap (249)
+[2020.04.24-08.05.50:359][484]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (246)
+[2020.04.24-08.05.50:359][484]LogModuleManager: Shutting down and abandoning module LiveLinkEditor (244)
+[2020.04.24-08.05.50:359][484]LogModuleManager: Shutting down and abandoning module LiveLink (242)
+[2020.04.24-08.05.50:512][484]LogModuleManager: Shutting down and abandoning module Paper2D (240)
+[2020.04.24-08.05.50:513][484]LogModuleManager: Shutting down and abandoning module InfinityBladeSetting (238)
+[2020.04.24-08.05.50:513][484]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (236)
+[2020.04.24-08.05.50:513][484]LogModuleManager: Shutting down and abandoning module WmfMedia (234)
+[2020.04.24-08.05.50:514][484]LogModuleManager: Shutting down and abandoning module Media (233)
+[2020.04.24-08.05.50:520][484]LogModuleManager: Shutting down and abandoning module PacketHandler (230)
+[2020.04.24-08.05.50:520][484]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (228)
+[2020.04.24-08.05.50:520][484]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (226)
+[2020.04.24-08.05.50:521][484]LogModuleManager: Shutting down and abandoning module MediaAssets (224)
+[2020.04.24-08.05.50:521][484]LogModuleManager: Shutting down and abandoning module Overlay (222)
+[2020.04.24-08.05.50:521][484]LogModuleManager: Shutting down and abandoning module OverlayEditor (221)
+[2020.04.24-08.05.50:521][484]LogModuleManager: Shutting down and abandoning module VREditor (218)
+[2020.04.24-08.05.50:521][484]LogModuleManager: Shutting down and abandoning module StringTableEditor (216)
+[2020.04.24-08.05.50:522][484]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (214)
+[2020.04.24-08.05.50:522][484]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (212)
+[2020.04.24-08.05.50:523][484]LogModuleManager: Shutting down and abandoning module FunctionalTesting (210)
+[2020.04.24-08.05.50:524][484]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (208)
+[2020.04.24-08.05.50:524][484]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (207)
+[2020.04.24-08.05.50:524][484]LogModuleManager: Shutting down and abandoning module UMG (204)
+[2020.04.24-08.05.50:524][484]LogModuleManager: Shutting down and abandoning module UMGEditor (203)
+[2020.04.24-08.05.50:524][484]LogModuleManager: Shutting down and abandoning module Sequencer (202)
+[2020.04.24-08.05.50:525][484]LogModuleManager: Shutting down and abandoning module MessageLog (199)
+[2020.04.24-08.05.50:525][484]LogModuleManager: Shutting down and abandoning module SlateReflector (194)
+[2020.04.24-08.05.50:526][484]LogModuleManager: Shutting down and abandoning module Slate (192)
+[2020.04.24-08.05.50:526][484]LogModuleManager: Shutting down and abandoning module EditorStyle (190)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module MRMesh (188)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (186)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (184)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module XAudio2 (182)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module Networking (180)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module Core (178)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module LevelSequence (176)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module KismetCompiler (174)
+[2020.04.24-08.05.50:529][484]LogModuleManager: Shutting down and abandoning module MeshUtilities (172)
+[2020.04.24-08.05.50:530][484]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (171)
+[2020.04.24-08.05.50:530][484]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (170)
+[2020.04.24-08.05.50:530][484]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (169)
+[2020.04.24-08.05.50:530][484]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (167)
+[2020.04.24-08.05.50:531][484]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (165)
+[2020.04.24-08.05.50:531][484]LogModuleManager: Shutting down and abandoning module MaterialBaking (161)
+[2020.04.24-08.05.50:532][484]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (157)
+[2020.04.24-08.05.50:536][484]LogModuleManager: Shutting down and abandoning module DerivedDataCache (154)
+[2020.04.24-08.05.50:637][484]LogDerivedDataCache: Shutdown
+[2020.04.24-08.05.50:637][484]LogModuleManager: Shutting down and abandoning module XGEController (152)
+[2020.04.24-08.05.50:637][484]LogModuleManager: Shutting down and abandoning module TargetPlatform (150)
+[2020.04.24-08.05.50:637][484]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (149)
+[2020.04.24-08.05.50:638][484]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (147)
+[2020.04.24-08.05.50:638][484]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (145)
+[2020.04.24-08.05.50:638][484]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (143)
+[2020.04.24-08.05.50:639][484]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (141)
+[2020.04.24-08.05.50:639][484]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (139)
+[2020.04.24-08.05.50:639][484]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (137)
+[2020.04.24-08.05.50:639][484]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (135)
+[2020.04.24-08.05.50:639][484]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (133)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (131)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module ImageWrapper (130)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (127)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (125)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (123)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (121)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (119)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (117)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (115)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (113)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (111)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Messaging (109)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (107)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (105)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (103)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (101)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (99)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (97)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (95)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_ETC1aTargetPlatform (93)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (91)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (89)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (87)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (85)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (83)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (81)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (79)
+[2020.04.24-08.05.50:640][484]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (77)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (75)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (73)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (71)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (69)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module InputCore (66)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module Settings (64)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module PhysXCooking (62)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module SteamVR (60)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module OculusHMD (58)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (56)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module AppleARKit (54)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2020.04.24-08.05.50:641][484]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2020.04.24-08.05.50:642][484]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2020.04.24-08.05.50:643][484]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2020.04.24-08.05.50:643][484]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2020.04.24-08.05.50:643][484]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B476D3076-4606-1BEE-8A73-6E9FBBE346FC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.19.2-4033788%2B%2B%2BUE4%2BRelease-4.19&UserID=740da03f4792943c42af93a8c1c8b86c%7C2397b827324e4e5598fb5ad28a0dc807%7C83286504-9604-4079-bf43-91e8b426d79c&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2020.04.24-08.05.50:653][484]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2020.04.24-08.05.50:655][484]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2020.04.24-08.05.50:656][484]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2020.04.24-08.05.50:656][484]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2020.04.24-08.05.50:657][484]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2020.04.24-08.05.50:658][484]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2020.04.24-08.05.50:658][484]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2020.04.24-08.05.50:658][484]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2020.04.24-08.05.50:692][484]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2020.04.24-08.05.50:693][484]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2020.04.24-08.05.50:701][484]LogExit: Exiting.
+[2020.04.24-08.05.50:724][484]Log file closed, 04/24/20 17:05:50

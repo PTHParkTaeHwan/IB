@@ -29,6 +29,6 @@ EBTNodeResult::Type UBTTask_E_FindPatrolPos::ExecuteTask(UBehaviorTreeComponent 
 		OwnerComp.GetBlackboardComponent()->SetValueAsVector(AIB_E_GREATERSPIDER_AIController::PatrolPosKey, NextPatrol.Location);
 		return EBTNodeResult::Succeeded;
 	}
-
+	
 	return EBTNodeResult::Failed;
 }

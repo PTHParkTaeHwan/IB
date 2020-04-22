@@ -28,6 +28,17 @@ UIBAnimInstance::UIBAnimInstance()
 		LSBasicAttackMontage = LSBASICATTACK_MONTAGE.Object;
 	}
 
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> SHIELD_MONTAGE(TEXT("/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_ShieldSkillMontage.SK_Mannequin_Skeleton_ShieldSkillMontage"));
+	if (SHIELD_MONTAGE.Succeeded())
+	{
+		ShieldMontage = SHIELD_MONTAGE.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> ULTIMATE_MONTAGE(TEXT("/Game/Book/Animations/Attack_Montage/SK_Mannequin_Skeleton_UltimateSkillMontage.SK_Mannequin_Skeleton_UltimateSkillMontage"));
+	if (ULTIMATE_MONTAGE.Succeeded())
+	{
+		UltimateSkill = ULTIMATE_MONTAGE.Object;
+	}
 
 }
 
@@ -197,6 +208,16 @@ void UIBAnimInstance::AnimNotify_FirstSkillStart()
 	FOnFirstSkillStartCheck.Broadcast();
 }
 
+void UIBAnimInstance::AnimNotify_ShieldSkillDone()
+{
+	FOnSecondSkillDoneCheck.Broadcast();
+}
+
+void UIBAnimInstance::AnimNotify_UltimateSkillStart()
+{
+	FOnForthSkillStartCheck.Broadcast();
+}
+
 void UIBAnimInstance::SetAttackMontageType(WeaponType NewType)
 {
 	CurrentAttackMontageType = NewType;
@@ -208,4 +229,14 @@ void UIBAnimInstance::PlayFirstSkillMontage(int32 SectionNum)
 	Montage_Play(AttackMontage, 1.0f);
 	Montage_JumpToSection(FName(*FString::Printf(TEXT("Attack4"))), AttackMontage);
 	
+}
+
+void UIBAnimInstance::PlayShieldSkillMontage()
+{
+	Montage_Play(ShieldMontage, 1.2f);
+}
+
+void UIBAnimInstance::PlayUltimateSkillMontage()
+{
+	Montage_Play(UltimateSkill, 1.0f);
 }

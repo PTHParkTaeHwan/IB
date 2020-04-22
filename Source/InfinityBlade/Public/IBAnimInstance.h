@@ -15,6 +15,8 @@ DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepStartCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnAttackType1_2StepDoneCheckDelegate);
 
 DECLARE_MULTICAST_DELEGATE(FOnFirstSkillStartCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnSecondSkillDoneCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnForthSkillStartCheckDelegate);
 
 
 /**
@@ -55,29 +57,37 @@ private:
 
 	FName GetAttackMontageSectionName(int32 Section);
 
-	//공격모션에서 맴 이동 관리
+	//공격모션
 public:
 	FOnAttackType1_1StepStartCheckDelegate FOnAttackType1_1StepStartCheck;
 	FOnAttackType1_1StepDoneCheckDelegate FOnAttackType1_1StepDoneCheck;
 	FOnAttackType1_2StepStartCheckDelegate FOnAttackType1_2StepStartCheck;
 	FOnAttackType1_2StepDoneCheckDelegate FOnAttackType1_2StepDoneCheck;
+	FOnSecondSkillDoneCheckDelegate FOnSecondSkillDoneCheck;
+	FOnForthSkillStartCheckDelegate FOnForthSkillStartCheck;
 
 private:
 	//AttackType1
 	UFUNCTION()
-		void AnimNotify_AttackType1_1StepStart();
+	void AnimNotify_AttackType1_1StepStart();
 
 	UFUNCTION()
-		void AnimNotify_AttackType1_1StepDone();
+	void AnimNotify_AttackType1_1StepDone();
 
 	UFUNCTION()
-		void AnimNotify_AttackType1_2StepStart();
+	void AnimNotify_AttackType1_2StepStart();
 
 	UFUNCTION()
-		void AnimNotify_AttackType1_2StepDone();
+	void AnimNotify_AttackType1_2StepDone();
 
 	UFUNCTION()
-		void AnimNotify_FirstSkillStart();
+	void AnimNotify_FirstSkillStart();
+
+	UFUNCTION()
+	void AnimNotify_ShieldSkillDone();
+
+	UFUNCTION()
+	void AnimNotify_UltimateSkillStart();
 
 
 
@@ -103,6 +113,14 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		UAnimMontage* LSBasicAttackMontage;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* ShieldMontage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* UltimateSkill;
+
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 		bool IsDead;
 
@@ -118,4 +136,7 @@ public:
 public:
 	void PlayFirstSkillMontage(int32 SectionNum);
 	FOnFirstSkillStartCheckDelegate FOnFirstSkillStartCheck;
+
+	void PlayShieldSkillMontage();
+	void PlayUltimateSkillMontage();
 };

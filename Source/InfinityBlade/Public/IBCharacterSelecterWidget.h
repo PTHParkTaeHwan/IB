@@ -20,6 +20,9 @@ protected:
 
 	virtual void NativeConstruct() override;
 
+
+
+
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Character)
 	int32 CurrentIndex;
@@ -28,6 +31,8 @@ protected:
 	int32 MaxIndex;
 
 	TWeakObjectPtr<USkeletalMeshComponent> TargetComponent;	
+	TWeakObjectPtr<USkeletalMeshComponent> TargetComponent2;
+	
 
 	UPROPERTY()
 	class UButton* PrevButton;
@@ -41,6 +46,12 @@ protected:
 	UPROPERTY()
 	class UButton* ConfirmButton;
 
+public:
+	UPROPERTY(EditAnywhere)
+	AActor* CameraOne;
+
+
+
 private:
 	UFUNCTION()
 	void OnPrevClicked();
@@ -50,6 +61,14 @@ private:
 
 	UFUNCTION()
 	void OnConfirmClicked();
+
+
+private:
+	bool bLeftFirstClicked;
+	bool bRightFirstClicked;
+
+	bool bLevelOpen;
+	float fLevelOpenBufferTime;
 
 
 };

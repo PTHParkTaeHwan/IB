@@ -101,10 +101,10 @@ AIB_E_GreaterSpider::AIB_E_GreaterSpider()
 		HitEffect->SetTemplate(P_HIT.Object);
 		HitEffect->bAutoActivate = false;
 	}
-
-
-
+	
 	HitMotionOn = false;
+
+	
 
 }
 

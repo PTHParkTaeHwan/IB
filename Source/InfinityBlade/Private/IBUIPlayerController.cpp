@@ -14,12 +14,13 @@ void AIBUIPlayerController::BeginPlay()
 
 	UIWidgetInstance->AddToViewport();
 
-	FInputModeUIOnly Mode;
-	Mode.SetWidgetToFocus(UIWidgetInstance->GetCachedWidget());
-	SetInputMode(Mode);
+	//FInputModeUIOnly Mode;
+	//Mode.SetWidgetToFocus(UIWidgetInstance->GetCachedWidget());
+	//SetInputMode(Mode);
 	bShowMouseCursor = true;
 
-
+	
+	
 }
 
 

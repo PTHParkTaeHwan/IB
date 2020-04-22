@@ -13,7 +13,6 @@ UCLASS()
 class INFINITYBLADE_API AIBCharacter : public ACharacter
 {
 	GENERATED_BODY()
-
 public:
 	// Sets default values for this character's properties
 	AIBCharacter();
@@ -182,6 +181,10 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Skill)
 	UParticleSystemComponent* ShieldSkill;
 
+	//스킬4
+
+
+
 	UPROPERTY(VisibleAnywhere, Category = Skill)
 	UParticleSystemComponent* TestParticle;
 
@@ -235,6 +238,7 @@ public:
 	void InitSkillParticle();
 	void InitFirstSkill();
 	void InitSecondSkill();
+	void InitForthSkill();
 	void Skill_3();
 
 private:
@@ -243,7 +247,6 @@ private:
 	//1st
 	void InitGroundBurstSkillParameter();
 	bool bFirstSkillEffect;
-	bool bFirstSkillMontagePlay;
 	float EffectIntervalTime;
 	int32 EffectNum;
 
@@ -253,8 +256,38 @@ private:
 	float ShieldSkillActiveTime;
 
 
+	//4th
+	void InitUltimateSkillParameter();
+	bool bForthSkillEffect;
+	bool bForthSkillMontagePlay;
+	bool bBasicUltimateSkill;
+	FVector SkillStartForwardLeftVector = FVector::ZeroVector;
+	FVector SkillStartForwardRightVector = FVector::ZeroVector;
+	FVector SkillStartBackVector = FVector::ZeroVector;
+	FVector SkillStartBackLeftVector = FVector::ZeroVector;
+	FVector SkillStartBackRightVector = FVector::ZeroVector;
+	FVector SkillStartRightVector = FVector::ZeroVector;
+	FVector SkillStartLeftVector = FVector::ZeroVector;
+
+	struct UltimateParticle
+	{
+		UPROPERTY(VisibleAnywhere, Category = Skill)
+		UParticleSystemComponent* FirstParticle;
+		UPROPERTY(VisibleAnywhere, Category = Skill)
+		UParticleSystemComponent* SecondParticle;
+		FVector SkillStartVector;		
+	};
+
+	std::vector<UltimateParticle> m_vUSParticleVector;
+	std::vector<UltimateParticle>::iterator m_viUSParticleVector;
+	int ParticelNum;
+
+
+	
 	FVector SkillStartLocation = FVector::ZeroVector;
 	FVector SkillStartForwardVector = FVector::ZeroVector;
+
+
 	//테스트용 Parameter
 private:
 	void TestParameter();
